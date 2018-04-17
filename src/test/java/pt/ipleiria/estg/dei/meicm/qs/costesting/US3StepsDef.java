@@ -12,7 +12,10 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class US3StepsDef {
@@ -47,10 +50,16 @@ public class US3StepsDef {
         searchbox.sendKeys(name);
     }
 
-    @Then("^the result should be \"([^\"]*)\" users$")
-    public void theFieldIsFilledOutWith(int aux) throws Throwable {
+    @Then("^the result names should contains \"([^\"]*)\"$")
+    public void theResultShould(String aux) throws Throwable {
+
         int i = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr")).size();
-        assertEquals(aux, i);
+
+        for(int y = 1; y<i; y++){
+            assertTrue((driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr["+y+"]/td[2]")).getText()).contains(aux));
+        }
+
+
     }
 
 
