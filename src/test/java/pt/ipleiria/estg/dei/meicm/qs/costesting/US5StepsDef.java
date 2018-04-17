@@ -10,7 +10,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -43,7 +46,7 @@ public class US5StepsDef {
     @When("^i click in the next page$")
     public void iClickInTheNextPage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table_paginate']/a[2]")));
+        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table_paginate']/a[3]")));
 
         select.click();
 
@@ -53,15 +56,43 @@ public class US5StepsDef {
     @Then("^the text users per page should contain \"([^\"]*)\"$")
     public void theTextUsersPerPageShouldBe(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        assertEquals(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText(),arg0);
         assertTrue(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText().contains(arg0));
     }
 
-    @When("^i click in the page (\\d+)$")
-    public void iClickInThePage(int arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table_paginate']/span/a[2]")));
 
+
+    @When("^i click in the first page$")
+    public void iClickInTheFirstPage() throws Throwable {
+        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='data-table_first']")));
         select.click();
     }
+
+    @Then("^the button previous must be disabled$")
+    public void theButtonPreviousMustBeDisabled() throws Throwable {
+       String aux = driver.findElement(By.xpath("//a[@id='data-table_previous']")).getAttribute("class");
+       String[] auxClasses = aux.split(" ");
+       assertTrue(auxClasses[2].equals("disabled"));
+    }
+
+    @When("^i click in the last page$")
+    public void iClickInThePageLast() throws Throwable {
+        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table_paginate']/a[4]")));
+        select.click();
+    }
+
+    @Then("^the text users per page should contain the last users$")
+    public void theTextUsersPerPageShouldContainTheLastUsers() throws Throwable {
+        String total = driver.findElement(By.xpath("//span[@id='total_contacts']")).getText();
+        String aux = "to "+total+ " of "+total+" entries";
+        assertTrue(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText().contains(aux));
+    }
+
+    @Then("^the button next must be disabled$")
+    public void theButtonNextMustBeDisabled() throws Throwable {
+        String aux = driver.findElement(By.xpath("//a[@id='data-table_next']")).getAttribute("class");
+        String[] auxClasses = aux.split(" ");
+        assertTrue(auxClasses[2].equals("disabled"));
+    }
+
+
 }

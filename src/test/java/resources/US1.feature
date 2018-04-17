@@ -50,6 +50,10 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
     Then I click on the button more info
     And The field "Guid" should be valid
 
+  Scenario: From the contacts list verify guid
+    Given I am on the Contact List page
+    Then The fields "Guid" should be valid
+
   Scenario: Landing page's and contact list returned is empty
     Given I access the landing page of contacts
     Then the title of the page should be "Contacts not available"

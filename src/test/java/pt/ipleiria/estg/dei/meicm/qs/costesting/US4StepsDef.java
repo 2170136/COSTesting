@@ -1,9 +1,12 @@
 package pt.ipleiria.estg.dei.meicm.qs.costesting;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -39,25 +42,30 @@ public class US4StepsDef {
         driver.quit();
     }
 
-    @Then("^the users per page should be \"([^\"]*)\"$")
+    @Then("^the users per page should contain \"([^\"]*)\"$")
     public void theUsersPerPageShouldBe(String results) throws Throwable {
-        assertEquals(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText(),results);
+        String aux = driver.findElement(By.xpath("//div[@id='data-table_info']")).getText();
+
+        Assert.assertTrue(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText().contains(results));
     }
 
-    @When("^I Change the users per page to 50$")
-    public void iChangeTheUsersPerPage() throws Throwable {
+
+    @When("^I Change the users per page to (\\d+)$")
+    public void iChangeTheUsersPerPageTo(int arg0) throws Throwable {
+        ////div[@id='data-table_length']/label/select
         WebElement select = driver.findElement(By.xpath("//select[@name='data-table_length']"));
         Select dropDown = new Select(select);
 
-
         List<WebElement> Options = dropDown.getOptions();
         for(WebElement option:Options){
-            if(option.getText().equals("50")) {
+            if(option.getText().equals(String.valueOf(arg0))) {
                 option.click(); //select option here;
             }
         }
-
-
     }
 
+    @Given("^I am on the Contact list page$")
+    public void iAmOnTheContactListPage() throws Throwable {
+        driver.get("http://35.187.16.192/COSProject/index.php");
+    }
 }

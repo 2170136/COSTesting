@@ -116,5 +116,14 @@ public class US1StepsDef {
         String[] split = profile_href.split("=");
         assertEquals((split.length>0?split[1]:""), guid);
     }
+
+    @Then("^The fields \"([^\"]*)\" should be valid$")
+    public void theFieldsShouldBeValid(String arg0) throws Throwable {
+        WebElement element = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr/td"));
+        String Guid = element.getText();
+        //Guid = "021a1dc3-5b75-4868-bb03-333170ce9ac";
+
+        Assert.assertTrue(Guid.matches("^[a-zA-Z0-9]{8}+-+[a-zA-Z0-9]{4}+-+[a-zA-Z0-9]{4}+-+[a-zA-Z0-9]{4}+-+[a-zA-Z0-9]{12}$"));
+    }
 }
 
