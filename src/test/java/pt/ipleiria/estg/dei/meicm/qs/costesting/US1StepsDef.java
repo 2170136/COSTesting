@@ -26,6 +26,7 @@ import static org.junit.Assert.fail;
 public class US1StepsDef {
     private  PhantomJSDriver driver;
     private String guid = "";
+    private String profile_href ="";
 
     @Given("^I access the landing page of COS$")
     public void iAccessTheLandingPageOfCOS() throws Throwable {
@@ -86,6 +87,7 @@ public class US1StepsDef {
         // Write code here that turns the phrase above into concrete actions
         WebElement webElement = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr/td[3]/a"));
         guid = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr/td")).getText();
+        profile_href = webElement.getAttribute("href");
         webElement.click();
         //new WebDriverWait(driver, 2));
     }
@@ -95,6 +97,24 @@ public class US1StepsDef {
         // Write code here that turns the phrase above into concrete actions
         String profile_guid = driver.findElement(By.xpath("//span[@id='guid_value']")).getText();
         assertTrue(profile_guid.equals(guid));
+    }
+
+    @And("^the \"([^\"]*)\" message should be displayed$")
+    public void theMessageShouldBeDisplayed(String arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        assertEquals("Error in API RESP", driver.findElement(By.xpath("//p")).getText(),"Error in access Rest Contacts API");
+    }
+
+    @Given("^I access the landing page of contacts$")
+    public void iAccessTheLandingPageOfContacts() throws Throwable {
+        driver.get("http://35.187.16.192/COSProject/index.php");
+        assertEquals("Contacts not available", driver.getTitle());
+    }
+
+    @And("^The field \"([^\"]*)\" should be valid$")
+    public void theFieldShouldBeValid(String arg0) throws Throwable {
+        String[] split = profile_href.split("=");
+        assertEquals((split.length>0?split[1]:""), guid);
     }
 }
 

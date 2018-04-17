@@ -44,3 +44,13 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
     Given I am on the Contact List page
     Then I click on the button more info
     And I can see the profile page
+
+  Scenario: From the contacts list open a profile page
+    Given I am on the Contact List page
+    Then I click on the button more info
+    And The field "Guid" should be valid
+
+  Scenario: Landing page's and contact list returned is empty
+    Given I access the landing page of contacts
+    Then the title of the page should be "Contacts not available"
+    And the "Error in access Rest Contacts API" message should be displayed
