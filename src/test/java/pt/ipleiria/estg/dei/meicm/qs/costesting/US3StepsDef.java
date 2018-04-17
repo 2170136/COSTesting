@@ -47,7 +47,7 @@ public class US3StepsDef {
         searchbox.sendKeys(name);
     }
 
-    @Then("^the result should be \"([^\"]*)\" user$")
+    @Then("^the result should be \"([^\"]*)\" users$")
     public void theFieldIsFilledOutWith(int aux) throws Throwable {
         int i = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr")).size();
         assertEquals(aux, i);

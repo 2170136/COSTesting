@@ -6,7 +6,7 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
   Scenario: Search a valid User
     Given I am on the Contact List page
     When i type "Joao " on the input box
-    Then the result should be "3" user
+    Then the result should be "3" users
   
   Scenario: Search an invalid User
     Given I am on the Contact List page
