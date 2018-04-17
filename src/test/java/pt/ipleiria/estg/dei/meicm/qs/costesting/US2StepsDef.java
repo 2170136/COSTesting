@@ -1,6 +1,7 @@
 package pt.ipleiria.estg.dei.meicm.qs.costesting;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -33,6 +34,12 @@ public class US2StepsDef {
 
         driver = new PhantomJSDriver();
     }
+
+    @After
+    public void tearDown() throws Exception {
+        driver.quit();
+    }
+
     @Given("^I am on the Contact List page$")
     public void iAmOnTheContactListPage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions

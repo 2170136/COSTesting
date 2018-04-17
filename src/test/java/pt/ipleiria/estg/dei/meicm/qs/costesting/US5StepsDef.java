@@ -1,5 +1,6 @@
 package pt.ipleiria.estg.dei.meicm.qs.costesting;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
@@ -19,4 +20,10 @@ public class US5StepsDef {
 
         driver = new PhantomJSDriver();
     }
+
+    @After
+    public void tearDown() throws Exception {
+        driver.quit();
+    }
+
 }

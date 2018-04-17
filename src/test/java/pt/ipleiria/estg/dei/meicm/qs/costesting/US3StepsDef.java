@@ -1,5 +1,6 @@
 package pt.ipleiria.estg.dei.meicm.qs.costesting;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -32,6 +33,10 @@ public class US3StepsDef {
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 
+    @After
+    public void tearDown() throws Exception {
+        driver.quit();
+    }
 
 
     @When("^i type \"([^\"]*)\" on the input box$")

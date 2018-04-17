@@ -1,5 +1,6 @@
 package pt.ipleiria.estg.dei.meicm.qs.costesting;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -31,6 +32,11 @@ public class US4StepsDef {
         driver = new PhantomJSDriver();
 
         driver.get("http://35.187.16.192/COSProject/index.php");
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        driver.quit();
     }
 
     @Then("^the users per page should be \"([^\"]*)\"$")
