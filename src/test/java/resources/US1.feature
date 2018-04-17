@@ -6,3 +6,32 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
     Given I access the landing page of COS
     Then the title of the page should be "Contacts Orchestrator Solution"
     And I can see the text "Contacts Orchestrator Solution"
+
+
+#  Scenario: Check Email Format
+#    Given I am on the Contact List page
+#    When i click in the first more info button
+#    Then the field "email" should be in the right format
+#
+#  Scenario: Check Phone Format
+#    Given I am on the Contact List page
+#    When i click in the first more info button
+#    Then the field "phone" should be in the right format
+##
+#  Scenario: Check Occupation Exists
+#    Given I am on the Contact List page
+#    When i click in the first more info button
+#    Then the field Occupation should be in the right format
+#
+#  Scenario: Check Phone Format
+#    Given I am on the Contact List page
+#    When i click in the first more info button
+#    Then the field Phone should be in the right format
+#
+#  Scenario: Check Guid exits
+#    Given I am on the Contact List page
+#    Then the field "Guid" should exist
+#
+#  Scenario: Check Name exits
+#    Given I am on the Contact List page
+#    Then the field "Email" should exist

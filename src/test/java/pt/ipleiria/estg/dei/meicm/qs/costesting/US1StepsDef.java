@@ -6,19 +6,28 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import static junit.framework.TestCase.assertEquals;
 
 public class US1StepsDef {
-    private WebDriver driver;
+    private  PhantomJSDriver driver;
+
 
     @Given("^I access the landing page of COS$")
     public void iAccessTheLandingPageOfCOS() throws Throwable {
-        driver.get("http://localhost:8080");
+        driver.get("http://35.187.16.192/COSProject/index.php");
         assertEquals("Contacts Orchestrator Solution", driver.getTitle());
     }
 
@@ -36,12 +45,24 @@ public class US1StepsDef {
 
     @Before
     public void setUp() throws Exception {
-        driver = new HtmlUnitDriver();
+        System.setProperty("webdriver.gecko.driver",
+                "drivers\\geckodriver.exe");
+        System.setProperty("webdriver.edge.driver",
+                "drivers\\MicrosoftWebDriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+                "drivers\\chromedriver.exe");
+        System.setProperty("phantomjs.binary.path",
+                "drivers\\phantomjs.exe");
+
+
+        driver = new PhantomJSDriver();
     }
 
     @After
     public void tearDown() throws Exception {
         driver.close();
     }
+
+
 }
 
