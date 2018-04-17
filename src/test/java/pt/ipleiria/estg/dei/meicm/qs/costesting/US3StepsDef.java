@@ -38,8 +38,7 @@ public class US3StepsDef {
     public void iTypeOnTheInputBox(String name) throws Throwable {
         WebElement searchbox = (new WebDriverWait(driver, 10))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table_filter']/label/input")));
-        // Write code here that turns the phrase above into concrete actions
-       // WebElement element = driver.findElement(By.xpath("//div[@id='data-table_filter']/label/input"));
+
         searchbox.sendKeys(name);
     }
 
