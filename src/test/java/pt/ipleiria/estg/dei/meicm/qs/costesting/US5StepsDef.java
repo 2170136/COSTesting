@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class US5StepsDef {
     private PhantomJSDriver driver;
@@ -49,10 +50,11 @@ public class US5StepsDef {
     }
 
 
-    @Then("^the text users per page should be \"([^\"]*)\"$")
+    @Then("^the text users per page should contain \"([^\"]*)\"$")
     public void theTextUsersPerPageShouldBe(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         assertEquals(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText(),arg0);
+        assertTrue(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText().contains(arg0));
     }
 
     @When("^i click in the page (\\d+)$")
