@@ -28,10 +28,19 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
 #    When i click in the first more info button
 #    Then the field Phone should be in the right format
 #
-#  Scenario: Check Guid exits
-#    Given I am on the Contact List page
-#    Then the field "Guid" should exist
+ Scenario: Check Guid exits
+    Given I am on the Contact List page
+    Then the field "Guid" should exist
 #
-#  Scenario: Check Name exits
-#    Given I am on the Contact List page
-#    Then the field "Email" should exist
+  Scenario: Check Name exits
+    Given I am on the Contact List page
+    Then the field "Name" should exist
+
+  Scenario: Check Actions exits
+    Given I am on the Contact List page
+    Then the field "Actions" should exist
+
+  Scenario: From the contacts list open a profile page
+    Given I am on the Contact List page
+    Then I click on the button more info
+    And I can see the profile page
