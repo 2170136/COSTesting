@@ -1,4 +1,3 @@
-package pt.ipleiria.estg.dei.meicm.qs.costesting;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;

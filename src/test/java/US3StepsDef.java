@@ -1,4 +1,4 @@
-package pt.ipleiria.estg.dei.meicm.qs.costesting;
+
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

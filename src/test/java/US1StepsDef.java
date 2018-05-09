@@ -1,4 +1,3 @@
-package pt.ipleiria.estg.dei.meicm.qs.costesting;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.After;
