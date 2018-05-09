@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class US4StepsDef {
     private PhantomJSDriver driver;
@@ -42,18 +43,13 @@ public class US4StepsDef {
         driver.quit();
     }
 
-    @Then("^the users per page should contain \"([^\"]*)\"$")
-    public void theUsersPerPageShouldBe(String results) throws Throwable {
-        String aux = driver.findElement(By.xpath("//div[@id='data-table_info']")).getText();
 
-        Assert.assertTrue(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText().contains(results));
-    }
 
 
     @When("^I Change the users per page to (\\d+)$")
     public void iChangeTheUsersPerPageTo(int arg0) throws Throwable {
         ////div[@id='data-table_length']/label/select
-        WebElement select = driver.findElement(By.xpath("//select[@name='data-table_length']"));
+        WebElement select = driver.findElement(By.xpath("//select[@name='data-table-contacts_length']"));
         Select dropDown = new Select(select);
 
         List<WebElement> Options = dropDown.getOptions();
@@ -67,5 +63,12 @@ public class US4StepsDef {
     @Given("^I am on the Contact list page$")
     public void iAmOnTheContactListPage() throws Throwable {
         driver.get("http://35.187.16.192/COSProject/index.php");
+    }
+
+    @Then("^the list contain \"([^\"]*)\" contacts$")
+    public void theListContainContacts(String arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+       List<WebElement> elementList = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr"));
+       assertTrue(elementList.size()==Integer.parseInt(arg0));
     }
 }

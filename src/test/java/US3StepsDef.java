@@ -45,7 +45,7 @@ public class US3StepsDef {
     @When("^i type \"([^\"]*)\" on the input box$")
     public void iTypeOnTheInputBox(String name) throws Throwable {
         WebElement searchbox = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table_filter']/label/input")));
+                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table-contacts_filter']/label/input")));
 
         searchbox.sendKeys(name);
     }
@@ -53,10 +53,10 @@ public class US3StepsDef {
     @Then("^the result names should contains \"([^\"]*)\"$")
     public void theResultShould(String aux) throws Throwable {
 
-        int i = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr")).size();
+        int i = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr")).size();
 
         for(int y = 1; y<i; y++){
-            assertTrue((driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr["+y+"]/td[2]")).getText()).contains(aux));
+            assertTrue((driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr["+y+"]/td[2]")).getText()).contains(aux));
         }
 
 
@@ -68,7 +68,7 @@ public class US3StepsDef {
 
 
         //div[@id='data-table_paginate']/span/a[5]
-        assertEquals(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr/td")).getText(),results);
+        assertEquals(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td")).getText(),results);
     }
 
 

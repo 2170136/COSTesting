@@ -1,4 +1,4 @@
-Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
+Feature: Search Contacts at the Contacts Orchestrator Solution's (COS) Landing Page
   As a user
   I want to search users by name or Guid
   So that I can find a specific user

@@ -1,4 +1,4 @@
-Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
+Feature: Access to the Profile Page of a contact
   As a user
   I want to access to the detail page of a specific user
   So that I can see the details about this user

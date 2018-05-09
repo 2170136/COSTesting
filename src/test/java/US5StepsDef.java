@@ -63,20 +63,20 @@ public class US5StepsDef {
 
     @When("^i click in the first page$")
     public void iClickInTheFirstPage() throws Throwable {
-        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='data-table_first']")));
+        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='data-table-contacts_first']")));
         select.click();
     }
 
     @Then("^the button previous must be disabled$")
     public void theButtonPreviousMustBeDisabled() throws Throwable {
-       String aux = driver.findElement(By.xpath("//a[@id='data-table_previous']")).getAttribute("class");
+       String aux = driver.findElement(By.xpath("//a[@id='data-table-contacts_previous']")).getAttribute("class");
        String[] auxClasses = aux.split(" ");
        assertTrue(auxClasses[2].equals("disabled"));
     }
 
     @When("^i click in the last page$")
     public void iClickInThePageLast() throws Throwable {
-        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table_paginate']/a[4]")));
+        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table-contacts_paginate']/a[4]")));
         select.click();
     }
 
@@ -84,12 +84,12 @@ public class US5StepsDef {
     public void theTextUsersPerPageShouldContainTheLastUsers() throws Throwable {
         String total = driver.findElement(By.xpath("//span[@id='total_contacts']")).getText();
         String aux = "to "+total+ " of "+total+" entries";
-        assertTrue(driver.findElement(By.xpath("//div[@id='data-table_info']")).getText().contains(aux));
+        assertTrue(driver.findElement(By.xpath("//div[@id='data-table-contacts_info']")).getText().contains(aux));
     }
 
     @Then("^the button next must be disabled$")
     public void theButtonNextMustBeDisabled() throws Throwable {
-        String aux = driver.findElement(By.xpath("//a[@id='data-table_next']")).getAttribute("class");
+        String aux = driver.findElement(By.xpath("//a[@id='data-table-contacts_next']")).getAttribute("class");
         String[] auxClasses = aux.split(" ");
         assertTrue(auxClasses[2].equals("disabled"));
     }

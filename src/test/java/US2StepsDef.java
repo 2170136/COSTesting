@@ -49,7 +49,7 @@ public class US2StepsDef {
     @When("^i click in the first more info button$")
     public void iClickInTheFirstMoreInfoButton() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        WebElement element = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr/td[3]/a"));
+        WebElement element = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[3]/a"));
 
         element.click();
 
