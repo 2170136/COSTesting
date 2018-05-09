@@ -46,6 +46,7 @@ public class US1StepsDef {
         wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.tagName("body")), text));
     }
 
+
     @Before
     public void setUp() throws Exception {
         System.setProperty("webdriver.gecko.driver",

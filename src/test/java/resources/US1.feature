@@ -36,6 +36,8 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
     Given I am on the Contact List page
     Then the field "Name" should exist
 
+
+
   Scenario: Check Actions exits
     Given I am on the Contact List page
     Then the field "Actions" should exist
@@ -58,3 +60,19 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
     Given I access the landing page of contacts
     Then the title of the page should be "Contacts not available"
     And the "Error in access Rest Contacts API" message should be displayed
+
+
+    # NEW
+
+  Scenario: Check Name exits
+    Given I am on the Contact List page
+    Then the field "Source" should exist
+
+  Scenario: List only Facebook Contacts
+
+  Scenario: List only Linkedin Contacts
+
+  Scenario: Disable Facebook
+
+  Scenario: Disable Linkedin
+
