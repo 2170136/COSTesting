@@ -65,6 +65,9 @@ public class US3StepsDef {
 
     @Then("^the result should be \"([^\"]*)\" error message$")
     public void theResultShouldBe(String results) throws Throwable {
+
+
+        //div[@id='data-table_paginate']/span/a[5]
         assertEquals(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr/td")).getText(),results);
     }
 

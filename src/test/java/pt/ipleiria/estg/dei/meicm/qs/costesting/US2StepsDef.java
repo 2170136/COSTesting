@@ -117,42 +117,21 @@ public class US2StepsDef {
     }
 
     @Then("^the field \"([^\"]*)\" should exits$")
-    public void theFieldExits(String arg0) throws Throwable {
+    public void theFieldExits(String aux) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        if(arg0.equals("contact_name")){
+
+
+      if(aux.equals("contact_name")){
             WebElement element = driver.findElement(By.xpath("//h2[@id='contact_name']"));
             String contactName = element.getText();
             Assert.assertTrue(contactName.length()>0);
-        }
-        if(arg0.equals("giveName")){
-            WebElement element = driver.findElement(By.xpath("//span[@id='given_name_value']"));
+        }else {
+            System.out.println("aux"+aux);
+            WebElement element = driver.findElement(By.xpath("//span[@id='"+aux+"']"));
             String giveName = element.getText();
             Assert.assertTrue(giveName.length()>0);
         }
-        if(arg0.equals("surName")){
-            WebElement element = driver.findElement(By.xpath("//span[@id='surname_value']"));
-            String surName = element.getText();
-            Assert.assertTrue(surName.length()>0);
-        }
-        if(arg0.equals("occupation")){
-            WebElement element = driver.findElement(By.xpath("//span[@id='occupation_value']"));
-            String occupation = element.getText();
-            Assert.assertTrue(occupation.length()>0);
-        }
-        if(arg0.equals("streetAddress")){
-            WebElement element = driver.findElement(By.xpath("//span[@id='street_address_value']"));
-            String streetAddress = element.getText();
-            Assert.assertTrue(streetAddress.length()>0);
-        }
-        if(arg0.equals("city")){
-            WebElement element = driver.findElement(By.xpath("//span[@id='city_value']"));
-            String city = element.getText();
-            Assert.assertTrue(city.length()>0);
-        }
-        if(arg0.equals("company")){
-            WebElement element = driver.findElement(By.xpath("//span[@id='company_value']"));
-            String company = element.getText();
-            Assert.assertTrue(company.length()>0);
-        }
+
+
     }
 }
