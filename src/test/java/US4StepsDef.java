@@ -31,8 +31,8 @@ public class US4StepsDef {
 //                "drivers\\MicrosoftWebDriver.exe");
 //        System.setProperty("webdriver.chrome.driver",
 //                "drivers\\chromedriver.exe");
-//        System.setProperty("phantomjs.binary.path",
-//                System.getProperty("user.dir")+ "/drivers/phantomjs.exe");
+        System.setProperty("phantomjs.binary.path",
+                "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
 
         driver = new PhantomJSDriver();
