@@ -54,14 +54,14 @@ public class US1StepsDef {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.gecko.driver",
-                "drivers\\geckodriver.exe");
-        System.setProperty("webdriver.edge.driver",
-                "drivers\\MicrosoftWebDriver.exe");
-        System.setProperty("webdriver.chrome.driver",
-                "drivers\\chromedriver.exe");
-        System.setProperty("phantomjs.binary.path",
-                System.getProperty("user.dir")+ "/drivers/phantomjs.exe");
+//        System.setProperty("webdriver.gecko.driver",
+//                "drivers\\geckodriver.exe");
+//        System.setProperty("webdriver.edge.driver",
+//                "drivers\\MicrosoftWebDriver.exe");
+//        System.setProperty("webdriver.chrome.driver",
+//                "drivers\\chromedriver.exe");
+//        System.setProperty("phantomjs.binary.path",
+//                System.getProperty("user.dir")+ "/drivers/phantomjs.exe");
 
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
