@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -31,7 +32,7 @@ public class US3StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver.exe");
         System.setProperty("phantomjs.binary.path",
-                System.getProperty("user.dir")+ "/drivers/phantomjs-linux");
+                System.getProperty("user.dir")+ "/drivers/phantomjs.exe");
 
 
         driver = new PhantomJSDriver();
