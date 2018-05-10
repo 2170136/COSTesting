@@ -61,7 +61,7 @@ public class US1StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver.exe");
         System.setProperty("phantomjs.binary.path",
-                System.getProperty("user.dir")+ "/drivers/phantomjs");
+                System.getProperty("user.dir")+ "/drivers/phantomjs-linux");
 
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);

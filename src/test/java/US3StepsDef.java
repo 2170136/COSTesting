@@ -31,7 +31,7 @@ public class US3StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver.exe");
         System.setProperty("phantomjs.binary.path",
-                System.getProperty("user.dir")+ "/drivers/phantomjs");
+                System.getProperty("user.dir")+ "/drivers/phantomjs-linux");
 
 
         driver = new PhantomJSDriver();
