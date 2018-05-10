@@ -32,7 +32,7 @@ public class US3StepsDef {
 //        System.setProperty("webdriver.chrome.driver",
 //                "drivers\\chromedriver.exe");
         System.setProperty("phantomjs.binary.path",
-                "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs");
+                "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
 
         driver = new PhantomJSDriver();
