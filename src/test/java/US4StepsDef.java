@@ -34,6 +34,7 @@ public class US4StepsDef {
         System.setProperty("phantomjs.binary.path",
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
+
         driver = new PhantomJSDriver();
        // driver.get("http://35.187.16.192/COSProject/index.php");
     }
