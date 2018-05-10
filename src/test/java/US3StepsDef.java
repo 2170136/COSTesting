@@ -21,7 +21,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class US3StepsDef {
-    private HtmlUnitDriver driver;
+    private PhantomJSDriver driver;
 
     @Before
     public void setUp() throws Exception {
@@ -34,7 +34,7 @@ public class US3StepsDef {
                 "drivers\\phantomjs.exe");
 
 
-        driver = new HtmlUnitDriver();
+        driver = new PhantomJSDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 

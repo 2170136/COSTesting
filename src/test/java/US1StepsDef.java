@@ -29,7 +29,7 @@ import static org.junit.Assert.fail;
 
 public class US1StepsDef {
 
-    private  HtmlUnitDriver driver;
+    private  PhantomJSDriver driver;
     private String guid = "";
     private String profile_href ="";
 
@@ -64,7 +64,7 @@ public class US1StepsDef {
                 "drivers\\phantomjs.exe");
 
 
-        driver = new HtmlUnitDriver();
+        driver = new PhantomJSDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 

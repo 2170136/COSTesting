@@ -21,7 +21,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class US2StepsDef {
-    private HtmlUnitDriver driver;
+    private PhantomJSDriver driver;
 
     @Before
     public void setUp() throws Exception {
@@ -34,7 +34,7 @@ public class US2StepsDef {
                 "drivers\\phantomjs.exe");
 
 
-        driver = new HtmlUnitDriver();
+        driver = new PhantomJSDriver();
     }
 
     @After
