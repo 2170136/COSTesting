@@ -26,8 +26,10 @@ import java.util.logging.Logger;
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
+
 public class US1StepsDef {
-    private  PhantomJSDriver driver;
+
+    private  HtmlUnitDriver driver;
     private String guid = "";
     private String profile_href ="";
 
@@ -62,7 +64,7 @@ public class US1StepsDef {
                 "drivers\\phantomjs.exe");
 
 
-        driver = new PhantomJSDriver();
+        driver = new HtmlUnitDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 
@@ -76,11 +78,11 @@ public class US1StepsDef {
     public void theFieldShouldExist(String field) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         if (field.equals("Name")) {
-            assertTrue(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[2]")).getText().matches("^([A-Z][a-z]*((\\s)))+[A-Z][a-z]*$"));
+            assertTrue(driver.findElement(By.xpath(".//table[@id='data-table-contacts']/tbody/tr/td[2]")).getText().matches("^([A-Z][a-z]*((\\s)))+[A-Z][a-z]*$"));
         }else if (field.equals("Guid")) {
-            assertTrue(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td")).getText().length() > 0);
+            assertTrue(driver.findElement(By.xpath(".//table[@id='data-table-contacts']/tbody/tr/td")).getText().length() > 0);
         }else if (field.equals("Actions")) {
-            assertTrue(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[4]")).getText().matches("More info"));
+            assertTrue(driver.findElement(By.xpath(".//table[@id='data-table-contacts']/tbody/tr/td[4]")).getText().matches("More info"));
         } else {
             fail("Unknown field: " + field);
         }
@@ -89,8 +91,8 @@ public class US1StepsDef {
     @Then("^I click on the button more info$")
     public void iClickOnTheButtonMoreInfo() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        WebElement webElement = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[4]/a"));
-        guid = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td")).getText();
+        WebElement webElement = driver.findElement(By.xpath(".//table[@id='data-table-contacts']/tbody/tr/td[4]/a"));
+        guid = driver.findElement(By.xpath(".//table[@id='data-table-contacts']/tbody/tr/td")).getText();
         profile_href = webElement.getAttribute("href");
         webElement.click();
         //new WebDriverWait(driver, 2));
@@ -99,7 +101,7 @@ public class US1StepsDef {
     @And("^I can see the profile page$")
     public void iCanSeeTheProfilePage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        String profile_guid = driver.findElement(By.xpath("//span[@id='guid_value']")).getText();
+        String profile_guid = driver.findElement(By.xpath(".//span[@id='guid_value']")).getText();
         assertTrue(profile_guid.equals(guid));
     }
 
@@ -123,7 +125,7 @@ public class US1StepsDef {
 
     @Then("^The fields \"([^\"]*)\" should be valid$")
     public void theFieldsShouldBeValid(String arg0) throws Throwable {
-        WebElement element = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td"));
+        WebElement element = driver.findElement(By.xpath(".//table[@id='data-table-contacts']/tbody/tr/td"));
         String Guid = element.getText();
         //Guid = "021a1dc3-5b75-4868-bb03-333170ce9ac";
 
