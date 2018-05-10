@@ -61,9 +61,10 @@ public class US1StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver.exe");
         System.setProperty("phantomjs.binary.path",
-                "drivers\\phantomjs.exe");
+                "drivers\\phantomjs");
 
-
+       // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
+        //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
         driver = new PhantomJSDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }

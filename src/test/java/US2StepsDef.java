@@ -31,7 +31,7 @@ public class US2StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver.exe");
         System.setProperty("phantomjs.binary.path",
-                "drivers\\phantomjs.exe");
+                "drivers\\phantomjs");
 
 
         driver = new PhantomJSDriver();
