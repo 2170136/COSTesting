@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeBinary;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
@@ -30,7 +31,7 @@ import static org.junit.Assert.fail;
 
 public class US1StepsDef {
 
-    private ChromeDriver driver;
+    private WebDriver driver;
     private String guid = "";
     private String profile_href ="";
 
@@ -64,7 +65,7 @@ public class US1StepsDef {
         System.setProperty("phantomjs.binary.path",
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
-        
+
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
         driver = new ChromeDriver();
