@@ -64,6 +64,7 @@ public class US1StepsDef {
         System.setProperty("phantomjs.binary.path",
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
+        
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
         driver = new ChromeDriver();
