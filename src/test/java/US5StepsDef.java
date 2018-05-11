@@ -59,6 +59,7 @@ public class US5StepsDef {
 
         driver = new ChromeDriver(options);
 
+        
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 
