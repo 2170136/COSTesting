@@ -42,6 +42,7 @@ public class US5StepsDef {
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
 
+        
         //driver = new ChromeDriver();
         ChromeDriverService service = new ChromeDriverService.Builder()
                 .usingDriverExecutable(new File("/usr/local/bin/chromedriver"))
@@ -53,7 +54,7 @@ public class US5StepsDef {
             e.printStackTrace();
         }
         driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
-        
+
 
 
         driver.get("http://35.187.16.192/COSProject/index.php");
