@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -42,17 +43,22 @@ public class US3StepsDef {
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
-        ChromeDriverService service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File("/usr/local/bin/chromedriver"))
-                .usingAnyFreePort()
-                .build();
-        try {
-            service.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
+        ChromeOptions options = new ChromeOptions();
+        options.setBinary("/usr/local/bin/chromedriver");
+
         //driver = new ChromeDriver();
+//        ChromeDriverService service = new ChromeDriverService.Builder()
+//                .usingDriverExecutable(new File("/usr/local/bin/chromedriver"))
+//                .usingAnyFreePort()
+//                .build();
+//        try {
+//            service.start();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
+
+        driver = new ChromeDriver(options);
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 
