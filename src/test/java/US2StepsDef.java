@@ -11,12 +11,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -36,8 +41,17 @@ public class US2StepsDef {
              "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
-
-        driver = new ChromeDriver();
+        ChromeDriverService service = new ChromeDriverService.Builder()
+                .usingDriverExecutable(new File("/usr/local/bin/chromedriver"))
+                .usingAnyFreePort()
+                .build();
+        try {
+            service.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
+        //driver = new ChromeDriver();
     }
 
     @After
