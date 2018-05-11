@@ -56,8 +56,8 @@ public class US1StepsDef {
 
     @Before
     public void setUp() throws Exception {
-//        System.setProperty("webdriver.gecko.driver",
-//                "drivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver",
+                "/usr/local/bin/geckodriver");
 //        System.setProperty("webdriver.edge.driver",
 //                "drivers\\MicrosoftWebDriver.exe");
         System.setProperty("webdriver.chrome.driver",
@@ -68,7 +68,7 @@ public class US1StepsDef {
 
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 
