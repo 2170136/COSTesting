@@ -8,6 +8,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -21,20 +22,20 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class US5StepsDef {
-    private PhantomJSDriver driver;
+    private ChromeDriver driver;
 
     @Before
     public void setUp() throws Exception {
 //        System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
 //        System.setProperty("webdriver.edge.driver",
 //                "drivers\\MicrosoftWebDriver.exe");
-//        System.setProperty("webdriver.chrome.driver",
-//                "drivers\\chromedriver.exe");
+       System.setProperty("webdriver.chrome.driver",
+               "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/chromedriver.exe");
         System.setProperty("phantomjs.binary.path",
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
 
-        driver = new PhantomJSDriver();
+        driver = new ChromeDriver();
 
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
@@ -59,14 +60,14 @@ public class US5StepsDef {
     @Then("^the text users per page should contain \"([^\"]*)\"$")
     public void theTextUsersPerPageShouldBe(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        assertTrue(driver.findElement(By.xpath(".//div[@id='data-table_info']")).getText().contains(arg0));
+        assertTrue(driver.findElement(By.xpath("//div[@id='data-table-contacts_info']")).getText().contains(arg0));
     }
 
 
 
     @When("^i click in the first page$")
     public void iClickInTheFirstPage() throws Throwable {
-        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//a[@id='data-table-contacts_first']")));
+        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='data-table-contacts_first']")));
         select.click();
     }
 

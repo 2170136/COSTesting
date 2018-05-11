@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -29,7 +30,7 @@ import static org.junit.Assert.fail;
 
 public class US1StepsDef {
 
-    private  PhantomJSDriver driver;
+    private ChromeDriver driver;
     private String guid = "";
     private String profile_href ="";
 
@@ -58,14 +59,14 @@ public class US1StepsDef {
 //                "drivers\\geckodriver.exe");
 //        System.setProperty("webdriver.edge.driver",
 //                "drivers\\MicrosoftWebDriver.exe");
-//        System.setProperty("webdriver.chrome.driver",
-//                "drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+                "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/chromedriver.exe");
         System.setProperty("phantomjs.binary.path",
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
-        driver = new PhantomJSDriver();
+        driver = new ChromeDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 

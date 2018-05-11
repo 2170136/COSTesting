@@ -9,6 +9,7 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -21,20 +22,20 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class US2StepsDef {
-    private PhantomJSDriver driver;
+    private ChromeDriver driver;
 
     @Before
     public void setUp() throws Exception {
 //        System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
 //        System.setProperty("webdriver.edge.driver",
 //                "drivers\\MicrosoftWebDriver.exe");
-//        System.setProperty("webdriver.chrome.driver",
-//                "drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+                "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/chromedriver.exe");
   System.setProperty("phantomjs.binary.path",
              "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
 
-        driver = new PhantomJSDriver();
+        driver = new ChromeDriver();
     }
 
     @After
