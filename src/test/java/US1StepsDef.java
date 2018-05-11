@@ -51,7 +51,7 @@ public class US1StepsDef {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.tagName("body")), text));
     }
-    
+
 
     @Before
     public void setUp() throws Exception {
@@ -60,7 +60,7 @@ public class US1StepsDef {
 //        System.setProperty("webdriver.edge.driver",
 //                "drivers\\MicrosoftWebDriver.exe");
         System.setProperty("webdriver.chrome.driver",
-                "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/chromedriver");
+                "/chromedriver");
         System.setProperty("phantomjs.binary.path",
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 

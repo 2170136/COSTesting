@@ -30,7 +30,7 @@ public class US5StepsDef {
 //        System.setProperty("webdriver.edge.driver",
 //                "drivers\\MicrosoftWebDriver.exe");
        System.setProperty("webdriver.chrome.driver",
-               "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/chromedriver");
+               "/chromedriver");
         System.setProperty("phantomjs.binary.path",
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
