@@ -36,7 +36,7 @@ public class US5StepsDef {
 
 
         driver = new ChromeDriver();
-        
+
 
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
@@ -46,7 +46,6 @@ public class US5StepsDef {
     public void tearDown() throws Exception {
         driver.quit();
     }
-
 
     @When("^i click in the next page$")
     public void iClickInTheNextPage() throws Throwable {
