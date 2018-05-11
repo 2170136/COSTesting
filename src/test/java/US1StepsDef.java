@@ -68,7 +68,7 @@ public class US1StepsDef {
 
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 

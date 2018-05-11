@@ -38,7 +38,7 @@ public class US3StepsDef {
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
 
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 

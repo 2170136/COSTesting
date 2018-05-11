@@ -37,7 +37,7 @@ public class US2StepsDef {
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
 
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
     }
 
     @After
