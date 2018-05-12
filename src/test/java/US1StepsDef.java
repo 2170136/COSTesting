@@ -86,7 +86,7 @@ public class US1StepsDef {
 //        }
 //        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
 
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
         //driver = new ChromeDriver();

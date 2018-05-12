@@ -57,7 +57,7 @@ public class US5StepsDef {
 //        }
 //        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
 
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
 
 
         driver.get("http://35.187.16.192/COSProject/index.php");
