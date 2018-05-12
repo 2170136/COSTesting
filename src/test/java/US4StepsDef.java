@@ -42,7 +42,7 @@ public class US4StepsDef {
         System.setProperty("phantomjs.binary.path",
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
         System.setProperty("webdriver.gecko.driver",
-                "/usr/local/bin/geckodriver");
+                "drivers\\geckodriver");
 
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/usr/local/bin/chromedriver");
