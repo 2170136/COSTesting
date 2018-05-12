@@ -72,7 +72,7 @@ public class US1StepsDef {
                 "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
 
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("/usr/local/bin\\chromedriver");
+        options.setBinary("/usr/local/bin/chromedriver");
 
         //driver = new ChromeDriver();
 //        ChromeDriverService service = new ChromeDriverService.Builder()

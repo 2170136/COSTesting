@@ -43,7 +43,7 @@ public class US5StepsDef {
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("/usr/local/bin\\chromedriver");
+        options.setBinary("/usr/local/bin/chromedriver");
 
         //driver = new ChromeDriver();
 //        ChromeDriverService service = new ChromeDriverService.Builder()
