@@ -40,7 +40,7 @@ public class US4StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "/usr/local/bin/chromedriver");
         System.setProperty("phantomjs.binary.path",
-                "/opt/bitnami/apps/jenkins/jenkins_home/workspace/Run automated tests/drivers/phantomjs-linux");
+                "/usr/local/bin/phantomjs-linux");
         System.setProperty("webdriver.gecko.driver",
                 "drivers\\geckodriver");
 
@@ -59,7 +59,7 @@ public class US4StepsDef {
 //        }
 //        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
 
-        driver = new ChromeDriver();
+        driver = new PhantomJSDriver();
         //driver = new ChromeDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
