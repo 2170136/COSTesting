@@ -69,7 +69,7 @@ public class US1StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
-                "/usr/local/bin/phantomjs-linux");
+                "/usr/local/bin/phantomjs");
 
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/usr/local/bin/chromedriver");

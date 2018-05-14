@@ -40,7 +40,7 @@ public class US4StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "/usr/local/bin/chromedriver");
         System.setProperty("phantomjs.binary.path",
-                "/usr/local/bin/phantomjs-linux");
+                "/usr/local/bin/phantomjs");
         System.setProperty("webdriver.gecko.driver",
                 "drivers\\geckodriver");
 

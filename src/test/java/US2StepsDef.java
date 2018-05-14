@@ -39,7 +39,7 @@ public class US2StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver");
   System.setProperty("phantomjs.binary.path",
-             "/usr/local/bin/phantomjs-linux");
+             "/usr/local/bin/phantomjs");
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
         ChromeOptions options = new ChromeOptions();
