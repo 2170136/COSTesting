@@ -33,9 +33,6 @@ public class US2StepsDef {
 
     @Before
     public void setUp() throws Exception {
-//        System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
-//        System.setProperty("webdriver.edge.driver",
-//                "drivers\\MicrosoftWebDriver.exe");
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver");
   System.setProperty("phantomjs.binary.path",
@@ -45,17 +42,7 @@ public class US2StepsDef {
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/usr/local/bin/chromedriver");
 
-        //driver = new ChromeDriver();
-//        ChromeDriverService service = new ChromeDriverService.Builder()
-//                .usingDriverExecutable(new File("/usr/local/bin/chromedriver"))
-//                .usingAnyFreePort()
-//                .build();
-//        try {
-//            service.start();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
+
 
         driver = new PhantomJSDriver();
         driver.get("http://35.187.16.192/COSProject/index.php");
@@ -75,7 +62,7 @@ public class US2StepsDef {
     @When("^i click in the first more info button$")
     public void iClickInTheFirstMoreInfoButton() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        WebElement element = driver.findElement(By.xpath(".//table[@id='data-table-contacts']/tbody/tr/td[4]/a"));
+        WebElement element = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[4]/a"));
 
         element.click();
 
@@ -94,14 +81,14 @@ public class US2StepsDef {
         }
         else if(arg0.equals("phone"))
         {
-            WebElement element = driver.findElement(By.xpath(".//span[@id='phone_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='phone_value']"));
             String phone = element.getText();
             //phone = "97";
             Assert.assertTrue(phone.matches("^[0-9]{9}$"));
         }
         else if(arg0.equals("Birthday"))
         {
-            WebElement element = driver.findElement(By.xpath(".//span[@id='birthday_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='birthday_value']"));
             String birthday = element.getText();
             SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
             try {
@@ -115,7 +102,7 @@ public class US2StepsDef {
         }
         else if(arg0.equals("Guid"))
         {
-            WebElement element = driver.findElement(By.xpath(".//span[@id='guid_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='guid_value']"));
             String Guid = element.getText();
             //Guid = "021a1dc3-5b75-4868-bb03-333170ce9ac";
 
@@ -123,7 +110,7 @@ public class US2StepsDef {
         }
         else if(arg0.equals("photourl"))
         {
-            WebElement element = driver.findElement(By.xpath(".//span[@id='photo_url_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='photo_url_value']"));
             String photoutl = element.getText();
             //Guid = "021a1dc3-5b75-4868-bb03-333170ce9ac";
             try {
@@ -146,37 +133,37 @@ public class US2StepsDef {
     public void theFieldExits(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         if(arg0.equals("contact_name")){
-            WebElement element = driver.findElement(By.xpath(".//h2[@id='contact_name']"));
+            WebElement element = driver.findElement(By.xpath("//h2[@id='contact_name']"));
             String contactName = element.getText();
             Assert.assertTrue(contactName.length()>0);
         }
         else if(arg0.equals("giveName")){
-            WebElement element = driver.findElement(By.xpath(".//span[@id='given_name_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='given_name_value']"));
             String giveName = element.getText();
             Assert.assertTrue(giveName.length()>0);
         }
         else if(arg0.equals("surName")){
-            WebElement element = driver.findElement(By.xpath(".//span[@id='surname_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='surname_value']"));
             String surName = element.getText();
             Assert.assertTrue(surName.length()>0);
         }
         else if(arg0.equals("occupation")){
-            WebElement element = driver.findElement(By.xpath(".//span[@id='occupation_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='occupation_value']"));
             String occupation = element.getText();
             Assert.assertTrue(occupation.length()>0);
         }
         else if(arg0.equals("streetAddress")){
-            WebElement element = driver.findElement(By.xpath(".//span[@id='street_address_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='street_address_value']"));
             String streetAddress = element.getText();
             Assert.assertTrue(streetAddress.length()>0);
         }
         else if(arg0.equals("city")){
-            WebElement element = driver.findElement(By.xpath(".//span[@id='city_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='city_value']"));
             String city = element.getText();
             Assert.assertTrue(city.length()>0);
         }
         else if(arg0.equals("company")){
-            WebElement element = driver.findElement(By.xpath(".//span[@id='company_value']"));
+            WebElement element = driver.findElement(By.xpath("//span[@id='company_value']"));
             String company = element.getText();
             Assert.assertTrue(company.length()>0);
         }

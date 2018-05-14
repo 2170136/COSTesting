@@ -75,7 +75,7 @@ public class US4StepsDef {
     @When("^I Change the users per page to (\\d+)$")
     public void iChangeTheUsersPerPageTo(int arg0) throws Throwable {
         ////div[@id='data-table_length']/label/select
-        WebElement select = driver.findElement(By.xpath(".//div[@id='data-table-contacts_length']/label/select"));
+        WebElement select = driver.findElement(By.xpath("//div[@id='data-table-contacts_length']/label/select"));
         Select dropDown = new Select(select);
 
         List<WebElement> Options = dropDown.getOptions();
@@ -94,7 +94,7 @@ public class US4StepsDef {
     @Then("^the list contain \"([^\"]*)\" contacts$")
     public void theListContainContacts(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-       List<WebElement> elementList = driver.findElements(By.xpath(".//table[@id='data-table-contacts']/tbody/tr"));
+       List<WebElement> elementList = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr"));
        assertTrue(elementList.size()==Integer.parseInt(arg0));
     }
 }

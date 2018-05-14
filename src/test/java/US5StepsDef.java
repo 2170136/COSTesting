@@ -95,7 +95,7 @@ public class US5StepsDef {
 
     @Then("^the button previous must be disabled$")
     public void theButtonPreviousMustBeDisabled() throws Throwable {
-       String aux = driver.findElement(By.xpath(".//a[@id='data-table-contacts_previous']")).getAttribute("class");
+       String aux = driver.findElement(By.xpath("//a[@id='data-table-contacts_previous']")).getAttribute("class");
        String[] auxClasses = aux.split(" ");
        assertTrue(auxClasses[2].equals("disabled"));
     }
@@ -109,14 +109,14 @@ public class US5StepsDef {
 
     @Then("^the text users per page should contain the last users$")
     public void theTextUsersPerPageShouldContainTheLastUsers() throws Throwable {
-        String total = driver.findElement(By.xpath(".//span[@id='total_contacts']")).getText();
+        String total = driver.findElement(By.xpath("//span[@id='total_contacts']")).getText();
         String aux = "to "+total+ " of "+total+" entries";
-        assertTrue(driver.findElement(By.xpath(".//div[@id='data-table-contacts_info']")).getText().contains(aux));
+        assertTrue(driver.findElement(By.xpath("//div[@id='data-table-contacts_info']")).getText().contains(aux));
     }
 
     @Then("^the button next must be disabled$")
     public void theButtonNextMustBeDisabled() throws Throwable {
-        String aux = driver.findElement(By.xpath(".//a[@id='data-table-contacts_next']")).getAttribute("class");
+        String aux = driver.findElement(By.xpath("//a[@id='data-table-contacts_next']")).getAttribute("class");
         String[] auxClasses = aux.split(" ");
         assertTrue(auxClasses[2].equals("disabled"));
     }
