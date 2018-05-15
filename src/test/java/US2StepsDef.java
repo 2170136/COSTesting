@@ -60,7 +60,7 @@ public class US2StepsDef {
     @Given("^I am on the Contact List page$")
     public void iAmOnTheContactListPage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        driver.get("http://35.187.16.192/COSProject/index.php");
+        driver.get("http://35.187.16.192:80/COSProject/index.php");
     }
 
     @When("^i click in the first more info button$")

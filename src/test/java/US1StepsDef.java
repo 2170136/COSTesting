@@ -93,7 +93,7 @@ public class US1StepsDef {
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
         //driver = new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
-        driver.get("http://35.187.16.192/COSProject");
+        driver.get("http://35.187.16.192:80/COSProject");
     }
 
     @After

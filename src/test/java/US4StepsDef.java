@@ -65,7 +65,7 @@ public class US4StepsDef {
         driver = new PhantomJSDriver();
         //driver = new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
-        driver.get("http://35.187.16.192/COSProject");
+        driver.get("http://35.187.16.192:80/COSProject");
     }
 
     @After
