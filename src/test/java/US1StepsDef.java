@@ -12,6 +12,7 @@ import net.sourceforge.htmlunit.cyberneko.HTMLElements;
 import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeBinary;
@@ -70,6 +71,8 @@ public class US1StepsDef {
                 "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
                 "/usr/local/bin/phantomjs");
+        //System.setProperty("phantomjs.binary.path",
+          //      "drivers\\phantomjs.exe");
 
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/usr/local/bin/chromedriver");
@@ -89,12 +92,13 @@ public class US1StepsDef {
        // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
         //driver = new ChromeDriver();
+        driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 
     @After
     public void tearDown() throws Exception {
-        driver.quit();
+        driver.close();
     }
 
 
@@ -107,7 +111,11 @@ public class US1StepsDef {
             assertTrue(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td")).getText().length() > 0);
         }else if (field.equals("Actions")) {
             assertTrue(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[4]")).getText().matches("More info"));
-        } else {
+        }
+        else if (field.equals("Source")) {
+            assertTrue(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[3]")).getText().length() > 0);
+        }
+        else {
             fail("Unknown field: " + field);
         }
     }

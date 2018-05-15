@@ -7,6 +7,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -41,6 +42,8 @@ public class US3StepsDef {
                 "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
                 "/usr/local/bin/phantomjs");
+       // System.setProperty("phantomjs.binary.path",
+         //       "drivers\\phantomjs.exe");
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
         ChromeOptions options = new ChromeOptions();
@@ -57,9 +60,19 @@ public class US3StepsDef {
 //            e.printStackTrace();
 //        }
 //        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
-
-        driver = new PhantomJSDriver();
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setJavascriptEnabled(true);
+        caps.setCapability("locationContextEnabled", true);
+        caps.setCapability("applicationCacheEnabled", true);
+        caps.setCapability("browserConnectionEnabled", true);
+        caps.setCapability("localToRemoteUrlAccessEnabled", true);
+        caps.setCapability("locationContextEnabled", true);
+        caps.setCapability("takesScreenshot", true);
+        caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "drivers\\phantomjs.exe");
+        driver = new PhantomJSDriver(caps);
+        driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192/COSProject/index.php");
+
     }
 
     @After
@@ -70,8 +83,10 @@ public class US3StepsDef {
 
     @When("^i type \"([^\"]*)\" on the input box$")
     public void iTypeOnTheInputBox(String name) throws Throwable {
-        WebElement searchbox = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@type='search']")));
+        //WebElement searchbox = (new WebDriverWait(driver, 10))
+          //      .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table-contacts_filter']/label/input")));
+        Thread.sleep(2000);
+        WebElement searchbox = driver.findElement(By.xpath("//input[@type='search']"));
 
         searchbox.sendKeys(name);
     }

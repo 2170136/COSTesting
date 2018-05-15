@@ -8,6 +8,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,6 +38,8 @@ public class US2StepsDef {
                 "drivers\\chromedriver");
   System.setProperty("phantomjs.binary.path",
              "/usr/local/bin/phantomjs");
+      //  System.setProperty("phantomjs.binary.path",
+        //        "drivers\\phantomjs.exe");
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
         ChromeOptions options = new ChromeOptions();
@@ -45,6 +48,7 @@ public class US2StepsDef {
 
 
         driver = new PhantomJSDriver();
+        driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 

@@ -7,6 +7,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -40,6 +41,8 @@ public class US5StepsDef {
                "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
                 "/usr/local/bin/phantomjs");
+    //    System.setProperty("phantomjs.binary.path",
+      //          "drivers\\phantomjs.exe");
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
         ChromeOptions options = new ChromeOptions();
@@ -59,7 +62,7 @@ public class US5StepsDef {
 
         driver = new PhantomJSDriver();
 
-
+        driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
 
@@ -72,7 +75,7 @@ public class US5StepsDef {
     @When("^i click in the next page$")
     public void iClickInTheNextPage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='data-table-contacts_next']")));
+        WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.id("data-table-contacts_next")));
 
         select.click();
 
