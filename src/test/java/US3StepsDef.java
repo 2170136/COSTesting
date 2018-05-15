@@ -60,16 +60,7 @@ public class US3StepsDef {
 //            e.printStackTrace();
 //        }
 //        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setJavascriptEnabled(true);
-        caps.setCapability("locationContextEnabled", true);
-        caps.setCapability("applicationCacheEnabled", true);
-        caps.setCapability("browserConnectionEnabled", true);
-        caps.setCapability("localToRemoteUrlAccessEnabled", true);
-        caps.setCapability("locationContextEnabled", true);
-        caps.setCapability("takesScreenshot", true);
-        caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "drivers\\phantomjs.exe");
-        driver = new PhantomJSDriver(caps);
+        driver = new PhantomJSDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192/COSProject/index.php");
 
