@@ -49,7 +49,7 @@ public class US2StepsDef {
 
         driver = new PhantomJSDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
-        driver.get("http://35.187.16.192/COSProject/index.php");
+        driver.get("http://35.187.16.192/COSProject");
     }
 
     @After

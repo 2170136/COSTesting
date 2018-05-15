@@ -62,7 +62,7 @@ public class US3StepsDef {
 //        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
         driver = new PhantomJSDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
-        driver.get("http://35.187.16.192/COSProject/index.php");
+        driver.get("http://35.187.16.192/COSProject");
 
     }
 

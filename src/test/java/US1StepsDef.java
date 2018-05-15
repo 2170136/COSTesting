@@ -44,7 +44,7 @@ public class US1StepsDef {
 
     @Given("^I access the landing page of COS$")
     public void iAccessTheLandingPageOfCOS() throws Throwable {
-        driver.get("http://35.187.16.192/COSProject/index.php");
+        driver.get("http://35.187.16.192/COSProject");
         assertEquals("Contacts Orchestrator Solution", driver.getTitle());
     }
 
@@ -93,7 +93,7 @@ public class US1StepsDef {
         //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
         //driver = new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
-        driver.get("http://35.187.16.192/COSProject/index.php");
+        driver.get("http://35.187.16.192/COSProject");
     }
 
     @After
