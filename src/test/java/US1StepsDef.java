@@ -74,6 +74,7 @@ public class US1StepsDef {
         //System.setProperty("phantomjs.binary.path",
           //      "drivers\\phantomjs.exe");
 
+
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/usr/local/bin/chromedriver");
 
