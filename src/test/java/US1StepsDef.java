@@ -63,18 +63,16 @@ public class US1StepsDef {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.gecko.driver",
-                "/usr/local/bin/geckodriver");
-        System.setProperty("webdriver.chrome.driver",
-                "drivers\\chromedriver");
+     //   System.setProperty("webdriver.gecko.driver",
+       //         "/usr/local/bin/geckodriver");
+       // System.setProperty("webdriver.chrome.driver",
+         //       "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
                 "drivers/phantomjs");
-        //System.setProperty("phantomjs.binary.path",
-          //      "drivers\\phantomjs.exe");
+       // System.setProperty("phantomjs.binary.path",
+         //      "drivers\\phantomjs.exe");
 
 
-        ChromeOptions options = new ChromeOptions();
-        options.setBinary("/usr/local/bin/chromedriver");
 
         driver = new PhantomJSDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));

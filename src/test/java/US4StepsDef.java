@@ -35,27 +35,27 @@ public class US4StepsDef {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver",
-                "/usr/local/bin/chromedriver");
+     //   System.setProperty("webdriver.chrome.driver",
+       //         "/usr/local/bin/chromedriver");
         System.setProperty("phantomjs.binary.path",
                 "drivers/phantomjs");
-    //    System.setProperty("phantomjs.binary.path",
-      //          "drivers\\phantomjs.exe");
-        System.setProperty("webdriver.gecko.driver",
-                "drivers\\geckodriver");
+      //  System.setProperty("phantomjs.binary.path",
+        //        "drivers\\phantomjs.exe");
+    //    System.setProperty("webdriver.gecko.driver",
+      //          "drivers\\geckodriver");
 
 
 
 
         driver = new PhantomJSDriver();
         //driver = new ChromeDriver();
-        driver.manage().window().setSize(new Dimension(1920, 1080));
+     //   driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192:80/COSProject");
     }
 
     @After
     public void tearDown() throws Exception {
-        driver.quit();
+        driver.close();
     }
 
 
