@@ -43,8 +43,7 @@ public class US3StepsDef {
        //         "drivers\\phantomjs.exe");
        // System.setProperty("webdriver.gecko.driver",
          //       "/usr/local/bin/geckodriver");
-
-
+        
         driver = new PhantomJSDriver();
         //driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192:80/COSProject");
