@@ -35,9 +35,6 @@ public class US4StepsDef {
 
     @Before
     public void setUp() throws Exception {
-//        System.setProperty("webdriver.gecko.driver", "drivers\\geckodriver.exe");
-//        System.setProperty("webdriver.edge.driver",
-//                "drivers\\MicrosoftWebDriver.exe");
         System.setProperty("webdriver.chrome.driver",
                 "/usr/local/bin/chromedriver");
         System.setProperty("phantomjs.binary.path",
@@ -49,17 +46,6 @@ public class US4StepsDef {
 
 
 
-        //driver = new ChromeDriver();
-//        ChromeDriverService service = new ChromeDriverService.Builder()
-//                .usingDriverExecutable(new File("/usr/local/bin/chromedriver"))
-//                .usingAnyFreePort()
-//                .build();
-//        try {
-//            service.start();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
 
         driver = new PhantomJSDriver();
         //driver = new ChromeDriver();

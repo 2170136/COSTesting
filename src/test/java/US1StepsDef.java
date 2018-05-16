@@ -65,8 +65,6 @@ public class US1StepsDef {
     public void setUp() throws Exception {
         System.setProperty("webdriver.gecko.driver",
                 "/usr/local/bin/geckodriver");
-//        System.setProperty("webdriver.edge.driver",
-//                "drivers\\MicrosoftWebDriver.exe");
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
@@ -78,21 +76,7 @@ public class US1StepsDef {
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/usr/local/bin/chromedriver");
 
-        //driver = new ChromeDriver();
-//        ChromeDriverService service = new ChromeDriverService.Builder()
-//                .usingDriverExecutable(new File("/usr/local/bin/chromedriver"))
-//                .usingAnyFreePort()
-//                .build();
-//        try {
-//            service.start();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        driver = new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
         driver = new PhantomJSDriver();
-       // String phantomjsExeutableFilePath = "usr\\drivers\\phantomjs";
-        //System.setProperty("phantomjs.binary.path", phantomjsExeutableFilePath);
-        //driver = new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192:80/COSProject");
     }
