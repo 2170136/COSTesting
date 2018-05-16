@@ -71,8 +71,7 @@ public class US1StepsDef {
                 "drivers/phantomjs");
        // System.setProperty("phantomjs.binary.path",
          //      "drivers\\phantomjs.exe");
-
-
+        
 
         driver = new PhantomJSDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
