@@ -70,7 +70,7 @@ public class US1StepsDef {
         System.setProperty("webdriver.chrome.driver",
                 "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
-                "/usr/local/bin/phantomjs");
+                "drivers/phantomjs");
         //System.setProperty("phantomjs.binary.path",
           //      "drivers\\phantomjs.exe");
 
@@ -96,7 +96,7 @@ public class US1StepsDef {
         driver.get("http://35.187.16.192:80/COSProject");
     }
 
-    
+
     @After
     public void tearDown() throws Exception {
         driver.close();
