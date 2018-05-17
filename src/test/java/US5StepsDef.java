@@ -37,12 +37,12 @@ public class US5StepsDef {
    //    System.setProperty("webdriver.chrome.driver",
      //          "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs");
+                "drivers/phantomjs-linux");
     //    System.setProperty("phantomjs.binary.path",
      //           "drivers\\phantomjs.exe");
        // System.setProperty("webdriver.gecko.driver",
        //         "/usr/local/bin/geckodriver");
-        
+
         driver = new PhantomJSDriver();
 
      //   driver.manage().window().setSize(new Dimension(1920, 1080));
