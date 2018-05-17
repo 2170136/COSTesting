@@ -37,7 +37,7 @@ public class US2StepsDef {
         //System.setProperty("webdriver.chrome.driver",
           //      "drivers\\chromedriver");
   System.setProperty("phantomjs.binary.path",
-             "/usr/local/bin/phantomjs");
+             "drivers/phantomjs");
      //   System.setProperty("phantomjs.binary.path",
        //         "drivers\\phantomjs.exe");
      //   System.setProperty("webdriver.gecko.driver",
