@@ -68,7 +68,7 @@ public class US1StepsDef {
        // System.setProperty("webdriver.chrome.driver",
          //       "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs-linux");
+                "drivers/phantomjs");
        // System.setProperty("phantomjs.binary.path",
          //      "drivers\\phantomjs.exe");
 
