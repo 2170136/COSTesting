@@ -68,7 +68,7 @@ public class US1StepsDef {
        // System.setProperty("webdriver.chrome.driver",
          //       "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs");
+                "/usr/local/bin/phantomjs");
        // System.setProperty("phantomjs.binary.path",
          //      "drivers\\phantomjs.exe");
 
@@ -82,7 +82,7 @@ public class US1StepsDef {
     @After
     public void tearDown() throws Exception {
         driver.close();
-        
+
     }
 
 
