@@ -41,19 +41,19 @@ public class US1StepsDef {
     private String guid = "";
     private String profile_href ="";
 
-    @Given("^I access the landing page of COS$")
+    @Given("^I access the landing page of COS -1US$")
     public void iAccessTheLandingPageOfCOS() throws Throwable {
         driver.get("http://35.187.16.192/COSProject");
         assertEquals("Contacts Orchestrator Solution", driver.getTitle());
     }
 
-    @Then("^the title of the page should be \"([^\"]*)\"$")
+    @Then("^the title of the page should be \"([^\"]*)\" -1US$")
     public void theTitleOfThePageShouldBe(String title) throws Throwable {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.titleContains(title));
     }
 
-    @And("^I can see the text \"([^\"]*)\"$")
+    @And("^I can see the text \"([^\"]*)\" -1US$")
     public void iCanSeeTheText(String text) throws Throwable {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.tagName("body")), text));
@@ -73,19 +73,18 @@ public class US1StepsDef {
 
 
         driver = new PhantomJSDriver();
-        driver.manage().window().setSize(new Dimension(1920, 1080));
         driver.get("http://35.187.16.192:80/COSProject");
     }
 
 
     @After
     public void tearDown() throws Exception {
-        driver.close();
+        driver.quit();
 
     }
 
 
-    @Then("^the field \"([^\"]*)\" should exist$")
+    @Then("^the field \"([^\"]*)\" should exist -1US$")
     public void theFieldShouldExist(String field) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         if (field.equals("Name")) {
@@ -103,7 +102,7 @@ public class US1StepsDef {
         }
     }
 
-    @Then("^I click on the button more info$")
+    @Then("^I click on the button more info -1US$")
     public void iClickOnTheButtonMoreInfo() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         WebElement webElement = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[4]/a"));
@@ -113,38 +112,44 @@ public class US1StepsDef {
         //new WebDriverWait(driver, 2));
     }
 
-    @And("^I can see the profile page$")
+    @And("^I can see the profile page -1US$")
     public void iCanSeeTheProfilePage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         String profile_guid = driver.findElement(By.xpath("//span[@id='guid_value']")).getText();
         assertTrue(profile_guid.equals(guid));
     }
 
-    @And("^the \"([^\"]*)\" message should be displayed$")
+    @And("^the \"([^\"]*)\" message should be displayed -1US$")
     public void theMessageShouldBeDisplayed(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         assertEquals("Error in API RESP", driver.findElement(By.xpath("//p")).getText(),"Error in access Rest Contacts API");
     }
 
-    @Given("^I access the landing page of contacts$")
+    @Given("^I access the landing page of contacts -1US$")
     public void iAccessTheLandingPageOfContacts() throws Throwable {
         driver.get("http://35.187.16.192/COSProject/index.php");
         assertEquals("Contacts not available", driver.getTitle());
     }
 
-    @And("^The field \"([^\"]*)\" should be valid$")
+    @And("^The field \"([^\"]*)\" should be valid -1US$")
     public void theFieldShouldBeValid(String arg0) throws Throwable {
         String[] split = profile_href.split("=");
         assertEquals((split.length>0?split[1]:""), guid);
     }
 
-    @Then("^The fields \"([^\"]*)\" should be valid$")
+    @Then("^The fields \"([^\"]*)\" should be valid -1US$")
     public void theFieldsShouldBeValid(String arg0) throws Throwable {
         WebElement element = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td"));
         String Guid = element.getText();
         //Guid = "021a1dc3-5b75-4868-bb03-333170ce9ac";
 
         Assert.assertTrue(Guid.matches("^[a-zA-Z0-9]{8}+-+[a-zA-Z0-9]{4}+-+[a-zA-Z0-9]{4}+-+[a-zA-Z0-9]{4}+-+[a-zA-Z0-9]{12}$"));
+    }
+
+    @Given("^I am on the Contact List page -1US$")
+    public void iAmOnTheContactListPageUS(int arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        driver.get("http://35.187.16.192/COSProject/index.php");
     }
 }
 

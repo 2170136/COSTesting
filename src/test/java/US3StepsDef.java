@@ -1,5 +1,6 @@
 
 
+import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -52,11 +53,11 @@ public class US3StepsDef {
 
     @After
     public void tearDown() throws Exception {
-        driver.close();
+        driver.quit();
     }
 
 
-    @When("^i type \"([^\"]*)\" on the input box$")
+    @When("^i type \"([^\"]*)\" on the input box -3US$")
     public void iTypeOnTheInputBox(String name) throws Throwable {
         //WebElement searchbox = (new WebDriverWait(driver, 10))
           //      .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='data-table-contacts_filter']/label/input")));
@@ -66,7 +67,7 @@ public class US3StepsDef {
         searchbox.sendKeys(name);
     }
 
-    @Then("^the result names should contains \"([^\"]*)\"$")
+    @Then("^the result names should contains \"([^\"]*)\" -3US$")
     public void theResultShould(String aux) throws Throwable {
 
         int i = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr")).size();
@@ -79,7 +80,7 @@ public class US3StepsDef {
     }
 
 
-    @Then("^the result should be \"([^\"]*)\" error message$")
+    @Then("^the result should be \"([^\"]*)\" error message -3US$")
     public void theResultShouldBe(String results) throws Throwable {
 
 
@@ -88,5 +89,9 @@ public class US3StepsDef {
     }
 
 
-
+    @Given("^I am on the Contact List page -3US$")
+    public void iAmOnTheContactListPageUS(int arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        driver.get("http://35.187.16.192:80/COSProject/index.php");
+    }
 }

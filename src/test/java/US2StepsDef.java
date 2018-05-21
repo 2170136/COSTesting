@@ -50,16 +50,16 @@ public class US2StepsDef {
 
     @After
     public void tearDown() throws Exception {
-        driver.close();
+        driver.quit();
     }
 
-    @Given("^I am on the Contact List page$")
+    @Given("^I am on the Contact List page -2US$")
     public void iAmOnTheContactListPage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         driver.get("http://35.187.16.192:80/COSProject/index.php");
     }
 
-    @When("^i click in the first more info button$")
+    @When("^i click in the first more info button -2US$")
     public void iClickInTheFirstMoreInfoButton() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         WebElement element = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[4]/a"));
@@ -70,7 +70,7 @@ public class US2StepsDef {
 
 
 
-    @Then("^the field \"([^\"]*)\" should be in the right format$")
+    @Then("^the field \"([^\"]*)\" should be in the right format -2US$")
     public void theFieldShouldBeInTheRightFormat(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         if(arg0.equals("email"))
@@ -129,7 +129,7 @@ public class US2StepsDef {
         }
     }
 
-    @Then("^the field \"([^\"]*)\" should exits$")
+    @Then("^the field \"([^\"]*)\" should exits -2US$")
     public void theFieldExits(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         if(arg0.equals("contact_name")){

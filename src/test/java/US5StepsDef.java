@@ -54,10 +54,10 @@ public class US5StepsDef {
 
     @After
     public void tearDown() throws Exception {
-        driver.close();
+        driver.quit();
     }
 
-    @When("^i click in the next page$")
+    @When("^i click in the next page -5US$")
     public void iClickInTheNextPage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.id("data-table-contacts_next")));
@@ -67,7 +67,7 @@ public class US5StepsDef {
     }
 
 
-    @Then("^the text users per page should contain \"([^\"]*)\"$")
+    @Then("^the text users per page should contain \"([^\"]*)\" -5US$")
     public void theTextUsersPerPageShouldBe(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         assertTrue(driver.findElement(By.xpath("//div[@id='data-table-contacts_info']")).getText().contains(arg0));
@@ -75,34 +75,34 @@ public class US5StepsDef {
 
 
 
-    @When("^i click in the first page$")
+    @When("^i click in the first page -5US$")
     public void iClickInTheFirstPage() throws Throwable {
         WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='data-table-contacts_first']")));
         select.click();
     }
 
-    @Then("^the button previous must be disabled$")
+    @Then("^the button previous must be disabled -5US$")
     public void theButtonPreviousMustBeDisabled() throws Throwable {
        String aux = driver.findElement(By.xpath("//a[@id='data-table-contacts_previous']")).getAttribute("class");
        String[] auxClasses = aux.split(" ");
        assertTrue(auxClasses[2].equals("disabled"));
     }
 
-    @When("^i click in the last page$")
+    @When("^i click in the last page -5US$")
     public void iClickInThePageLast() throws Throwable {
         List<WebElement> element = driver.findElements(By.id("data-table-contacts_paginate"));
         WebElement select = (new WebDriverWait(driver, 3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//div[@id='data-table-contacts_paginate']/a[@id='data-table-contacts_last']")));
         select.click();
     }
 
-    @Then("^the text users per page should contain the last users$")
+    @Then("^the text users per page should contain the last users -5US$")
     public void theTextUsersPerPageShouldContainTheLastUsers() throws Throwable {
         String total = driver.findElement(By.xpath("//span[@id='total_contacts']")).getText();
         String aux = "to "+total+ " of "+total+" entries";
         assertTrue(driver.findElement(By.xpath("//div[@id='data-table-contacts_info']")).getText().contains(aux));
     }
 
-    @Then("^the button next must be disabled$")
+    @Then("^the button next must be disabled -5US$")
     public void theButtonNextMustBeDisabled() throws Throwable {
         String aux = driver.findElement(By.xpath("//a[@id='data-table-contacts_next']")).getAttribute("class");
         String[] auxClasses = aux.split(" ");
@@ -110,4 +110,9 @@ public class US5StepsDef {
     }
 
 
+    @Given("^I am on the Contact List page -5US$")
+    public void iAmOnTheContactListPageUS(int arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        driver.get("http://35.187.16.192/COSProject/index.php");
+    }
 }

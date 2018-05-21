@@ -4,35 +4,35 @@ Feature: Access to the Profile Page of a contact
   So that I can see the details about this user
 
   Scenario: Check Email Format
-    Given I am on the Contact List page
-    When i click in the first more info button
-    Then the field "email" should be in the right format
+    Given I am on the Contact List page -2US
+    When i click in the first more info button -2US
+    Then the field "email" should be in the right format -2US
 
   Scenario: Check Phone Format
-    Given I am on the Contact List page
-    When i click in the first more info button
-    Then the field "phone" should be in the right format
+    Given I am on the Contact List page -2US
+    When i click in the first more info button -2US
+    Then the field "phone" should be in the right format -2US
 
   Scenario: Check Birthday Format
-    Given I am on the Contact List page
-    When i click in the first more info button
-    Then the field "Birthday" should be in the right format
+    Given I am on the Contact List page -2US
+    When i click in the first more info button -2US
+    Then the field "Birthday" should be in the right format -2US
 
   Scenario: Check Guid Format
-    Given I am on the Contact List page
-    When i click in the first more info button
-    Then the field "Guid" should be in the right format
+    Given I am on the Contact List page -2US
+    When i click in the first more info button -2US
+    Then the field "Guid" should be in the right format -2US
 
   Scenario: Check Guid Format
-    Given I am on the Contact List page
-    When i click in the first more info button
-    Then the field "Guid" should be in the right format
+    Given I am on the Contact List page -2US
+    When i click in the first more info button -2US
+    Then the field "Guid" should be in the right format -2US
 
 
   Scenario Outline: Check Given Name
-    Given I am on the Contact List page
-    When i click in the first more info button
-    Then the field "<field>" should exits
+    Given I am on the Contact List page -2US
+    When i click in the first more info button -2US
+    Then the field "<field>" should exits -2US
     Examples:
     |field|
     |contact_name|
@@ -46,6 +46,6 @@ Feature: Access to the Profile Page of a contact
 
 
   Scenario: Check Photo Url
-    Given I am on the Contact List page
-    When i click in the first more info button
-    Then the field "photourl" should be in the right format
+    Given I am on the Contact List page -2US
+    When i click in the first more info button -2US
+    Then the field "photourl" should be in the right format -2US
