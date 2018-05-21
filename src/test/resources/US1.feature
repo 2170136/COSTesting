@@ -3,9 +3,9 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
   I want to access to the URL address provided for the landing page
   So that I can see the list of the contacts available
   Scenario: Landing page's title and text contains "Contacts Orchestrator Solution"
-    Given I access the landing page of COS -US1
-    Then the title of the page should be "Contacts Orchestrator Solution" -US1
-    And I can see the text "Contacts Orchestrator Solution" -US1
+    Given I access the landing page of COS -1US
+    Then the title of the page should be "Contacts Orchestrator Solution" -1US
+    And I can see the text "Contacts Orchestrator Solution" -1US
 
 
  Scenario: Check Guid exits

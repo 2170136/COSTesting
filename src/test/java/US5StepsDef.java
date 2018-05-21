@@ -111,7 +111,7 @@ public class US5StepsDef {
 
 
     @Given("^I am on the Contact List page -5US$")
-    public void iAmOnTheContactListPageUS(int arg0) throws Throwable {
+    public void iAmOnTheContactListPageUS() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         driver.get("http://35.187.16.192/COSProject/index.php");
     }
