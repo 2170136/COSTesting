@@ -36,10 +36,10 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
     Given I am on the Contact List page -1US
     Then The fields "Guid" should be valid -1US
 
-  Scenario: Landing page's and contact list returned is empty
-    Given I access the landing page of contacts -1US
-    Then the title of the page should be "Contacts not available" -1US
-    And the "Error in access Rest Contacts API" message should be displayed -1US
+#  Scenario: Landing page's and contact list returned is empty
+#    Given I access the landing page of contacts -1US
+#    Then the title of the page should be "Contacts not available" -1US
+#    And the "Error in access Rest Contacts API" message should be displayed -1US
 
 
   Scenario: Check Name exits
