@@ -38,7 +38,7 @@ public class US3StepsDef {
       //  System.setProperty("webdriver.chrome.driver",
         //        "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs");
+                "drivers/phantomjs-linux");
      //   System.setProperty("phantomjs.binary.path",
        //         "drivers\\phantomjs.exe");
        // System.setProperty("webdriver.gecko.driver",
