@@ -67,10 +67,10 @@ public class US1StepsDef {
        //         "/usr/local/bin/geckodriver");
        // System.setProperty("webdriver.chrome.driver",
          //       "drivers\\chromedriver");
-       // System.setProperty("phantomjs.binary.path",
-         //       "drivers/phantomjs-linux");
         System.setProperty("phantomjs.binary.path",
-               "drivers\\phantomjs.exe");
+                "drivers/phantomjs-linux");
+      //  System.setProperty("phantomjs.binary.path",
+        //       "drivers\\phantomjs.exe");
 
 
         driver = new PhantomJSDriver();
