@@ -38,8 +38,8 @@ public class US5StepsDef {
      //          "drivers\\chromedriver");
         System.setProperty("phantomjs.binary.path",
                 "drivers/phantomjs-linux");
-       // System.setProperty("phantomjs.binary.path",
-         //       "drivers\\phantomjs.exe");
+   //     System.setProperty("phantomjs.binary.path",
+     //           "drivers\\phantomjs.exe");
        // System.setProperty("webdriver.gecko.driver",
        //         "/usr/local/bin/geckodriver");
         driver = new PhantomJSDriver();
