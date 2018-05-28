@@ -46,3 +46,48 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
     Given I am on the Contact List page -1US
     Then the field "Source" should exist -1US
 
+  Scenario: Button Facebook and Button LinkedIn are switched on First Access Page
+    Given I am on the Contact List page -1US
+    Then Button Facebook and Button LinkedIn should be switched on -1US
+
+  Scenario: Button Facebook turned off and no users from Facebook Should appear
+    Given I am on the landing page and both buttons are on -1US
+    When I switch off the Facebook Button -1US
+    Then on list of users should only appears users that are not from Facebook Source -1US
+
+  Scenario: Click on Label Facebook with both button ON
+    Given I am on the landing page and both buttons are on -1US
+    When I Click on Facebook Label -1US
+    Then on list of users should only appears users from Facebook Source -1US
+    And LinkedIn stays ON -1US
+
+  Scenario: Button Facebook turned off and saved on session
+    Given I am on the landing page and both buttons are on -1US
+    When I switch off the Facebook Button -1US
+    And i refresh the page -1US
+    Then the Facebook button should be off -1US
+
+  Scenario: Button Linkedin and Facebook turned off
+    Given I am on the landing page and both buttons are on -1US
+    When I Click on both Facebook and Linkedin Buttons -1US
+    Then the list should not contains contacts -1US
+
+
+
+  Scenario: Button Linkedin turned off and no users from Linkedin Should appear
+    Given I am on the landing page and both buttons are on -1US
+    When I switch off the Linkedin Button -1US
+    Then on list of users should only appears users that are not from Linkedin Source -1US
+
+  Scenario: Click on Label Linkedin with both button ON
+    Given I am on the landing page and both buttons are on -1US
+    When I Click on Linkedin Label -1US
+    Then on list of users should only appears users from Linkedin Source -1US
+    And Facebook stays ON -1US
+
+  Scenario: Button Linkedin turned off and saved on session
+    Given I am on the landing page and both buttons are on -1US
+    When I switch off the Linkedin Button -1US
+    And i refresh the page -1US
+    Then the Linkedin button should be off -1US
+

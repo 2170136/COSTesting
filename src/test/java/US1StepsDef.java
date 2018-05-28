@@ -28,6 +28,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -66,10 +67,10 @@ public class US1StepsDef {
        //         "/usr/local/bin/geckodriver");
        // System.setProperty("webdriver.chrome.driver",
          //       "drivers\\chromedriver");
-        System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs-linux");
        // System.setProperty("phantomjs.binary.path",
-         //      "drivers\\phantomjs.exe");
+         //       "drivers/phantomjs-linux");
+        System.setProperty("phantomjs.binary.path",
+               "drivers\\phantomjs.exe");
 
 
         driver = new PhantomJSDriver();
@@ -150,7 +151,170 @@ public class US1StepsDef {
     public void iAmOnTheContactListPageUS() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         driver.get("http://35.187.16.192/COSProject/index.php");
-        
+
+    }
+
+    @When("^I switch off the Facebook Button -1US$")
+    public void iClickInTheFacebookButtonUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElement = driver.findElement(By.xpath("//label/span"));
+        webElement.click();
+    }
+
+    @Then("^on list of users should only appears users that are not from Facebook Source -1US$")
+    public void theListShouldNotContainFacebookContactsUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        List<WebElement> webElementList =  driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[3]"));
+        for (WebElement element: webElementList)
+        {
+            if(element.getText().toUpperCase().equals("FACEBOOK")){
+                Assert.assertTrue("Teste falhou! Facebook está desligado mas aparecem contactos do Facebook", false);
+                return;
+            }
+        }
+        assertTrue(true);
+    }
+
+    @Given("^I am on the landing page and both buttons are on -1US$")
+    public void iAmOnTheLandingPageAndBothButtonsAreOnUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElementFacebook = driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+        WebElement webElementLinkedin = driver.findElement(By.xpath("//a[contains(text(),'Linkedin')]"));
+        if(webElementFacebook.getAttribute("class").contains("disabled"))
+        {
+            WebElement webElementFacebookClick = driver.findElement(By.xpath("//label/span"));
+            webElementFacebookClick.click();
+        }
+        if(webElementLinkedin.getAttribute("class").contains("disabled"))
+        {
+            WebElement webElementLinkedinClick = driver.findElement(By.xpath("//label[2]/span"));
+            webElementLinkedinClick.click();
+        }
+    }
+
+    @Then("^Button Facebook and Button LinkedIn should be switched on -1US$")
+    public void buttonFacebookAndButtonLinkedInShouldBeSwitchedOnUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElementFacebook = driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+        WebElement webElementLinkedin = driver.findElement(By.xpath("//a[contains(text(),'Linkedin')]"));
+        Assert.assertTrue("Facebook not ON", !webElementFacebook.getAttribute("class").contains("disabled"));
+        Assert.assertTrue("Linkedin not ON", !webElementLinkedin.getAttribute("class").contains("disabled"));
+    }
+
+    @When("^I Click on Facebook Label -1US$")
+    public void iClickOnFacebookLabelUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElementFacebook = driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+        webElementFacebook.click();
+    }
+
+    @Then("^on list of users should only appears users from Facebook Source -1US$")
+    public void theListOfUsersShouldOnlyAppearsUsersFromFacebookSourceUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        List<WebElement> webElementList =  driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[3]"));
+        for (WebElement element: webElementList)
+        {
+            if(!element.getText().toUpperCase().equals("FACEBOOK")){
+                Assert.assertTrue("Teste falhou! Apareceu contactos com a Source diferente do Facebook", false);
+                return;
+            }
+        }
+        assertTrue(true);
+    }
+
+    @And("^LinkedIn stays ON -1US$")
+    public void linkedinStaysONUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElementLinkedin = driver.findElement(By.xpath("//a[contains(text(),'Linkedin')]"));
+        Assert.assertTrue("Teste falhou! Linkedin está Offline", !webElementLinkedin.getAttribute("class").contains("disabled"));
+    }
+
+    @Then("^the Facebook button should be off -1US$")
+    public void theFacebookButtonShouldBeOffUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElementFacebook = driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+        Assert.assertTrue("Teste falhou! Facebook está Online",webElementFacebook.getAttribute("class").contains("disabled"));
+    }
+
+    @And("^i refresh the page -1US$")
+    public void iRefreshThePageUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+      driver.navigate().refresh();
+    }
+
+    @When("^I switch off the Linkedin Button -1US$")
+    public void iSwitchOffTheLinkedinButtonUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElement = driver.findElement(By.xpath("//label[2]/span"));
+        webElement.click();
+    }
+
+    @When("^I Click on Linkedin Label -1US$")
+    public void iClickOnLinkedinLabelUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElementFacebook = driver.findElement(By.xpath("//a[contains(text(),'Linkedin')]"));
+        webElementFacebook.click();
+    }
+
+    @Then("^on list of users should only appears users that are not from Linkedin Source -1US$")
+    public void onListOfUsersShouldOnlyAppearsUsersThatAreNotFromLinkedinSourceUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        List<WebElement> webElementList =  driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[3]"));
+        for (WebElement element: webElementList)
+        {
+            if(element.getText().toUpperCase().equals("LINKEDIN")){
+                Assert.assertTrue("Teste falhou! LinkedIn está desligado mas aparecem contactos do Facebook", false);
+                return;
+            }
+        }
+        assertTrue(true);
+    }
+
+    @Then("^on list of users should only appears users from Linkedin Source -1US$")
+    public void onListOfUsersShouldOnlyAppearsUsersFromLinkedinSourceUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        List<WebElement> webElementList =  driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[3]"));
+        for (WebElement element: webElementList)
+        {
+            if(!element.getText().toUpperCase().equals("LINKEDIN")){
+                Assert.assertTrue("Teste falhou! Apareceu contactos com a Source diferente do LinkedIn", false);
+                return;
+            }
+        }
+        assertTrue(true);
+    }
+
+    @And("^Facebook stays ON -1US$")
+    public void facebookStaysONUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElementLinkedin = driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+        Assert.assertTrue("Teste falhou! Facebook está Offline", !webElementLinkedin.getAttribute("class").contains("disabled"));
+
+    }
+
+    @Then("^the Linkedin button should be off -1US$")
+    public void theLinkedinButtonShouldBeOffUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElementFacebook = driver.findElement(By.xpath("//a[contains(text(),'Linkedin')]"));
+        Assert.assertTrue("Teste falhou! Linkedin está Online",webElementFacebook.getAttribute("class").contains("disabled"));
+
+    }
+
+    @When("^I Click on both Facebook and Linkedin Buttons -1US$")
+    public void iClickOnBothFacebookAndLinkedinButtonsUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElement = driver.findElement(By.xpath("//label[2]/span"));
+        webElement.click();
+        webElement = driver.findElement(By.xpath("//label/span"));
+        webElement.click();
+    }
+
+    @Then("^the list should not contains contacts -1US$")
+    public void theListShouldNotContainsContactsUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        List<WebElement> webElementList =  driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td"));
+        Assert.assertTrue("Teste falhou! Existem contactos na lista",webElementList.size()==1);
+
     }
 }
 

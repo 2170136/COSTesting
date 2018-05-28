@@ -3,76 +3,91 @@ Feature: Access to the Contacts Orchestrator Solution's (COS) Landing Page
   I want to access to the URL address provided for the landing page
   So that I can see the list of the contacts available
   Scenario: Landing page's title and text contains "Contacts Orchestrator Solution"
-    Given I access the landing page of COS
-    Then the title of the page should be "Contacts Orchestrator Solution"
-    And I can see the text "Contacts Orchestrator Solution"
+    Given I access the landing page of COS -1US
+    Then the title of the page should be "Contacts Orchestrator Solution" -1US
+    And I can see the text "Contacts Orchestrator Solution" -1US
 
 
-#  Scenario: Check Email Format
-#    Given I am on the Contact List page
-#    When i click in the first more info button
-#    Then the field "email" should be in the right format
-#
-#  Scenario: Check Phone Format
-#    Given I am on the Contact List page
-#    When i click in the first more info button
-#    Then the field "phone" should be in the right format
-##
-#  Scenario: Check Occupation Exists
-#    Given I am on the Contact List page
-#    When i click in the first more info button
-#    Then the field Occupation should be in the right format
-#
-#  Scenario: Check Phone Format
-#    Given I am on the Contact List page
-#    When i click in the first more info button
-#    Then the field Phone should be in the right format
-#
  Scenario: Check Guid exits
-    Given I am on the Contact List page
-    Then the field "Guid" should exist
-#
+    Given I am on the Contact List page -1US
+    Then the field "Guid" should exist -1US
+
   Scenario: Check Name exits
-    Given I am on the Contact List page
-    Then the field "Name" should exist
+    Given I am on the Contact List page -1US
+    Then the field "Name" should exist -1US
 
 
 
   Scenario: Check Actions exits
-    Given I am on the Contact List page
-    Then the field "Actions" should exist
+    Given I am on the Contact List page -1US
+    Then the field "Actions" should exist -1US
 
   Scenario: From the contacts list open a profile page
-    Given I am on the Contact List page
-    Then I click on the button more info
-    And I can see the profile page
+    Given I am on the Contact List page -1US
+    Then I click on the button more info -1US
+    And I can see the profile page -1US
 
   Scenario: From the contacts list open a profile page
-    Given I am on the Contact List page
-    Then I click on the button more info
-    And The field "Guid" should be valid
+    Given I am on the Contact List page -1US
+    Then I click on the button more info -1US
+    And The field "Guid" should be valid -1US
 
   Scenario: From the contacts list verify guid
-    Given I am on the Contact List page
-    Then The fields "Guid" should be valid
+    Given I am on the Contact List page -1US
+    Then The fields "Guid" should be valid -1US
 
-  Scenario: Landing page's and contact list returned is empty
-    Given I access the landing page of contacts
-    Then the title of the page should be "Contacts not available"
-    And the "Error in access Rest Contacts API" message should be displayed
+#  Scenario: Landing page's and contact list returned is empty
+#    Given I access the landing page of contacts -1US
+#    Then the title of the page should be "Contacts not available" -1US
+#    And the "Error in access Rest Contacts API" message should be displayed -1US
 
-
-    # NEW
 
   Scenario: Check Name exits
-    Given I am on the Contact List page
-    Then the field "Source" should exist
+    Given I am on the Contact List page -1US
+    Then the field "Source" should exist -1US
 
-  Scenario: List only Facebook Contacts
+  Scenario: Button Facebook and Button LinkedIn are switched on First Access Page
+    Given I am on the Contact List page -1US
+    Then Button Facebook and Button LinkedIn should be switched on -1US
 
-  Scenario: List only Linkedin Contacts
+  Scenario: Button Facebook turned off and no users from Facebook Should appear
+    Given I am on the landing page and both buttons are on -1US
+    When I switch off the Facebook Button -1US
+    Then on list of users should only appears users that are not from Facebook Source -1US
 
-  Scenario: Disable Facebook
+  Scenario: Click on Label Facebook with both button ON
+    Given I am on the landing page and both buttons are on -1US
+    When I Click on Facebook Label -1US
+    Then on list of users should only appears users from Facebook Source -1US
+    And LinkedIn stays ON -1US
 
-  Scenario: Disable Linkedin
+  Scenario: Button Facebook turned off and saved on session
+    Given I am on the landing page and both buttons are on -1US
+    When I switch off the Facebook Button -1US
+    And i refresh the page -1US
+    Then the Facebook button should be off -1US
+
+  Scenario: Button Linkedin and Facebook turned off
+    Given I am on the landing page and both buttons are on -1US
+    When I Click on both Facebook and Linkedin Buttons -1US
+    Then the list should not contains contacts -1US
+
+
+
+  Scenario: Button Linkedin turned off and no users from Linkedin Should appear
+    Given I am on the landing page and both buttons are on -1US
+    When I switch off the Linkedin Button -1US
+    Then on list of users should only appears users that are not from Linkedin Source -1US
+
+  Scenario: Click on Label Linkedin with both button ON
+    Given I am on the landing page and both buttons are on -1US
+    When I Click on Linkedin Label -1US
+    Then on list of users should only appears users from Linkedin Source -1US
+    And Facebook stays ON -1US
+
+  Scenario: Button Linkedin turned off and saved on session
+    Given I am on the landing page and both buttons are on -1US
+    When I switch off the Linkedin Button -1US
+    And i refresh the page -1US
+    Then the Linkedin button should be off -1US
 
