@@ -35,10 +35,10 @@ public class US2StepsDef {
     @Before
     public void setUp() throws Exception {
 
- // System.setProperty("phantomjs.binary.path",
-   //          "drivers/phantomjs-linux");
-        System.setProperty("phantomjs.binary.path",
-                "drivers\\phantomjs.exe");
+  System.setProperty("phantomjs.binary.path",
+             "drivers/phantomjs-linux");
+      // System.setProperty("phantomjs.binary.path",
+        //        "drivers\\phantomjs.exe");
 
         driver = new PhantomJSDriver();
    //     driver.manage().window().setSize(new Dimension(1920, 1080));

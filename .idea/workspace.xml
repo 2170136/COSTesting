@@ -3,21 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="00fabd71-4a59-4bc6-a358-8f7f79ac2ed5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/reports/test-report/report.js" afterPath="$PROJECT_DIR$/reports/test-report/report.js" />
       <change beforePath="$PROJECT_DIR$/src/test/java/US1StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US1StepsDef.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/US2StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US2StepsDef.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/US3StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US3StepsDef.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/US4StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US4StepsDef.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/US5StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US5StepsDef.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/US3.feature" afterPath="$PROJECT_DIR$/src/test/resources/US3.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/US5.feature" afterPath="$PROJECT_DIR$/src/test/resources/US5.feature" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US1StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US1StepsDef.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US2StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US2StepsDef.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US3.feature" afterPath="$PROJECT_DIR$/target/test-classes/US3.feature" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US3StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US3StepsDef.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US4StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US4StepsDef.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US5.feature" afterPath="$PROJECT_DIR$/target/test-classes/US5.feature" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US5StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US5StepsDef.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +24,8 @@
       <file leaf-file-name="US1StepsDef.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/US1StepsDef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="106" column="15" lean-forward="false" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="104" />
+            <state relative-caret-position="220">
+              <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="US3.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="US3.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/US3.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -96,18 +86,18 @@
       <file leaf-file-name="US2StepsDef.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/US2StepsDef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="US5StepsDef.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="US5StepsDef.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/US5StepsDef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="115" column="8" lean-forward="false" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
+            <state relative-caret-position="210">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -116,8 +106,8 @@
       <file leaf-file-name="US3StepsDef.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/US3StepsDef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="108" column="9" lean-forward="true" selection-start-line="104" selection-start-column="7" selection-end-line="108" selection-end-column="9" />
+            <state relative-caret-position="189">
+              <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -126,8 +116,8 @@
       <file leaf-file-name="US4StepsDef.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/US4StepsDef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="79" column="16" lean-forward="false" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            <state relative-caret-position="189">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -178,11 +168,11 @@
         <option value="$PROJECT_DIR$/src/test/resources/US4.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/US1.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/US3.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/US5.feature" />
         <option value="$PROJECT_DIR$/src/test/java/US1StepsDef.java" />
         <option value="$PROJECT_DIR$/src/test/java/US2StepsDef.java" />
         <option value="$PROJECT_DIR$/src/test/java/US3StepsDef.java" />
         <option value="$PROJECT_DIR$/src/test/java/US4StepsDef.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/US5.feature" />
         <option value="$PROJECT_DIR$/src/test/java/US5StepsDef.java" />
       </list>
     </option>
@@ -560,14 +550,7 @@
       <workItem from="1527513334039" duration="593000" />
       <workItem from="1527528269698" duration="2296000" />
       <workItem from="1527617457588" duration="492000" />
-      <workItem from="1527682662013" duration="8606000" />
-    </task>
-    <task id="LOCAL-00040" summary="US5">
-      <created>1526063585394</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1526063585394</updated>
+      <workItem from="1527682662013" duration="8859000" />
     </task>
     <task id="LOCAL-00041" summary="US5">
       <created>1526064024985</created>
@@ -905,7 +888,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527529377275</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Tests Search Functions and Pagination">
+      <created>1527695193129</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1527695193129</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -941,7 +931,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142148000" />
+    <option name="totallyTimeSpent" value="142401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -988,7 +978,8 @@
     <MESSAGE value="US3" />
     <MESSAGE value="US5" />
     <MESSAGE value="Tests Buttons Facebook and Linkedin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests Buttons Facebook and Linkedin" />
+    <MESSAGE value="Tests Search Functions and Pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests Search Functions and Pagination" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1309,60 +1300,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1113">
-          <caret line="83" column="31" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/US2StepsDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/US2.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12">
           <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/US4StepsDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="79" column="16" lean-forward="false" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/US1StepsDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="106" column="15" lean-forward="false" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/US3StepsDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="108" column="9" lean-forward="true" selection-start-line="104" selection-start-column="7" selection-end-line="108" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/US5StepsDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="115" column="8" lean-forward="false" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1387,6 +1328,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="83" column="31" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/US1StepsDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/US2StepsDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/US3StepsDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/US4StepsDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/US5StepsDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding />
         </state>
       </provider>
