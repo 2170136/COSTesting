@@ -35,14 +35,10 @@ public class US4StepsDef {
 
     @Before
     public void setUp() throws Exception {
-     //   System.setProperty("webdriver.chrome.driver",
-       //         "/usr/local/bin/chromedriver");
+     //   System.setProperty("phantomjs.binary.path",
+       //         "drivers/phantomjs-linux");
         System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs-linux");
-  //      System.setProperty("phantomjs.binary.path",
-    //            "drivers\\phantomjs.exe");
-    //    System.setProperty("webdriver.gecko.driver",
-      //          "drivers\\geckodriver");
+                "drivers\\phantomjs.exe");
 
 
 

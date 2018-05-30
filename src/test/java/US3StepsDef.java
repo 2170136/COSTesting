@@ -36,14 +36,10 @@ public class US3StepsDef {
 
     @Before
     public void setUp() throws Exception {
-      //  System.setProperty("webdriver.chrome.driver",
-        //        "drivers\\chromedriver");
+     //   System.setProperty("phantomjs.binary.path",
+      //          "drivers/phantomjs-linux");
         System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs-linux");
-    //    System.setProperty("phantomjs.binary.path",
-      //          "drivers\\phantomjs.exe");
-       // System.setProperty("webdriver.gecko.driver",
-         //       "/usr/local/bin/geckodriver");
+                "drivers\\phantomjs.exe");
 
         driver = new PhantomJSDriver();
         //driver.manage().window().setSize(new Dimension(1920, 1080));
@@ -93,5 +89,24 @@ public class US3StepsDef {
     public void iAmOnTheContactListPageUS() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         driver.get("http://35.187.16.192:80/COSProject/index.php");
+    }
+
+    @Then("^the result \"([^\"]*)\" should contains \"([^\"]*)\" -3US$")
+    public void theResultShouldContainsUS(String arg0, String arg1) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        int indexCollumn = 0;
+        if(arg0.toUpperCase().equals("NAME"))
+            indexCollumn = 2;
+        else if(arg0.toUpperCase().equals("GUID"))
+            indexCollumn = 1;
+        else if(arg0.toUpperCase().equals("SOURCE"))
+            indexCollumn = 3;
+
+        int i = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr")).size();
+
+        for(int y = 1; y<i; y++){
+            assertTrue((driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr["+y+"]/td["+indexCollumn+"]")).getText()).contains(arg1));
+        }
+
     }
 }

@@ -3,6 +3,7 @@
 import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -24,6 +25,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -31,17 +33,14 @@ import static org.junit.Assert.assertTrue;
 
 public class US5StepsDef {
     private WebDriver driver;
+    private LinkedList<String> listContacts;
 
     @Before
     public void setUp() throws Exception {
-   //    System.setProperty("webdriver.chrome.driver",
-     //          "drivers\\chromedriver");
+     //   System.setProperty("phantomjs.binary.path",
+       //         "drivers/phantomjs-linux");
         System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs-linux");
-   //     System.setProperty("phantomjs.binary.path",
-     //           "drivers\\phantomjs.exe");
-       // System.setProperty("webdriver.gecko.driver",
-       //         "/usr/local/bin/geckodriver");
+                "drivers\\phantomjs.exe");
         driver = new PhantomJSDriver();
 
      //   driver.manage().window().setSize(new Dimension(1920, 1080));
@@ -114,5 +113,27 @@ public class US5StepsDef {
     public void iAmOnTheContactListPageUS() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         driver.get("http://35.187.16.192/COSProject/index.php");
+        //driver.wait();
+
+        int i = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr")).size();
+        listContacts = new LinkedList<String>();
+        for(int y = 1; y<i; y++){
+            listContacts.add(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr["+y+"]/td")).getText());
+        }
+
+        //listContacts = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr"));
+    }
+
+    @And("^contacts off the page have to be different from the contacts off the first page -5US$")
+    public void contactsOffThePageHaveToBeDifferentFromTheContactsOffTheFirstPageUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+     //   List<WebElement> listContactsnew  = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr"));
+        int i = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr")).size();
+
+        for(int y = 1; y<i; y++){
+            if(listContacts.contains(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr["+y+"]/td[1]")).getText())){
+                assertTrue("Contactos são os mesmo da primeira página.", false);
+            }
+        }
     }
 }
