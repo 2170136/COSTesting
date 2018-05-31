@@ -7,23 +7,27 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2833959659,
+  "duration": 2292652958,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1599411774,
+  "duration": 1282752643,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1659461875,
+  "duration": 1163584955,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2274993046,
+  "duration": 1299600246,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2722404696,
+  "duration": 1319369287,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1503625029,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,7 +57,7 @@ formatter.match({
   "location": "US1StepsDef.iAccessTheLandingPageOfCOS()"
 });
 formatter.result({
-  "duration": 1393460835,
+  "duration": 631884416,
   "status": "passed"
 });
 formatter.match({
@@ -66,7 +70,7 @@ formatter.match({
   "location": "US1StepsDef.theTitleOfThePageShouldBe(String)"
 });
 formatter.result({
-  "duration": 25376021,
+  "duration": 166002597,
   "status": "passed"
 });
 formatter.match({
@@ -79,47 +83,55 @@ formatter.match({
   "location": "US1StepsDef.iCanSeeTheText(String)"
 });
 formatter.result({
-  "duration": 120471894,
+  "duration": 65823233,
   "status": "passed"
 });
 formatter.after({
-  "duration": 546471013,
+  "duration": 539896648,
   "status": "passed"
 });
 formatter.after({
-  "duration": 120282765,
+  "duration": 535164746,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116741429,
+  "duration": 544619934,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103238648,
+  "duration": 536794287,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115342044,
+  "duration": 535398183,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533016643,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2098732388,
+  "duration": 1255514876,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1820152058,
+  "duration": 1276078996,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2601006442,
+  "duration": 1298502809,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2398708840,
+  "duration": 1156075615,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2445519545,
+  "duration": 1185399537,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 953926116,
   "status": "passed"
 });
 formatter.scenario({
@@ -144,7 +156,7 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 619835996,
+  "duration": 694892878,
   "status": "passed"
 });
 formatter.match({
@@ -157,47 +169,55 @@ formatter.match({
   "location": "US1StepsDef.theFieldShouldExist(String)"
 });
 formatter.result({
-  "duration": 97189003,
+  "duration": 33912643,
   "status": "passed"
 });
 formatter.after({
-  "duration": 94349206,
+  "duration": 184713177,
   "status": "passed"
 });
 formatter.after({
-  "duration": 96231464,
+  "duration": 798168860,
   "status": "passed"
 });
 formatter.after({
-  "duration": 95568899,
+  "duration": 538777878,
   "status": "passed"
 });
 formatter.after({
-  "duration": 110816091,
+  "duration": 537229159,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115524197,
+  "duration": 536199824,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 537315313,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3126760719,
+  "duration": 1804828968,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2381278261,
+  "duration": 1826497088,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2473253722,
+  "duration": 1691444259,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2224907672,
+  "duration": 1884547187,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2285572747,
+  "duration": 1192081799,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1486709322,
   "status": "passed"
 });
 formatter.scenario({
@@ -222,7 +242,7 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 956657605,
+  "duration": 477578648,
   "status": "passed"
 });
 formatter.match({
@@ -235,47 +255,55 @@ formatter.match({
   "location": "US1StepsDef.theFieldShouldExist(String)"
 });
 formatter.result({
-  "duration": 94921103,
+  "duration": 32513668,
   "status": "passed"
 });
 formatter.after({
-  "duration": 108293011,
+  "duration": 539099930,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107611986,
+  "duration": 545313268,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103589829,
+  "duration": 541444547,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111531989,
+  "duration": 537595108,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111479476,
+  "duration": 538400031,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 537648031,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2175817580,
+  "duration": 1238398144,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2300506914,
+  "duration": 1732313627,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3059549177,
+  "duration": 1313698719,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2348453619,
+  "duration": 1304010095,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2467967974,
+  "duration": 1196688571,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1581094631,
   "status": "passed"
 });
 formatter.scenario({
@@ -300,7 +328,7 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 844823258,
+  "duration": 564752873,
   "status": "passed"
 });
 formatter.match({
@@ -313,47 +341,55 @@ formatter.match({
   "location": "US1StepsDef.theFieldShouldExist(String)"
 });
 formatter.result({
-  "duration": 77805602,
+  "duration": 37813364,
   "status": "passed"
 });
 formatter.after({
-  "duration": 100706954,
+  "duration": 536214183,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107570140,
+  "duration": 537084748,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119399072,
+  "duration": 547357987,
   "status": "passed"
 });
 formatter.after({
-  "duration": 122989639,
+  "duration": 536296645,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111902861,
+  "duration": 79617706,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535814593,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2351245827,
+  "duration": 1838796996,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2241078762,
+  "duration": 1280027717,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2301105478,
+  "duration": 1272160223,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2375514154,
+  "duration": 1173255116,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2328014628,
+  "duration": 1298239835,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 963150329,
   "status": "passed"
 });
 formatter.scenario({
@@ -383,61 +419,69 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 898900840,
+  "duration": 713284277,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iClickOnTheButtonMoreInfo()"
 });
 formatter.result({
-  "duration": 405454282,
+  "duration": 397259813,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iCanSeeTheProfilePage()"
 });
 formatter.result({
-  "duration": 72948983,
+  "duration": 26449663,
   "status": "passed"
 });
 formatter.after({
-  "duration": 98864902,
+  "duration": 538186698,
   "status": "passed"
 });
 formatter.after({
-  "duration": 114988812,
+  "duration": 535961466,
   "status": "passed"
 });
 formatter.after({
-  "duration": 112466964,
+  "duration": 534289259,
   "status": "passed"
 });
 formatter.after({
-  "duration": 102938341,
+  "duration": 542462804,
   "status": "passed"
 });
 formatter.after({
-  "duration": 568649903,
+  "duration": 542541573,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 531406385,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2392837245,
+  "duration": 1179960352,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1927378812,
+  "duration": 1710183968,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2054532968,
+  "duration": 1295789781,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1867577737,
+  "duration": 2609349423,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1815354925,
+  "duration": 1152371818,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 960972275,
   "status": "passed"
 });
 formatter.scenario({
@@ -467,14 +511,14 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 828137295,
+  "duration": 486631373,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iClickOnTheButtonMoreInfo()"
 });
 formatter.result({
-  "duration": 465746433,
+  "duration": 297892757,
   "status": "passed"
 });
 formatter.match({
@@ -487,47 +531,55 @@ formatter.match({
   "location": "US1StepsDef.theFieldShouldBeValid(String)"
 });
 formatter.result({
-  "duration": 216205,
+  "duration": 142359,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115650557,
+  "duration": 538895212,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115677223,
+  "duration": 535600439,
   "status": "passed"
 });
 formatter.after({
-  "duration": 95750643,
+  "duration": 535802286,
   "status": "passed"
 });
 formatter.after({
-  "duration": 112239682,
+  "duration": 536948543,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107506140,
+  "duration": 535101977,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533168438,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1965320177,
+  "duration": 1283702797,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1966799973,
+  "duration": 1283628951,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2194501493,
+  "duration": 1250881437,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2399424738,
+  "duration": 1142836630,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2209264992,
+  "duration": 1259989957,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1708904787,
   "status": "passed"
 });
 formatter.scenario({
@@ -552,7 +604,7 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 627469233,
+  "duration": 465832997,
   "status": "passed"
 });
 formatter.match({
@@ -565,47 +617,55 @@ formatter.match({
   "location": "US1StepsDef.theFieldsShouldBeValid(String)"
 });
 formatter.result({
-  "duration": 70507955,
+  "duration": 31769461,
   "status": "passed"
 });
 formatter.after({
-  "duration": 90669202,
+  "duration": 536110388,
   "status": "passed"
 });
 formatter.after({
-  "duration": 95731361,
+  "duration": 537158184,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107820807,
+  "duration": 540395110,
   "status": "passed"
 });
 formatter.after({
-  "duration": 83693197,
+  "duration": 538018493,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119191893,
+  "duration": 537120030,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533583617,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2348426542,
+  "duration": 1274170892,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1740758761,
+  "duration": 1500340512,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1659098797,
+  "duration": 1281988744,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3608123166,
+  "duration": 1247730255,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1554419326,
+  "duration": 1169474601,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 960321609,
   "status": "passed"
 });
 formatter.scenario({
@@ -648,7 +708,7 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 597777721,
+  "duration": 471451054,
   "status": "passed"
 });
 formatter.match({
@@ -661,47 +721,55 @@ formatter.match({
   "location": "US1StepsDef.theFieldShouldExist(String)"
 });
 formatter.result({
-  "duration": 65515131,
+  "duration": 34475106,
   "status": "passed"
 });
 formatter.after({
-  "duration": 538503826,
+  "duration": 537618492,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115515582,
+  "duration": 536672441,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103538136,
+  "duration": 541979111,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107518448,
+  "duration": 537734595,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115506967,
+  "duration": 536840645,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533537258,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1565473284,
+  "duration": 1153146793,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1465351766,
+  "duration": 1272634890,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1592511255,
+  "duration": 1282611514,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1497249228,
+  "duration": 1155327307,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2963292277,
+  "duration": 1158735720,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 979688188,
   "status": "passed"
 });
 formatter.scenario({
@@ -726,54 +794,62 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 813781181,
+  "duration": 500393846,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.buttonFacebookAndButtonLinkedInShouldBeSwitchedOnUS()"
 });
 formatter.result({
-  "duration": 125218975,
+  "duration": 50148554,
   "status": "passed"
 });
 formatter.after({
-  "duration": 93995564,
+  "duration": 535170491,
   "status": "passed"
 });
 formatter.after({
-  "duration": 94186334,
+  "duration": 543032651,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107889729,
+  "duration": 540853367,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115666146,
+  "duration": 538257672,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115511479,
+  "duration": 537544646,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534843516,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2779480845,
+  "duration": 2283373360,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2267145245,
+  "duration": 1149258379,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2369676611,
+  "duration": 1274279199,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2127056924,
+  "duration": 1277164125,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1464087765,
+  "duration": 1255971902,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 965499048,
   "status": "passed"
 });
 formatter.scenario({
@@ -803,61 +879,69 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheLandingPageAndBothButtonsAreOnUS()"
 });
 formatter.result({
-  "duration": 74367240,
+  "duration": 39323109,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iClickInTheFacebookButtonUS()"
 });
 formatter.result({
-  "duration": 56414815,
+  "duration": 48436963,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.theListShouldNotContainFacebookContactsUS()"
 });
 formatter.result({
-  "duration": 129391285,
+  "duration": 151897150,
   "status": "passed"
 });
 formatter.after({
-  "duration": 543079010,
+  "duration": 544228138,
   "status": "passed"
 });
 formatter.after({
-  "duration": 106992498,
+  "duration": 537331722,
   "status": "passed"
 });
 formatter.after({
-  "duration": 110729117,
+  "duration": 539023212,
   "status": "passed"
 });
 formatter.after({
-  "duration": 546432038,
+  "duration": 537843723,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111109425,
+  "duration": 537985672,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534370901,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1480156702,
+  "duration": 1272851095,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1582734837,
+  "duration": 1271356530,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1541451111,
+  "duration": 1188433796,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2244951585,
+  "duration": 1260295599,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2128068208,
+  "duration": 1256493748,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 965044074,
   "status": "passed"
 });
 formatter.scenario({
@@ -892,68 +976,76 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheLandingPageAndBothButtonsAreOnUS()"
 });
 formatter.result({
-  "duration": 64946926,
+  "duration": 38621981,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iClickOnFacebookLabelUS()"
 });
 formatter.result({
-  "duration": 58933382,
+  "duration": 49719835,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.theListOfUsersShouldOnlyAppearsUsersFromFacebookSourceUS()"
 });
 formatter.result({
-  "duration": 141436013,
+  "duration": 146146171,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.linkedinStaysONUS()"
 });
 formatter.result({
-  "duration": 20811504,
+  "duration": 24388533,
   "status": "passed"
 });
 formatter.after({
-  "duration": 541961880,
+  "duration": 537483108,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115583275,
+  "duration": 537075723,
   "status": "passed"
 });
 formatter.after({
-  "duration": 558084150,
+  "duration": 542619111,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116442762,
+  "duration": 538835314,
   "status": "passed"
 });
 formatter.after({
-  "duration": 114869837,
+  "duration": 535928234,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 541537265,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2132826775,
+  "duration": 1795477166,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2031444949,
+  "duration": 1262691087,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1423917065,
+  "duration": 1769796734,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1489572504,
+  "duration": 1186528563,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1580507963,
+  "duration": 1169651421,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1531326384,
   "status": "passed"
 });
 formatter.scenario({
@@ -988,68 +1080,76 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheLandingPageAndBothButtonsAreOnUS()"
 });
 formatter.result({
-  "duration": 83449094,
+  "duration": 39961469,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iClickInTheFacebookButtonUS()"
 });
 formatter.result({
-  "duration": 71250520,
+  "duration": 46644141,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iRefreshThePageUS()"
 });
 formatter.result({
-  "duration": 695353186,
+  "duration": 563843334,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.theFacebookButtonShouldBeOffUS()"
 });
 formatter.result({
-  "duration": 63314103,
+  "duration": 29280844,
   "status": "passed"
 });
 formatter.after({
-  "duration": 97388387,
+  "duration": 539512237,
   "status": "passed"
 });
 formatter.after({
-  "duration": 544545267,
+  "duration": 535829773,
   "status": "passed"
 });
 formatter.after({
-  "duration": 132434160,
+  "duration": 550694195,
   "status": "passed"
 });
 formatter.after({
-  "duration": 553780558,
+  "duration": 537608646,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119138970,
+  "duration": 536063209,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534406592,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1427860454,
+  "duration": 1157534488,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1409167925,
+  "duration": 1285524747,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1438540668,
+  "duration": 1817663440,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2429697173,
+  "duration": 1909450592,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2693953800,
+  "duration": 2038680647,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 960703147,
   "status": "passed"
 });
 formatter.scenario({
@@ -1079,61 +1179,69 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheLandingPageAndBothButtonsAreOnUS()"
 });
 formatter.result({
-  "duration": 119984509,
+  "duration": 40717162,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iClickOnBothFacebookAndLinkedinButtonsUS()"
 });
 formatter.result({
-  "duration": 185727742,
+  "duration": 99665723,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.theListShouldNotContainsContactsUS()"
 });
 formatter.result({
-  "duration": 29799820,
+  "duration": 10632624,
   "status": "passed"
 });
 formatter.after({
-  "duration": 124133025,
+  "duration": 538603929,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119036405,
+  "duration": 538994494,
   "status": "passed"
 });
 formatter.after({
-  "duration": 122780818,
+  "duration": 538528442,
   "status": "passed"
 });
 formatter.after({
-  "duration": 118087071,
+  "duration": 538718801,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119242354,
+  "duration": 540532546,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533534797,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1801415632,
+  "duration": 1807177278,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2338073713,
+  "duration": 1377509233,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2773134173,
+  "duration": 1281455000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1649306379,
+  "duration": 1168940036,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2891147398,
+  "duration": 1286478594,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 916463111,
   "status": "passed"
 });
 formatter.scenario({
@@ -1163,61 +1271,69 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheLandingPageAndBothButtonsAreOnUS()"
 });
 formatter.result({
-  "duration": 120133843,
+  "duration": 37986082,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iSwitchOffTheLinkedinButtonUS()"
 });
 formatter.result({
-  "duration": 124962974,
+  "duration": 47531937,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.onListOfUsersShouldOnlyAppearsUsersThatAreNotFromLinkedinSourceUS()"
 });
 formatter.result({
-  "duration": 179571019,
+  "duration": 136583907,
   "status": "passed"
 });
 formatter.after({
-  "duration": 540377879,
+  "duration": 540459110,
   "status": "passed"
 });
 formatter.after({
-  "duration": 106962959,
+  "duration": 534272439,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119822457,
+  "duration": 540278186,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111238245,
+  "duration": 538345467,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115950044,
+  "duration": 94192077,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 536999825,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2128073541,
+  "duration": 1268943810,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2334287043,
+  "duration": 1251683079,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2316460978,
+  "duration": 1270533145,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2160764440,
+  "duration": 1428068043,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2211477507,
+  "duration": 1337479661,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 981469524,
   "status": "passed"
 });
 formatter.scenario({
@@ -1252,68 +1368,76 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheLandingPageAndBothButtonsAreOnUS()"
 });
 formatter.result({
-  "duration": 106483780,
+  "duration": 38069365,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iClickOnLinkedinLabelUS()"
 });
 formatter.result({
-  "duration": 115131992,
+  "duration": 45881883,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.onListOfUsersShouldOnlyAppearsUsersFromLinkedinSourceUS()"
 });
 formatter.result({
-  "duration": 194614724,
+  "duration": 139043806,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.facebookStaysONUS()"
 });
 formatter.result({
-  "duration": 24100123,
+  "duration": 21026888,
   "status": "passed"
 });
 formatter.after({
-  "duration": 543289882,
+  "duration": 543209061,
   "status": "passed"
 });
 formatter.after({
-  "duration": 106711472,
+  "duration": 538039826,
   "status": "passed"
 });
 formatter.after({
-  "duration": 112134246,
+  "duration": 542656445,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107488498,
+  "duration": 536137465,
   "status": "passed"
 });
 formatter.after({
-  "duration": 546477576,
+  "duration": 539309981,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534021771,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2383097750,
+  "duration": 1279833665,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2774092943,
+  "duration": 1656846077,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1701093088,
+  "duration": 1285174387,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2031181153,
+  "duration": 1295651524,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2332292375,
+  "duration": 1292812138,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 974164491,
   "status": "passed"
 });
 formatter.scenario({
@@ -1348,48 +1472,52 @@ formatter.match({
   "location": "US1StepsDef.iAmOnTheLandingPageAndBothButtonsAreOnUS()"
 });
 formatter.result({
-  "duration": 91011357,
+  "duration": 43492138,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iSwitchOffTheLinkedinButtonUS()"
 });
 formatter.result({
-  "duration": 90295869,
+  "duration": 49891733,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.iRefreshThePageUS()"
 });
 formatter.result({
-  "duration": 701030729,
+  "duration": 587363764,
   "status": "passed"
 });
 formatter.match({
   "location": "US1StepsDef.theLinkedinButtonShouldBeOffUS()"
 });
 formatter.result({
-  "duration": 71715751,
+  "duration": 24676123,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111480297,
+  "duration": 538602698,
   "status": "passed"
 });
 formatter.after({
-  "duration": 95301412,
+  "duration": 535488440,
   "status": "passed"
 });
 formatter.after({
-  "duration": 558157586,
+  "duration": 540023008,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115414248,
+  "duration": 540045981,
   "status": "passed"
 });
 formatter.after({
-  "duration": 131997237,
+  "duration": 536538286,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 536298286,
   "status": "passed"
 });
 formatter.uri("US2.feature");
@@ -1401,23 +1529,27 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1677134094,
+  "duration": 1169564036,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2062390615,
+  "duration": 1275976432,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2757688006,
+  "duration": 1283068129,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2314692361,
+  "duration": 1140488730,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2252598772,
+  "duration": 1187229281,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 966739255,
   "status": "passed"
 });
 formatter.scenario({
@@ -1447,14 +1579,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 640293448,
+  "duration": 466361408,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 331619144,
+  "duration": 256162672,
   "status": "passed"
 });
 formatter.match({
@@ -1467,47 +1599,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldShouldBeInTheRightFormat(String)"
 });
 formatter.result({
-  "duration": 55593892,
+  "duration": 27570484,
   "status": "passed"
 });
 formatter.after({
-  "duration": 96567464,
+  "duration": 539054391,
   "status": "passed"
 });
 formatter.after({
-  "duration": 580449296,
+  "duration": 535810080,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111469220,
+  "duration": 537343620,
   "status": "passed"
 });
 formatter.after({
-  "duration": 114616709,
+  "duration": 536763517,
   "status": "passed"
 });
 formatter.after({
-  "duration": 114923582,
+  "duration": 536186697,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 538524749,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2278309151,
+  "duration": 1294479832,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2193226826,
+  "duration": 1272211916,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2268188528,
+  "duration": 1272321044,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2236486347,
+  "duration": 1309074305,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2165155417,
+  "duration": 1289725366,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 976999366,
   "status": "passed"
 });
 formatter.scenario({
@@ -1537,14 +1677,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 913627416,
+  "duration": 481929421,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 315203951,
+  "duration": 261205958,
   "status": "passed"
 });
 formatter.match({
@@ -1557,47 +1697,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldShouldBeInTheRightFormat(String)"
 });
 formatter.result({
-  "duration": 82674530,
+  "duration": 27357561,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116960096,
+  "duration": 536978492,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115632095,
+  "duration": 538959622,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115573838,
+  "duration": 537252544,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107625114,
+  "duration": 540360649,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107789627,
+  "duration": 542612548,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534118182,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2278388741,
+  "duration": 1289724546,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2409101464,
+  "duration": 1288460134,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1822186110,
+  "duration": 2380876620,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2341395972,
+  "duration": 1584203966,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2075697703,
+  "duration": 2716158536,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1324298113,
   "status": "passed"
 });
 formatter.scenario({
@@ -1627,14 +1775,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 680215122,
+  "duration": 487204092,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 336133199,
+  "duration": 253446772,
   "status": "passed"
 });
 formatter.match({
@@ -1647,47 +1795,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldShouldBeInTheRightFormat(String)"
 });
 formatter.result({
-  "duration": 84039864,
+  "duration": 27734176,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119480713,
+  "duration": 535753465,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111432707,
+  "duration": 537760031,
   "status": "passed"
 });
 formatter.after({
-  "duration": 99782236,
+  "duration": 538296646,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111758861,
+  "duration": 538900134,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111957835,
+  "duration": 542263829,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 540198187,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2736296399,
+  "duration": 1786624236,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2218279563,
+  "duration": 1819543647,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1724495363,
+  "duration": 1304765378,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2848224696,
+  "duration": 1293439831,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2161868441,
+  "duration": 1284035515,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 987145426,
   "status": "passed"
 });
 formatter.scenario({
@@ -1717,14 +1873,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 579279654,
+  "duration": 625177128,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 327176884,
+  "duration": 265032013,
   "status": "passed"
 });
 formatter.match({
@@ -1737,47 +1893,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldShouldBeInTheRightFormat(String)"
 });
 formatter.result({
-  "duration": 82449709,
+  "duration": 35177054,
   "status": "passed"
 });
 formatter.after({
-  "duration": 117288711,
+  "duration": 547309988,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116066147,
+  "duration": 538151826,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107503268,
+  "duration": 539118802,
   "status": "passed"
 });
 formatter.after({
-  "duration": 537017056,
+  "duration": 535889260,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111538963,
+  "duration": 535277978,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 536445568,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3547672655,
+  "duration": 1207059862,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2129983696,
+  "duration": 1811069384,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2248287793,
+  "duration": 1260965958,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2138563396,
+  "duration": 1819374621,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2261492727,
+  "duration": 1218860487,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1535011311,
   "status": "passed"
 });
 formatter.scenario({
@@ -1807,14 +1971,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 708143351,
+  "duration": 618507994,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 414877879,
+  "duration": 267279809,
   "status": "passed"
 });
 formatter.match({
@@ -1827,27 +1991,31 @@ formatter.match({
   "location": "US2StepsDef.theFieldShouldBeInTheRightFormat(String)"
 });
 formatter.result({
-  "duration": 82493606,
+  "duration": 27238586,
   "status": "passed"
 });
 formatter.after({
-  "duration": 557006816,
+  "duration": 539269776,
   "status": "passed"
 });
 formatter.after({
-  "duration": 106458344,
+  "duration": 532942796,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91763357,
+  "duration": 536607210,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111731784,
+  "duration": 542338086,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111403578,
+  "duration": 532320027,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 532663001,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1939,23 +2107,27 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2749845949,
+  "duration": 1827395961,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2426919735,
+  "duration": 1734536808,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1830198015,
+  "duration": 1938682616,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2121524612,
+  "duration": 1293180138,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2063558616,
+  "duration": 1256344415,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 977792802,
   "status": "passed"
 });
 formatter.scenario({
@@ -1988,14 +2160,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 613531991,
+  "duration": 477908905,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 360270245,
+  "duration": 266828527,
   "status": "passed"
 });
 formatter.match({
@@ -2008,47 +2180,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldExits(String)"
 });
 formatter.result({
-  "duration": 54669583,
+  "duration": 26258073,
   "status": "passed"
 });
 formatter.after({
-  "duration": 94100590,
+  "duration": 540099725,
   "status": "passed"
 });
 formatter.after({
-  "duration": 546744243,
+  "duration": 537917159,
   "status": "passed"
 });
 formatter.after({
-  "duration": 114794761,
+  "duration": 534853362,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103720701,
+  "duration": 536737671,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91841716,
+  "duration": 533597566,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 532464847,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1637616934,
+  "duration": 1310643537,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1933666817,
+  "duration": 1276943407,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2104982240,
+  "duration": 1266423603,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2077202525,
+  "duration": 1278691100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1743676508,
+  "duration": 1282406386,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 979612291,
   "status": "passed"
 });
 formatter.scenario({
@@ -2081,14 +2261,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 676696350,
+  "duration": 636907599,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 346563157,
+  "duration": 258256622,
   "status": "passed"
 });
 formatter.match({
@@ -2101,47 +2281,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldExits(String)"
 });
 formatter.result({
-  "duration": 427077,
+  "duration": 47179,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107328088,
+  "duration": 536163311,
   "status": "passed"
 });
 formatter.after({
-  "duration": 537817878,
+  "duration": 536331927,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107218139,
+  "duration": 536989569,
   "status": "passed"
 });
 formatter.after({
-  "duration": 96149412,
+  "duration": 536435722,
   "status": "passed"
 });
 formatter.after({
-  "duration": 532115309,
+  "duration": 534329874,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535227106,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2503426464,
+  "duration": 1259253956,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2019585247,
+  "duration": 1285960440,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2067041696,
+  "duration": 1287043107,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1436401588,
+  "duration": 1291265880,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2349722133,
+  "duration": 1165642392,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 917865779,
   "status": "passed"
 });
 formatter.scenario({
@@ -2174,14 +2362,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 679975122,
+  "duration": 472804080,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 321932982,
+  "duration": 255192825,
   "status": "passed"
 });
 formatter.match({
@@ -2194,47 +2382,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldExits(String)"
 });
 formatter.result({
-  "duration": 125538,
+  "duration": 40615,
   "status": "passed"
 });
 formatter.after({
-  "duration": 109193936,
+  "duration": 537527415,
   "status": "passed"
 });
 formatter.after({
-  "duration": 540738905,
+  "duration": 534881670,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111274348,
+  "duration": 533433874,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119593944,
+  "duration": 534567003,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111612810,
+  "duration": 536804543,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533029771,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2201611242,
+  "duration": 1283413976,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1698563035,
+  "duration": 1287464441,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2068474723,
+  "duration": 1280609461,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1871215895,
+  "duration": 1264224627,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2125423693,
+  "duration": 1901339816,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 954255962,
   "status": "passed"
 });
 formatter.scenario({
@@ -2267,14 +2463,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 625404001,
+  "duration": 490806967,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 348545517,
+  "duration": 260511803,
   "status": "passed"
 });
 formatter.match({
@@ -2287,47 +2483,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldExits(String)"
 });
 formatter.result({
-  "duration": 118564,
+  "duration": 127590,
   "status": "passed"
 });
 formatter.after({
-  "duration": 112261835,
+  "duration": 534745875,
   "status": "passed"
 });
 formatter.after({
-  "duration": 96249104,
+  "duration": 535343619,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103559880,
+  "duration": 534968645,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115756813,
+  "duration": 535550798,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115415890,
+  "duration": 536359415,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535589772,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2347185106,
+  "duration": 1296989372,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2305671225,
+  "duration": 1286979107,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2210796481,
+  "duration": 2068379543,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1999620923,
+  "duration": 1154587203,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1415390700,
+  "duration": 1253433644,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 956514836,
   "status": "passed"
 });
 formatter.scenario({
@@ -2360,14 +2564,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 542300752,
+  "duration": 464370843,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 444695750,
+  "duration": 255331491,
   "status": "passed"
 });
 formatter.match({
@@ -2380,47 +2584,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldExits(String)"
 });
 formatter.result({
-  "duration": 135795,
+  "duration": 41026,
   "status": "passed"
 });
 formatter.after({
-  "duration": 108708602,
+  "duration": 536022594,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111663271,
+  "duration": 535957363,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115596402,
+  "duration": 535371106,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115556607,
+  "duration": 536041876,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91625922,
+  "duration": 536345466,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535577465,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1658042386,
+  "duration": 1412840954,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2215647767,
+  "duration": 1164082186,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1790901572,
+  "duration": 1170220037,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2374271077,
+  "duration": 1260828111,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2350373211,
+  "duration": 1143916836,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 969678334,
   "status": "passed"
 });
 formatter.scenario({
@@ -2453,14 +2665,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 897034992,
+  "duration": 470294130,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 330074117,
+  "duration": 259711392,
   "status": "passed"
 });
 formatter.match({
@@ -2473,47 +2685,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldExits(String)"
 });
 formatter.result({
-  "duration": 129641,
+  "duration": 70154,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111890553,
+  "duration": 535628747,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119810970,
+  "duration": 538489878,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111967681,
+  "duration": 537397364,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91478639,
+  "duration": 534282285,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107878243,
+  "duration": 535166798,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533365361,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2868909021,
+  "duration": 1163043416,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2159021259,
+  "duration": 1297602706,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2109424911,
+  "duration": 1186247537,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2313288872,
+  "duration": 1267992425,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2075387550,
+  "duration": 1280682897,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1113765016,
   "status": "passed"
 });
 formatter.scenario({
@@ -2546,14 +2766,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 837441508,
+  "duration": 585456070,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 313047641,
+  "duration": 255152209,
   "status": "passed"
 });
 formatter.match({
@@ -2566,47 +2786,55 @@ formatter.match({
   "location": "US2StepsDef.theFieldExits(String)"
 });
 formatter.result({
-  "duration": 139077,
+  "duration": 89436,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115864300,
+  "duration": 538829571,
   "status": "passed"
 });
 formatter.after({
-  "duration": 119698970,
+  "duration": 537697262,
   "status": "passed"
 });
 formatter.after({
-  "duration": 112030041,
+  "duration": 535111824,
   "status": "passed"
 });
 formatter.after({
-  "duration": 99689107,
+  "duration": 538066083,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91312075,
+  "duration": 534228541,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 532148129,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2157651002,
+  "duration": 1370262458,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2236871579,
+  "duration": 1491419070,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2819920263,
+  "duration": 1377688515,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2267802066,
+  "duration": 1295822602,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2031650077,
+  "duration": 1150766073,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 976586647,
   "status": "passed"
 });
 formatter.scenario({
@@ -2636,14 +2864,14 @@ formatter.match({
   "location": "US2StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 813009898,
+  "duration": 454979245,
   "status": "passed"
 });
 formatter.match({
   "location": "US2StepsDef.iClickInTheFirstMoreInfoButton()"
 });
 formatter.result({
-  "duration": 320305904,
+  "duration": 256442056,
   "status": "passed"
 });
 formatter.match({
@@ -2656,27 +2884,31 @@ formatter.match({
   "location": "US2StepsDef.theFieldShouldBeInTheRightFormat(String)"
 });
 formatter.result({
-  "duration": 669424550,
+  "duration": 1241682249,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536699517,
+  "duration": 537309569,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115538146,
+  "duration": 536276953,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115301428,
+  "duration": 536563312,
   "status": "passed"
 });
 formatter.after({
-  "duration": 548610091,
+  "duration": 537818697,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115090966,
+  "duration": 536661774,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 531234487,
   "status": "passed"
 });
 formatter.uri("US3.feature");
@@ -2752,23 +2984,27 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2259692111,
+  "duration": 1157991925,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2211572686,
+  "duration": 1266149962,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2350262441,
+  "duration": 1299025476,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2240437120,
+  "duration": 1266799398,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2076743037,
+  "duration": 1249415590,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 962643251,
   "status": "passed"
 });
 formatter.scenario({
@@ -2805,7 +3041,7 @@ formatter.match({
   "location": "US3StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 635317855,
+  "duration": 459067454,
   "status": "passed"
 });
 formatter.match({
@@ -2818,7 +3054,7 @@ formatter.match({
   "location": "US3StepsDef.iTypeOnTheInputBox(String)"
 });
 formatter.result({
-  "duration": 2165243623,
+  "duration": 2066540772,
   "status": "passed"
 });
 formatter.match({
@@ -2835,47 +3071,55 @@ formatter.match({
   "location": "US3StepsDef.theResultShouldContainsUS(String,String)"
 });
 formatter.result({
-  "duration": 141775296,
+  "duration": 79890117,
   "status": "passed"
 });
 formatter.after({
-  "duration": 99681312,
+  "duration": 541915522,
   "status": "passed"
 });
 formatter.after({
-  "duration": 88109611,
+  "duration": 534253977,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111343271,
+  "duration": 536027516,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111811784,
+  "duration": 539424853,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91941819,
+  "duration": 537234082,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534865259,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1718987667,
+  "duration": 1268525759,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2286420337,
+  "duration": 1253954670,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2229646137,
+  "duration": 1263350370,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1732712806,
+  "duration": 1269080426,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2087497918,
+  "duration": 1280541769,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 958014735,
   "status": "passed"
 });
 formatter.scenario({
@@ -2912,7 +3156,7 @@ formatter.match({
   "location": "US3StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 882712929,
+  "duration": 476518545,
   "status": "passed"
 });
 formatter.match({
@@ -2925,7 +3169,7 @@ formatter.match({
   "location": "US3StepsDef.iTypeOnTheInputBox(String)"
 });
 formatter.result({
-  "duration": 2266808424,
+  "duration": 2148949865,
   "status": "passed"
 });
 formatter.match({
@@ -2942,47 +3186,55 @@ formatter.match({
   "location": "US3StepsDef.theResultShouldContainsUS(String,String)"
 });
 formatter.result({
-  "duration": 11068317,
+  "duration": 10449239,
   "status": "passed"
 });
 formatter.after({
-  "duration": 543828548,
+  "duration": 541142188,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111177938,
+  "duration": 536344645,
   "status": "passed"
 });
 formatter.after({
-  "duration": 95849105,
+  "duration": 535233260,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115364607,
+  "duration": 536290081,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111678861,
+  "duration": 535271824,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 532939104,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2160105977,
+  "duration": 1171781474,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2105944702,
+  "duration": 1180768148,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1643048733,
+  "duration": 1261355701,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2108015678,
+  "duration": 1160260645,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2575485600,
+  "duration": 1274064635,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 930389276,
   "status": "passed"
 });
 formatter.scenario({
@@ -3019,7 +3271,7 @@ formatter.match({
   "location": "US3StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 719061923,
+  "duration": 479825625,
   "status": "passed"
 });
 formatter.match({
@@ -3032,7 +3284,7 @@ formatter.match({
   "location": "US3StepsDef.iTypeOnTheInputBox(String)"
 });
 formatter.result({
-  "duration": 2149613251,
+  "duration": 2081072887,
   "status": "passed"
 });
 formatter.match({
@@ -3049,47 +3301,55 @@ formatter.match({
   "location": "US3StepsDef.theResultShouldContainsUS(String,String)"
 });
 formatter.result({
-  "duration": 537770697,
+  "duration": 203610834,
   "status": "passed"
 });
 formatter.after({
-  "duration": 96358233,
+  "duration": 537799416,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103932393,
+  "duration": 534682285,
   "status": "passed"
 });
 formatter.after({
-  "duration": 111310040,
+  "duration": 536469774,
   "status": "passed"
 });
 formatter.after({
-  "duration": 88685611,
+  "duration": 534845567,
   "status": "passed"
 });
 formatter.after({
-  "duration": 114987992,
+  "duration": 534319208,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 532797565,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1720741104,
+  "duration": 1163308852,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2262265651,
+  "duration": 1258640623,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2206339862,
+  "duration": 1174881785,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2857230242,
+  "duration": 1292203317,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1536464850,
+  "duration": 1159825772,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 964223151,
   "status": "passed"
 });
 formatter.scenario({
@@ -3119,7 +3379,7 @@ formatter.match({
   "location": "US3StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 902340843,
+  "duration": 460036480,
   "status": "passed"
 });
 formatter.match({
@@ -3132,7 +3392,7 @@ formatter.match({
   "location": "US3StepsDef.iTypeOnTheInputBox(String)"
 });
 formatter.result({
-  "duration": 2210663557,
+  "duration": 2070934212,
   "status": "passed"
 });
 formatter.match({
@@ -3145,27 +3405,31 @@ formatter.match({
   "location": "US3StepsDef.theResultShouldBe(String)"
 });
 formatter.result({
-  "duration": 41485572,
+  "duration": 21904018,
   "status": "passed"
 });
 formatter.after({
-  "duration": 99061005,
+  "duration": 536499723,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91402331,
+  "duration": 534562490,
   "status": "passed"
 });
 formatter.after({
-  "duration": 540042699,
+  "duration": 536670800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 110974450,
+  "duration": 535410490,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103661623,
+  "duration": 535900748,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533932335,
   "status": "passed"
 });
 formatter.uri("US4.feature");
@@ -3177,23 +3441,27 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2651484431,
+  "duration": 1283159207,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2088811150,
+  "duration": 1257428314,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1673945168,
+  "duration": 1339577714,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2837669610,
+  "duration": 1274948329,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2407874386,
+  "duration": 1176031324,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 899085456,
   "status": "passed"
 });
 formatter.scenario({
@@ -3218,7 +3486,7 @@ formatter.match({
   "location": "US4StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 710110531,
+  "duration": 484045525,
   "status": "passed"
 });
 formatter.match({
@@ -3231,47 +3499,55 @@ formatter.match({
   "location": "US4StepsDef.theListContainContacts(String)"
 });
 formatter.result({
-  "duration": 52659326,
+  "duration": 18983810,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116860814,
+  "duration": 535997568,
   "status": "passed"
 });
 formatter.after({
-  "duration": 95951668,
+  "duration": 536371722,
   "status": "passed"
 });
 formatter.after({
-  "duration": 92223255,
+  "duration": 534739310,
   "status": "passed"
 });
 formatter.after({
-  "duration": 123347794,
+  "duration": 538034493,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116143685,
+  "duration": 531723103,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533234079,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2678117890,
+  "duration": 1163992750,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2265308525,
+  "duration": 1249705231,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2145660017,
+  "duration": 1158852643,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2343192897,
+  "duration": 1270825658,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2176006298,
+  "duration": 1294057677,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 954532475,
   "status": "passed"
 });
 formatter.scenario({
@@ -3301,7 +3577,7 @@ formatter.match({
   "location": "US4StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 934143126,
+  "duration": 474186235,
   "status": "passed"
 });
 formatter.match({
@@ -3314,7 +3590,7 @@ formatter.match({
   "location": "US4StepsDef.iChangeTheUsersPerPageTo(int)"
 });
 formatter.result({
-  "duration": 236627887,
+  "duration": 131096723,
   "status": "passed"
 });
 formatter.match({
@@ -3327,47 +3603,55 @@ formatter.match({
   "location": "US4StepsDef.theListContainContacts(String)"
 });
 formatter.result({
-  "duration": 15198782,
+  "duration": 11944626,
   "status": "passed"
 });
 formatter.after({
-  "duration": 537839621,
+  "duration": 535920029,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115341633,
+  "duration": 535666901,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107508601,
+  "duration": 535845363,
   "status": "passed"
 });
 formatter.after({
-  "duration": 124146153,
+  "duration": 541691522,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115768300,
+  "duration": 535664850,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533150387,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2365119068,
+  "duration": 1165943521,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2232404294,
+  "duration": 1256062159,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1459166736,
+  "duration": 1151914381,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2262285754,
+  "duration": 1161447517,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1935462101,
+  "duration": 1242000609,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 957900684,
   "status": "passed"
 });
 formatter.scenario({
@@ -3397,7 +3681,7 @@ formatter.match({
   "location": "US4StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 590873920,
+  "duration": 481196703,
   "status": "passed"
 });
 formatter.match({
@@ -3410,7 +3694,7 @@ formatter.match({
   "location": "US4StepsDef.iChangeTheUsersPerPageTo(int)"
 });
 formatter.result({
-  "duration": 179167327,
+  "duration": 135381034,
   "status": "passed"
 });
 formatter.match({
@@ -3423,47 +3707,55 @@ formatter.match({
   "location": "US4StepsDef.theListContainContacts(String)"
 });
 formatter.result({
-  "duration": 22945249,
+  "duration": 11133958,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103415059,
+  "duration": 537361261,
   "status": "passed"
 });
 formatter.after({
-  "duration": 537316133,
+  "duration": 534161669,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115342864,
+  "duration": 535725157,
   "status": "passed"
 });
 formatter.after({
-  "duration": 131748621,
+  "duration": 542063624,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115794967,
+  "duration": 536709774,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533401053,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1516843501,
+  "duration": 2788768237,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2208678735,
+  "duration": 1318448671,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2113931581,
+  "duration": 1276090072,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2190576976,
+  "duration": 1285296645,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2168813677,
+  "duration": 1141832732,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 962482841,
   "status": "passed"
 });
 formatter.scenario({
@@ -3493,7 +3785,7 @@ formatter.match({
   "location": "US4StepsDef.iAmOnTheContactListPage()"
 });
 formatter.result({
-  "duration": 632519904,
+  "duration": 500548513,
   "status": "passed"
 });
 formatter.match({
@@ -3506,7 +3798,7 @@ formatter.match({
   "location": "US4StepsDef.iChangeTheUsersPerPageTo(int)"
 });
 formatter.result({
-  "duration": 257614160,
+  "duration": 136253650,
   "status": "passed"
 });
 formatter.match({
@@ -3519,27 +3811,31 @@ formatter.match({
   "location": "US4StepsDef.theListContainContacts(String)"
 });
 formatter.result({
-  "duration": 20741761,
+  "duration": 15411295,
   "status": "passed"
 });
 formatter.after({
-  "duration": 543268548,
+  "duration": 535094593,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107488908,
+  "duration": 535247618,
   "status": "passed"
 });
 formatter.after({
-  "duration": 95438437,
+  "duration": 535013772,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116267993,
+  "duration": 550298298,
   "status": "passed"
 });
 formatter.after({
-  "duration": 99226338,
+  "duration": 535641875,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 532761053,
   "status": "passed"
 });
 formatter.uri("US5.feature");
@@ -3551,23 +3847,27 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2157574693,
+  "duration": 1284169669,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1496719997,
+  "duration": 1281049256,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1481857626,
+  "duration": 1152001356,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1986011886,
+  "duration": 1152164637,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2187831539,
+  "duration": 1188070718,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 965489613,
   "status": "passed"
 });
 formatter.scenario({
@@ -3602,14 +3902,14 @@ formatter.match({
   "location": "US5StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 934275638,
+  "duration": 689100873,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.iClickInTheNextPage()"
 });
 formatter.result({
-  "duration": 61936462,
+  "duration": 49375220,
   "status": "passed"
 });
 formatter.match({
@@ -3622,54 +3922,62 @@ formatter.match({
   "location": "US5StepsDef.theTextUsersPerPageShouldBe(String)"
 });
 formatter.result({
-  "duration": 20451299,
+  "duration": 20080837,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.contactsOffThePageHaveToBeDifferentFromTheContactsOffTheFirstPageUS()"
 });
 formatter.result({
-  "duration": 198957291,
+  "duration": 207709299,
   "status": "passed"
 });
 formatter.after({
-  "duration": 538653160,
+  "duration": 533113463,
   "status": "passed"
 });
 formatter.after({
-  "duration": 132283185,
+  "duration": 539058904,
   "status": "passed"
 });
 formatter.after({
-  "duration": 115419992,
+  "duration": 533831002,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116860403,
+  "duration": 534320438,
   "status": "passed"
 });
 formatter.after({
-  "duration": 541655418,
+  "duration": 534014387,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533239822,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1563644770,
+  "duration": 1269592837,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1508668315,
+  "duration": 1196048571,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2048082091,
+  "duration": 1265859090,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2025523303,
+  "duration": 1321033289,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2145146785,
+  "duration": 1277628125,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 954984989,
   "status": "passed"
 });
 formatter.scenario({
@@ -3704,68 +4012,76 @@ formatter.match({
   "location": "US5StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 940010617,
+  "duration": 666504342,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.iClickInThePageLast()"
 });
 formatter.result({
-  "duration": 79160270,
+  "duration": 57585688,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.theTextUsersPerPageShouldContainTheLastUsers()"
 });
 formatter.result({
-  "duration": 56216662,
+  "duration": 43845370,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.contactsOffThePageHaveToBeDifferentFromTheContactsOffTheFirstPageUS()"
 });
 formatter.result({
-  "duration": 180556046,
+  "duration": 135867598,
   "status": "passed"
 });
 formatter.after({
-  "duration": 557920868,
+  "duration": 535154901,
   "status": "passed"
 });
 formatter.after({
-  "duration": 109242346,
+  "duration": 541867521,
   "status": "passed"
 });
 formatter.after({
-  "duration": 540064444,
+  "duration": 538168647,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116425941,
+  "duration": 534342182,
   "status": "passed"
 });
 formatter.after({
-  "duration": 548345885,
+  "duration": 536474697,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533219720,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2024429148,
+  "duration": 1172270501,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1972342951,
+  "duration": 1256853134,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2068710621,
+  "duration": 1269138272,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1504002054,
+  "duration": 1249598974,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2387762780,
+  "duration": 1166708239,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1023265249,
   "status": "passed"
 });
 formatter.scenario({
@@ -3795,61 +4111,69 @@ formatter.match({
   "location": "US5StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 1191226413,
+  "duration": 677749069,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.iClickInTheFirstPage()"
 });
 formatter.result({
-  "duration": 50285170,
+  "duration": 40525572,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.theButtonPreviousMustBeDisabled()"
 });
 formatter.result({
-  "duration": 28155510,
+  "duration": 17259501,
   "status": "passed"
 });
 formatter.after({
-  "duration": 104317624,
+  "duration": 536364337,
   "status": "passed"
 });
 formatter.after({
-  "duration": 136840728,
+  "duration": 539420750,
   "status": "passed"
 });
 formatter.after({
-  "duration": 121545536,
+  "duration": 536922697,
   "status": "passed"
 });
 formatter.after({
-  "duration": 543922908,
+  "duration": 534736439,
   "status": "passed"
 });
 formatter.after({
-  "duration": 547418705,
+  "duration": 535005978,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534205157,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2177919326,
+  "duration": 1257925135,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1630081337,
+  "duration": 1173474194,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1477857623,
+  "duration": 1174029682,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2043073266,
+  "duration": 2475301723,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1473763671,
+  "duration": 1750938052,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 943539646,
   "status": "passed"
 });
 formatter.scenario({
@@ -3884,48 +4208,306 @@ formatter.match({
   "location": "US5StepsDef.iAmOnTheContactListPageUS()"
 });
 formatter.result({
-  "duration": 947504778,
+  "duration": 672920347,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.iClickInThePageLast()"
 });
 formatter.result({
-  "duration": 89902433,
+  "duration": 56356148,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.theButtonNextMustBeDisabled()"
 });
 formatter.result({
-  "duration": 18683092,
+  "duration": 16404526,
   "status": "passed"
 });
 formatter.match({
   "location": "US5StepsDef.contactsOffThePageHaveToBeDifferentFromTheContactsOffTheFirstPageUS()"
 });
 formatter.result({
-  "duration": 185093486,
+  "duration": 144133862,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536893158,
+  "duration": 537600031,
   "status": "passed"
 });
 formatter.after({
-  "duration": 118812815,
+  "duration": 540199828,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107862242,
+  "duration": 535670183,
   "status": "passed"
 });
 formatter.after({
-  "duration": 544961268,
+  "duration": 534752439,
   "status": "passed"
 });
 formatter.after({
-  "duration": 107310447,
+  "duration": 536176030,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533165155,
+  "status": "passed"
+});
+formatter.uri("US6.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Check possible duplicated Contacts Page",
+  "description": "As a user\r\nI want to see the possible duplicated contacts\r\nSo that I can decide if they are the same Contact",
+  "id": "check-possible-duplicated-contacts-page",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 1255920620,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1316721080,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1143164425,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1253595285,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1237902144,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 914047109,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 6,
+  "name": "Check for each group if some field is similar for all the group -6US",
+  "description": "",
+  "id": "check-possible-duplicated-contacts-page;check-for-each-group-if-some-field-is-similar-for-all-the-group--6us",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 7,
+  "name": "I am on the duplicate page and there is some group of duplicates -6US",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "For each group of possible duplicates, you must have at least one similar field in all possible duplicates -6US",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
+});
+formatter.result({
+  "duration": 128961747,
+  "status": "passed"
+});
+formatter.match({
+  "location": "US6StepsDef.Foreachgroupofpossibleduplicatesyoumusthaveatleastonesimilarfieldinallpossibleduplicates()"
+});
+formatter.result({
+  "duration": 7047587322,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535130695,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534752439,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 536486594,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534654798,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 537097466,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533732540,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1204609399,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1277453355,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 2334063043,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1274443712,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1266391604,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 989181119,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 10,
+  "name": "Check if every group have at least 2 contacts -6US",
+  "description": "",
+  "id": "check-possible-duplicated-contacts-page;check-if-every-group-have-at-least-2-contacts--6us",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 11,
+  "name": "I am on the duplicate page and there is some group of duplicates -6US",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "every group of duplicate should contain at least 2 contacts -6US",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
+});
+formatter.result({
+  "duration": 130475595,
+  "status": "passed"
+});
+formatter.match({
+  "location": "US6StepsDef.everygroupofduplicateshouldcontainatleast2contacts()"
+});
+formatter.result({
+  "duration": 866953737,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534728233,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533774797,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 531924949,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535869568,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533207002,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 536309363,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1132951084,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1266616014,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1279271613,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1250347283,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1145921351,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 959979454,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 14,
+  "name": "Check if Total of possible duplicated contacts is right -6US",
+  "description": "",
+  "id": "check-possible-duplicated-contacts-page;check-if-total-of-possible-duplicated-contacts-is-right--6us",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 15,
+  "name": "I am on the duplicate page and there is some group of duplicates -6US",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 16,
+  "name": "the Total of possible duplicated contacts must be consistent to the total groups in list -6US",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
+});
+formatter.result({
+  "duration": 129292004,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "6",
+      "offset": 90
+    }
+  ],
+  "location": "US6StepsDef.theTotalOfPossibleDuplicatedContactsMustBeConsistentToTheTotalGroupsInListUS(int)"
+});
+formatter.result({
+  "duration": 893468220,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535474491,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535065875,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534485772,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535699311,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 532804540,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 533269771,
   "status": "passed"
 });
 });
