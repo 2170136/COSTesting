@@ -18,12 +18,8 @@ public class US6StepsDef {
     private WebDriver driver;
     @Before
     public void setUp() throws Exception {
-
-        System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs-linux");
-     //    System.setProperty("phantomjs.binary.path",
-       //       "drivers\\phantomjs.exe");
-
+        System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
+        //  System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
 
         driver = new PhantomJSDriver();
         driver.get("http://35.187.16.192:80/COSProject/duplicate.php");
@@ -48,25 +44,30 @@ public class US6StepsDef {
         List<String> names  = new LinkedList<String>();
         List<String> emails  = new LinkedList<String>();
         List<String> phones  = new LinkedList<String>();
-        for(int y = 1; y<=duplicatedList.size(); y++){
+        Boolean state = true;
 
+        for(int y = 1; y<=duplicatedList.size(); y++){
             WebElement elementName = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[1]"));
             WebElement elementSurname = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[2]"));
             WebElement elementEmail = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[3]"));
             WebElement elementPhone = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[4]"));
             String color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
 
-            if(oldColor.equals(color))
+            if(oldColor.equals(color) || oldColor.equals(""))
             {
                 names.add(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[1]")).getText()+driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[2]")).getText());
                 emails.add(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[3]")).getText());
                 phones.add(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[4]")).getText());
+                oldColor = color;
             }
             else
             {
-             //   if(!compareElementsList(names) && !compareElementsList(emails) && !compareElementsList(phones)){
-                    assertTrue("Contactos apresentados não são possiveis duplicados",(compareElementsList(names) || compareElementsList(emails) || compareElementsList(phones)));
-               // }
+                if(!(compareElementsList(names) || compareElementsList(emails) || compareElementsList(phones))){
+                    state = false;
+                }
+                if(!state){
+                    assertTrue("Contactos apresentados não são possiveis duplicados", state);
+                }
                 names  = new LinkedList<String>();
                 emails  = new LinkedList<String>();
                 phones  = new LinkedList<String>();
@@ -77,6 +78,7 @@ public class US6StepsDef {
             }
 
         }
+        assertTrue("Contactos apresentados não são possiveis duplicados", state);
     }
 
     @Then("^every group of duplicate should contain at least 2 contacts -6US$")
@@ -84,10 +86,10 @@ public class US6StepsDef {
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
         String oldColor = "";
         int nrContactsInGroup = 0;
+        Boolean state = true;
+
         for(int y = 1; y<=duplicatedList.size(); y++){
-
             String color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
-
             if(oldColor.equals(color))
             {
                 nrContactsInGroup++;
@@ -95,17 +97,21 @@ public class US6StepsDef {
             else
             {
                 if(nrContactsInGroup<= 1 && y > 1){
-                    assertTrue("Número de possiveis duplicados por grupo tem de ser mais que um.",false);
+                    state = false;
+                    assertTrue("Número de possiveis duplicados por grupo tem de ser mais que um.", state);
                 }
                 nrContactsInGroup = 1;
-
-                 oldColor = color;
+                oldColor = color;
             }
-
         }
+        assertTrue("Número de possiveis duplicados por grupo é invalido.", state);
     }
 
     private boolean compareElementsList(List<String> list) {
+        if(list.size() <2){
+            return false;
+        }
+
         for (int i = 0; i < list.size() - 1; i++)
             for (int k = i + 1; k < list.size(); k++)
                 if (!list.get(i).equals(list.get(k))) {
@@ -115,8 +121,8 @@ public class US6StepsDef {
         return  true;
     }
 
-    @Then("^the Total of possible duplicated contacts must be consistent to the total groups in list -(\\d+)US$")
-    public void theTotalOfPossibleDuplicatedContactsMustBeConsistentToTheTotalGroupsInListUS(int arg0) throws Throwable {
+    @Then("^the Total of possible duplicated contacts must be consistent to the total groups in list -6US$")
+    public void theTotalOfPossibleDuplicatedContactsMustBeConsistentToTheTotalGroupsInListUS() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         String nrTotalGroupsLabel = driver.findElement(By.xpath("//span[@id='total_contacts']")).getText();
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));

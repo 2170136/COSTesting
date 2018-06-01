@@ -64,10 +64,8 @@ public class US1StepsDef {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("phantomjs.binary.path",
-                "drivers/phantomjs-linux");
-       // System.setProperty("phantomjs.binary.path",
-         //      "drivers\\phantomjs.exe");
+        System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
+    //  System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
 
 
         driver = new PhantomJSDriver();
@@ -82,8 +80,8 @@ public class US1StepsDef {
     }
 
 
-    @Then("^the field \"([^\"]*)\" should exist -1US$")
-    public void theFieldShouldExist(String field) throws Throwable {
+    @Then("^the field \"([^\"]*)\" should exists -1US$")
+    public void theFieldShouldExists(String field) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         if (field.equals("Name")) {
             assertTrue(driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td[2]")).getText().matches("^([A-Z][a-z]*((\\s)))+[A-Z][a-z]*$"));
@@ -192,10 +190,16 @@ public class US1StepsDef {
     @Then("^Button Facebook and Button LinkedIn should be switched on -1US$")
     public void buttonFacebookAndButtonLinkedInShouldBeSwitchedOnUS() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        WebElement webElementFacebook = driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
-        WebElement webElementLinkedin = driver.findElement(By.xpath("//a[contains(text(),'Linkedin')]"));
-        Assert.assertTrue("Facebook not ON", !webElementFacebook.getAttribute("class").contains("disabled"));
-        Assert.assertTrue("Linkedin not ON", !webElementLinkedin.getAttribute("class").contains("disabled"));
+
+        WebElement webElmFacebook = driver.findElement(By.id("checkbox_facebook"));
+        Assert.assertTrue("Facebook not ON", webElmFacebook.isSelected());
+        WebElement webElmLinkedin = driver.findElement(By.id("checkbox_linkedin"));
+        Assert.assertTrue("Linkedin not ON", webElmLinkedin.isSelected());
+
+        //  WebElement webElementFacebook = driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+        //   WebElement webElementLinkedin = driver.findElement(By.xpath("//a[contains(text(),'Linkedin')]"));
+        //   Assert.assertTrue("Facebook not ON", !webElementFacebook.getAttribute("class").contains("disabled"));
+        //   Assert.assertTrue("Linkedin not ON", !webElementLinkedin.getAttribute("class").contains("disabled"));
     }
 
     @When("^I Click on Facebook Label -1US$")
@@ -311,6 +315,41 @@ public class US1StepsDef {
         // Write code here that turns the phrase above into concrete actions
         List<WebElement> webElementList =  driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr/td"));
         Assert.assertTrue("Teste falhou! Existem contactos na lista",webElementList.size()==1);
+
+    }
+
+
+    @Then("^all contacts must have the source column filled in and and if they are valid -1US$")
+    public void allContactsMustHaveTheColumnFilledInAndEqualAUS() throws Throwable {
+        int i = driver.findElements(By.xpath("//table[@id='data-table-contacts']/tbody/tr")).size();
+        String source ="";
+
+        for(int y = 1; y<i; y++){
+            source = driver.findElement(By.xpath("//table[@id='data-table-contacts']/tbody/tr["+y+"]/td[3]")).getText();
+            assertTrue(source.equals("Facebook") || source.equals("LinkedIn"));
+        }
+
+    }
+
+    @When("^I switch the \"([^\"]*)\" button -1US$")
+    public void iSwitchTheButtonUS(String arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement webElement = driver.findElement(By.xpath(arg0));
+        webElement.click();
+    }
+
+
+    @Then("^the \"([^\"]*)\" label change state according to the \"([^\"]*)\" state -1US$")
+    public void theLabelChangeStateAccordingToTheStateUS(String arg0, String arg1) throws Throwable {
+
+        WebElement webElmLabel = driver.findElement(By.id(arg0)); // facebook_filter or linkedin_filter
+        WebElement webElmSwitchInput = driver.findElement(By.id(arg1)); // input checkbox
+
+        if(webElmSwitchInput.isSelected()){
+            Assert.assertTrue("Teste falhou! A label não está de acordo com o switch!",webElmLabel.getAttribute("class").contains("enable"));
+        }else{
+            Assert.assertTrue("Teste falhou! A label não está de acordo com o switch!",webElmLabel.getAttribute("class").contains("disable"));
+        }
 
     }
 }
