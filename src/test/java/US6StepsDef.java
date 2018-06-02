@@ -1,34 +1,45 @@
 import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.naming.InsufficientResourcesException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class US6StepsDef {
     private WebDriver driver;
+    private int countListDuplicates;
+    private int totalOfDuplicates;
     @Before
     public void setUp() throws Exception {
-        System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
-        //  System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
+       // System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
+        System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
 
         driver = new PhantomJSDriver();
         driver.get("http://35.187.16.192:80/COSProject/duplicate.php");
+        countListDuplicates = 0;
+        totalOfDuplicates = 0;
     }
 
     @After
     public void tearDown() throws Exception {
         driver.quit();
-
     }
 
     @Given("^I am on the duplicate page and there is some group of duplicates -6US$")
@@ -137,5 +148,296 @@ public class US6StepsDef {
             }
         }
         assertTrue("Número de grupos não está correto.", nrTotalGroupsLabel.equals(Integer.toString(nrGroups)));
+    }
+
+
+    @Given("^I am on the duplicate page and the first group of duplicate have every checkbox checked$")
+    public void iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked() throws Throwable {
+        driver.get("http://35.187.16.192/COSProject/duplicate.php");
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        WebElement column;
+        WebElement elCheckbox;
+        String color, oldColor = "";
+
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            column =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[5]"));
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                elCheckbox = column.findElement(By.xpath("//input[@id="+i+"]"));
+                if(!elCheckbox.isSelected()){
+                    elCheckbox.click();
+                }
+                i++;
+                oldColor = color;
+            }else{
+                return;
+            }
+        }
+    }
+
+
+    @When("^I uncheck checkbox but let one checked of this first group$")
+    public void iUncheckCheckboxButLetOneCheckedOfThisFirstGroup() throws Throwable {
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        WebElement column;
+        WebElement elCheckbox;
+        String color, oldColor = "";
+
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            column =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[5]"));
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                elCheckbox = column.findElement(By.xpath("//input[@id="+i+"]"));
+                if(i == 0 && elCheckbox.isSelected()){
+                    elCheckbox.click();
+                }else{
+                    if(!elCheckbox.isSelected()){
+                        elCheckbox.click();
+                    }
+                }
+                i++;
+                oldColor = color;
+            }else{
+                return;
+            }
+        }
+    }
+
+    @When("^I uncheck every checkbox of this first group$")
+    public void iUncheckEveryCheckboxOfThisFirstGroup() throws Throwable {
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        WebElement column;
+        WebElement elCheckbox;
+        String color, oldColor = "";
+
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            column =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[5]"));
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                elCheckbox = column.findElement(By.xpath("//input[@id="+i+"]"));
+                if(elCheckbox.isSelected()){
+                    elCheckbox.click();
+                }
+                i++;
+                oldColor = color;
+            }else{
+                return;
+            }
+        }
+    }
+
+
+    @Then("^The label \"([^\"]*)\" should change to \"([^\"]*)\"$")
+    public void theLabelShouldChangeTo(String arg0, String arg1) throws Throwable {
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        String color, oldColor = "";
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                oldColor = color;
+            }else{
+                if(y > 0){
+                    i = y-1;
+                }else{
+                    Assert.assertTrue("Teste falhou! Link não alterou para a label desejada", false);
+                }
+                break;
+            }
+        }
+
+
+        WebElement column = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + i + "]/td[6]"));
+        String label = column.getText();
+        Assert.assertTrue("Teste falhou! Link não alterou para a label desejada", label.equals(arg1));
+    }
+
+    @Given("^I am on the duplicate page and the first group of duplicate have every checkbox unchecked$")
+    public void iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxUnchecked() throws Throwable {
+        driver.get("http://35.187.16.192/COSProject/duplicate.php");
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        WebElement column;
+        WebElement elCheckbox;
+        String color, oldColor = "";
+
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            column =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[5]"));
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                elCheckbox = column.findElement(By.xpath("//input[@id="+i+"]"));
+                if(elCheckbox.isSelected()){
+                    elCheckbox.click();
+                }
+                i++;
+                oldColor = color;
+            }else{
+                return;
+            }
+        }
+    }
+
+    @When("^I check at least (\\d+) checkbox of this group$")
+    public void iCheckAtLeastCheckboxOfThisGroup(int arg0) throws Throwable {
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        WebElement column;
+        WebElement elCheckbox;
+        String color, oldColor = "";
+
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            column =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[5]"));
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                elCheckbox = column.findElement(By.xpath("//input[@id="+i+"]"));
+                if(!elCheckbox.isSelected() && i < arg0){
+                    elCheckbox.click();
+                }
+                i++;
+                oldColor = color;
+            }else{
+                return;
+            }
+        }
+    }
+
+    @When("^I uncheck every contacts of this group$")
+    public void iUncheckEveryContactsOfThisGroup() throws Throwable {
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        WebElement column;
+        WebElement elCheckbox;
+        String color, oldColor = "";
+
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            column =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[5]"));
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                elCheckbox = column.findElement(By.xpath("//input[@id="+i+"]"));
+                if(elCheckbox.isSelected()){
+                    elCheckbox.click();
+                }
+                i++;
+                oldColor = color;
+            }else{
+                return;
+            }
+        }
+    }
+
+    @And("^I click on label Separate$")
+    public void iClickOnLabelSeparate() throws Throwable {
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        totalOfDuplicates = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText());
+        String color, oldColor = "";
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                oldColor = color;
+            }else{
+                if(y > 0){
+                    i = y-1;
+                }else{
+                    Assert.assertTrue("Teste falhou! Não é possivél clicar na label desejada", false);
+                }
+                break;
+            }
+        }
+
+        countListDuplicates = countListOfGroups();
+        WebElement column = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + i + "]/td[6]/a"));
+        String text = column.getText();
+
+        if(!text.equals("Separate")){
+            Assert.assertTrue("Teste falhou! Não é possivél clicar na label desejada", false);
+        }
+
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.elementToBeClickable(column));
+    }
+
+    private int countListOfGroups(){
+        String oldColor = "";
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        int nrGroups = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            String color1 = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(!oldColor.equals(color1))
+            {
+                nrGroups++;
+                oldColor = color1;
+            }
+        }
+        return nrGroups;
+    }
+
+    @Then("^the list of groups on duplicate page should decrease (\\d+)$")
+    public void theListOfGroupsOnDuplicatePageShouldDecrease(int arg0) throws Throwable {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+
+        int nrGroups = countListOfGroups();
+        boolean status = false;
+        if(countListDuplicates == nrGroups+1){
+            status = true;
+        }
+        Assert.assertTrue("Teste falhou! List of duplicate contacts not decrease", status);
+    }
+
+    @Then("^the total of contacts duplicated should decrease (\\d+)$")
+    public void theTotalOfContactsDuplicatedShouldDecrease(int arg0) throws Throwable {
+        String nrTotalGroupsLabel = driver.findElement(By.xpath("//span[@id='total_contacts']")).getText();
+        int auxTotal = Integer.parseInt(nrTotalGroupsLabel);
+
+        Assert.assertTrue("Teste falhou! List of dupplicate contacts not decrease", auxTotal+arg0 == totalOfDuplicates);
+    }
+
+    @When("^I click on Group button of this first group$")
+    public void iClickOnGroupButtonOfThisFirstGroup() throws Throwable {
+        List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+        totalOfDuplicates = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText());
+        String color, oldColor = "";
+        int i = 0;
+        for(int y = 1; y<=duplicatedList.size(); y++){
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                oldColor = color;
+            }else{
+                if(y > 0){
+                    i = y-1;
+                }else{
+                    Assert.assertTrue("Teste falhou! Não é possivél clicar na label desejada", false);
+                }
+                break;
+            }
+        }
+
+        countListDuplicates = countListOfGroups();
+        WebElement column = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + i + "]/td[6]/a"));
+        String text = column.getText();
+        if(!text.equals("Group")){
+            Assert.assertTrue("Teste falhou! Não é possivél clicar na label desejada", false);
+        }
+
+       // column.click();
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.elementToBeClickable(column));
+    }
+
+    @Then("^page is redirected to a form with title \"([^\"]*)\"$")
+    public void pageIsRedirectedToAFormWithTitle(String arg0) throws Throwable {
+        assertEquals(arg0, driver.getTitle());
     }
 }
