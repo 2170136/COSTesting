@@ -154,7 +154,7 @@ public class US6StepsDef {
     }
 
 
-    @Given("^I am on the duplicate page and the first group of duplicate have every checkbox checked$")
+    @Given("^I am on the duplicate page and the first group of duplicate have every checkbox checked -6US$")
     public void iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked() throws Throwable {
         driver.get("http://35.187.16.192/COSProject/duplicate.php");
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
@@ -181,7 +181,7 @@ public class US6StepsDef {
     }
 
 
-    @When("^I uncheck checkbox but let one checked of this first group$")
+    @When("^I uncheck checkbox but let one checked of this first group -6US$")
     public void iUncheckCheckboxButLetOneCheckedOfThisFirstGroup() throws Throwable {
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
         WebElement column;
@@ -210,7 +210,7 @@ public class US6StepsDef {
         }
     }
 
-    @When("^I uncheck every checkbox of this first group$")
+    @When("^I uncheck every checkbox of this first group -6US$")
     public void iUncheckEveryCheckboxOfThisFirstGroup() throws Throwable {
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
         WebElement column;
@@ -236,7 +236,7 @@ public class US6StepsDef {
     }
 
 
-    @Then("^The label \"([^\"]*)\" should change to \"([^\"]*)\"$")
+    @Then("^The label \"([^\"]*)\" should change to \"([^\"]*)\" -6US$")
     public void theLabelShouldChangeTo(String arg0, String arg1) throws Throwable {
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
         String color, oldColor = "";
@@ -262,7 +262,7 @@ public class US6StepsDef {
         Assert.assertTrue("Teste falhou! Link não alterou para a label desejada", label.equals(arg1));
     }
 
-    @Given("^I am on the duplicate page and the first group of duplicate have every checkbox unchecked$")
+    @Given("^I am on the duplicate page and the first group of duplicate have every checkbox unchecked -6US$")
     public void iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxUnchecked() throws Throwable {
         driver.get("http://35.187.16.192/COSProject/duplicate.php");
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
@@ -288,7 +288,7 @@ public class US6StepsDef {
         }
     }
 
-    @When("^I check at least (\\d+) checkbox of this group$")
+    @When("^I check at least (\\d+) checkbox of this group -6US$")
     public void iCheckAtLeastCheckboxOfThisGroup(int arg0) throws Throwable {
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
         WebElement column;
@@ -313,7 +313,7 @@ public class US6StepsDef {
         }
     }
 
-    @When("^I uncheck every contacts of this group$")
+    @When("^I uncheck every contacts of this group -6US$")
     public void iUncheckEveryContactsOfThisGroup() throws Throwable {
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
         WebElement column;
@@ -338,7 +338,7 @@ public class US6StepsDef {
         }
     }
 
-    @And("^I click on label Separate$")
+    @And("^I click on label Separate -6US$")
     public void iClickOnLabelSeparate() throws Throwable {
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
         totalOfDuplicates = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText());
@@ -386,7 +386,7 @@ public class US6StepsDef {
         return nrGroups;
     }
 
-    @Then("^the list of groups on duplicate page should decrease (\\d+)$")
+    @Then("^the list of groups on duplicate page should decrease (\\d+) -6US$")
     public void theListOfGroupsOnDuplicatePageShouldDecrease(int arg0) throws Throwable {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
@@ -398,7 +398,7 @@ public class US6StepsDef {
         Assert.assertTrue("Teste falhou! List of duplicate contacts not decrease", status);
     }
 
-    @Then("^the total of contacts duplicated should decrease (\\d+)$")
+    @Then("^the total of contacts duplicated should decrease (\\d+) -6US$")
     public void theTotalOfContactsDuplicatedShouldDecrease(int arg0) throws Throwable {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
@@ -408,7 +408,7 @@ public class US6StepsDef {
         Assert.assertTrue("Teste falhou! Total of duplicates contacts not decrease", auxTotal+arg0 == totalOfDuplicates);
     }
 
-    @When("^I click on Group button of this first group$")
+    @When("^I click on Group button of this first group -6US$")
     public void iClickOnGroupButtonOfThisFirstGroup() throws Throwable {
         List<WebElement> duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
         totalOfDuplicates = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText());
@@ -440,7 +440,7 @@ public class US6StepsDef {
         column.click();
     }
 
-    @Then("^page is redirected to a form with title \"([^\"]*)\"$")
+    @Then("^page is redirected to a form with title \"([^\"]*)\" -6US$")
     public void pageIsRedirectedToAFormWithTitle(String arg0) throws Throwable {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.titleContains(arg0));
