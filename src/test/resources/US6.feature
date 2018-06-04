@@ -45,7 +45,7 @@ Feature: Check possible duplicated Contacts Page
     And I click on label Separate
     Then the total of contacts duplicated should decrease 1
 
-  Scenario: Check when i Group one group of duplicate i redirect to a form with title "form contact"
+  Scenario: Check when i Group one group of duplicate i redirect to a form with title "Contacts Form"
     Given I am on the duplicate page and the first group of duplicate have every checkbox checked
     When I click on Group button of this first group
     Then page is redirected to a form with title "Contacts Form"

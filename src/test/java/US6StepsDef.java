@@ -18,6 +18,7 @@ import javax.naming.InsufficientResourcesException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -31,6 +32,8 @@ public class US6StepsDef {
        // System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
         System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
 
+        //System.setProperty("webdriver.chrome.driver","drivers\\chromedriver.exe");
+       // driver = new ChromeDriver();
         driver = new PhantomJSDriver();
         driver.get("http://35.187.16.192:80/COSProject/duplicate.php");
         countListDuplicates = 0;
@@ -357,15 +360,15 @@ public class US6StepsDef {
         }
 
         countListDuplicates = countListOfGroups();
-        WebElement column = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + i + "]/td[6]/a"));
+        WebElement column = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + i + "]/td[6]/button"));
+        /*
         String text = column.getText();
-
         if(!text.equals("Separate")){
             Assert.assertTrue("Teste falhou! Não é possivél clicar na label desejada", false);
         }
+        */
 
-        WebDriverWait wait = new WebDriverWait(driver, 3);
-        wait.until(ExpectedConditions.elementToBeClickable(column));
+        column.click();
     }
 
     private int countListOfGroups(){
@@ -385,7 +388,7 @@ public class US6StepsDef {
 
     @Then("^the list of groups on duplicate page should decrease (\\d+)$")
     public void theListOfGroupsOnDuplicatePageShouldDecrease(int arg0) throws Throwable {
-        WebDriverWait wait = new WebDriverWait(driver, 3);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         int nrGroups = countListOfGroups();
         boolean status = false;
@@ -397,10 +400,12 @@ public class US6StepsDef {
 
     @Then("^the total of contacts duplicated should decrease (\\d+)$")
     public void theTotalOfContactsDuplicatedShouldDecrease(int arg0) throws Throwable {
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
         String nrTotalGroupsLabel = driver.findElement(By.xpath("//span[@id='total_contacts']")).getText();
         int auxTotal = Integer.parseInt(nrTotalGroupsLabel);
 
-        Assert.assertTrue("Teste falhou! List of dupplicate contacts not decrease", auxTotal+arg0 == totalOfDuplicates);
+        Assert.assertTrue("Teste falhou! Total of duplicates contacts not decrease", auxTotal+arg0 == totalOfDuplicates);
     }
 
     @When("^I click on Group button of this first group$")
@@ -425,19 +430,20 @@ public class US6StepsDef {
         }
 
         countListDuplicates = countListOfGroups();
-        WebElement column = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + i + "]/td[6]/a"));
-        String text = column.getText();
+        WebElement column = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + i + "]/td[6]/button"));
+
+       /* String text = column.getText();
         if(!text.equals("Group")){
             Assert.assertTrue("Teste falhou! Não é possivél clicar na label desejada", false);
-        }
+        }*/
 
-       // column.click();
-        WebDriverWait wait = new WebDriverWait(driver, 3);
-        wait.until(ExpectedConditions.elementToBeClickable(column));
+        column.click();
     }
 
     @Then("^page is redirected to a form with title \"([^\"]*)\"$")
     public void pageIsRedirectedToAFormWithTitle(String arg0) throws Throwable {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.titleContains(arg0));
         assertEquals(arg0, driver.getTitle());
     }
 }

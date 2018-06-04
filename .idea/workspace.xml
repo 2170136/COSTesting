@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00fabd71-4a59-4bc6-a358-8f7f79ac2ed5" name="Default" comment="Tests Search Functions and Pagination">
+    <list default="true" id="00fabd71-4a59-4bc6-a358-8f7f79ac2ed5" name="Default" comment="new tests to US6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/reports/test-report/report.js" afterPath="$PROJECT_DIR$/reports/test-report/report.js" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/US1StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US1StepsDef.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/US2StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US2StepsDef.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/US3StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US3StepsDef.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/US4StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US4StepsDef.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/US5StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US5StepsDef.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/US6StepsDef.java" afterPath="$PROJECT_DIR$/src/test/java/US6StepsDef.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/US1.feature" afterPath="$PROJECT_DIR$/src/test/resources/US1.features" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/US2.feature" afterPath="$PROJECT_DIR$/src/test/resources/US2.features" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/US3.feature" afterPath="$PROJECT_DIR$/src/test/resources/US3.features" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/US4.feature" afterPath="$PROJECT_DIR$/src/test/resources/US4.features" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/US5.feature" afterPath="$PROJECT_DIR$/src/test/resources/US5.features" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/US6.feature" afterPath="$PROJECT_DIR$/src/test/resources/US6.feature" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US1.feature" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US1StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US1StepsDef.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US2.feature" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US2StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US2StepsDef.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US3.feature" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US3StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US3StepsDef.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US4.feature" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US4StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US4StepsDef.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US5.feature" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/US5StepsDef.class" afterPath="$PROJECT_DIR$/target/test-classes/US5StepsDef.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,26 +24,23 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="US6.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="US6.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/US6.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="413">
+              <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="US6StepsDef.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="US6StepsDef.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/US6StepsDef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="394" column="0" lean-forward="false" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
+            <state relative-caret-position="182">
+              <caret line="407" column="119" lean-forward="false" selection-start-line="407" selection-start-column="102" selection-end-line="407" selection-end-column="119" />
               <folding>
                 <element signature="method#Foreachgroupofpossibleduplicatesyoumusthaveatleastonesimilarfieldinallpossibleduplicates#0;class#US6StepsDef#0" expanded="false" />
-                <element signature="e#2200#2208#0" expanded="true" />
-                <element signature="e#2257#2265#0" expanded="true" />
-                <element signature="e#2314#2322#0" expanded="true" />
                 <element signature="method#everygroupofduplicateshouldcontainatleast2contacts#0;class#US6StepsDef#0" expanded="false" />
                 <element signature="method#compareElementsList#0;class#US6StepsDef#0" expanded="false" />
               </folding>
@@ -81,6 +68,8 @@
       <find>resh</find>
       <find>face</find>
       <find>more</find>
+      <find>/bu</find>
+      <find>countListOfGroups</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\José Guerra\IdeaProjects\COSTesting\drivers</dir>
@@ -121,8 +110,8 @@
         <option value="$PROJECT_DIR$/src/test/java/US4StepsDef.java" />
         <option value="$PROJECT_DIR$/src/test/java/US5StepsDef.java" />
         <option value="$PROJECT_DIR$/src/test/java/US1StepsDef.java" />
-        <option value="$PROJECT_DIR$/src/test/java/US6StepsDef.java" />
         <option value="$PROJECT_DIR$/src/test/resources/US6.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/US6StepsDef.java" />
       </list>
     </option>
   </component>
@@ -162,9 +151,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,6 +198,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -508,14 +497,8 @@
       <workItem from="1527788875662" duration="966000" />
       <workItem from="1527795625930" duration="1890000" />
       <workItem from="1527858247124" duration="15084000" />
-      <workItem from="1527950051167" duration="12754000" />
-    </task>
-    <task id="LOCAL-00043" summary="US5">
-      <created>1526064594872</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1526064594872</updated>
+      <workItem from="1527950051167" duration="12925000" />
+      <workItem from="1528105422264" duration="6310000" />
     </task>
     <task id="LOCAL-00044" summary="US5">
       <created>1526064994641</created>
@@ -853,68 +836,75 @@
       <option name="project" value="LOCAL" />
       <updated>1527874173570</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="new tests to US6">
+      <created>1527963809141</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1527963809143</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 00m 27s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 11h 31m 13s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 01m 37s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 11h 32m 46s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 02m 37s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 11h 34m 12s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 03m 35s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 11h 36m 05s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 03m 38s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 11h 44m 30s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 05m 23s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 11h 55m 06s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 07m 02s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 12h 00m 37s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 08m 18s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 12h 05m 41s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 09m 51s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 13h 05m 07s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberRunner - 2018.06.02 at 19h 19m 48s.xml">
+    <history-entry file="CucumberRunner - 2018.06.04 at 13h 09m 38s.xml">
       <configuration name="CucumberRunner" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182687000" />
+    <option name="totallyTimeSpent" value="189168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1985371" sideWeight="0.23072916" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1985371" sideWeight="0.21197917" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24555904" sideWeight="0.290625" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34378266" sideWeight="0.17708333" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0320442" sideWeight="0.47447917" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34378266" sideWeight="0.796875" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34378266" sideWeight="0.8229167" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19166666" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19166666" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24555904" sideWeight="0.709375" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57889235" sideWeight="0.8234375" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -937,24 +927,17 @@
     <MESSAGE value="Tests Buttons Facebook and Linkedin" />
     <MESSAGE value="Tests Search Functions and Pagination" />
     <MESSAGE value="Tests to validate facebook and linkedin label status" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests to validate facebook and linkedin label status" />
+    <MESSAGE value="new tests to US6" />
+    <option name="LAST_COMMIT_MESSAGE" value="new tests to US6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/US6StepsDef.java</url>
-          <line>363</line>
-          <properties />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="77" />
+      <option name="time" value="84" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US5.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US5.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
@@ -993,42 +976,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US3.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US3.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US3.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US3.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US2.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US2.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US4.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US4.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US5.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US5.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
@@ -1091,7 +1074,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
@@ -1114,7 +1097,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
@@ -1172,7 +1155,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US4.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US4.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
@@ -1180,23 +1163,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US2.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CucumberRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US3.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US3.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
@@ -1211,7 +1178,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US5.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US5.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
@@ -1219,7 +1186,6 @@
             <marker date="1527858241338" expanded="true" signature="176:453" ph="Scenario: Check Next Page" />
             <marker date="1527858241338" expanded="true" signature="457:727" ph="Scenario: Check last page" />
             <marker date="1527858241338" expanded="true" signature="731:934" ph="Scenario: if on the first page the previous button must be disabled" />
-            <marker date="1527858241338" expanded="true" signature="938:1224" ph="Scenario: if on the last page the next button must be disabled" />
           </folding>
         </state>
       </provider>
@@ -1256,7 +1222,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US1.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="77" column="17" lean-forward="false" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="17" />
@@ -1296,15 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <marker date="1521037825736" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521037825736" expanded="false" signature="140:404" ph="..." />
-            <marker date="1521037825736" expanded="true" signature="451:458" ph="{}" />
-            <marker date="1521037825736" expanded="true" signature="559:1595" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="938:990" ph="run() → {" />
-            <marker date="1521037825736" expanded="false" signature="1118:1137" ph="}" />
-            <marker date="1521037825736" expanded="true" signature="1630:1672" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1312,26 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <marker date="1521037825736" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521037825736" expanded="false" signature="140:541" ph="..." />
-            <marker date="1521037825736" expanded="true" signature="584:591" ph="{}" />
-            <marker date="1521037825736" expanded="true" signature="647:794" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="853:1107" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="1236:2290" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="1335:1411" ph="call() → {" />
-            <marker date="1521037825736" expanded="true" signature="2252:2267" ph="}" />
-            <marker date="1521037825736" expanded="true" signature="2390:3244" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="3292:3303" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="3339:3345" ph=" }" />
-            <marker date="1521037825736" expanded="false" signature="3391:3402" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="3437:3443" ph=" }" />
-            <marker date="1521037825736" expanded="false" signature="3491:3502" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="3537:3543" ph=" }" />
-            <marker date="1521037825736" expanded="true" signature="3623:4319" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="4367:4735" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="4783:4942" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1339,23 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <marker date="1521037825509" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521037825509" expanded="false" signature="145:588" ph="..." />
-            <marker date="1521037825509" expanded="true" signature="1023:1315" ph="{...}" />
-            <marker date="1521037825509" expanded="true" signature="1384:1517" ph="{...}" />
-            <marker date="1521037825509" expanded="false" signature="1572:1583" ph=" { " />
-            <marker date="1521037825509" expanded="false" signature="1641:1647" ph=" }" />
-            <marker date="1521037825509" expanded="true" signature="1695:1824" ph="{...}" />
-            <marker date="1521037825509" expanded="false" signature="1864:1875" ph=" { " />
-            <marker date="1521037825509" expanded="false" signature="1909:1915" ph=" }" />
-            <marker date="1521037825509" expanded="true" signature="1985:2050" ph="{...}" />
-            <marker date="1521037825509" expanded="true" signature="2104:2245" ph="{...}" />
-            <marker date="1521037825509" expanded="false" signature="2277:2288" ph=" { " />
-            <marker date="1521037825509" expanded="false" signature="2318:2324" ph=" }" />
-            <marker date="1521037825509" expanded="false" signature="2363:2374" ph=" { " />
-            <marker date="1521037825509" expanded="false" signature="2387:2393" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1363,26 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
-          <folding>
-            <marker date="1521037825736" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521037825736" expanded="false" signature="140:703" ph="..." />
-            <marker date="1521037825736" expanded="true" signature="1102:1334" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="1388:1744" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="1820:3140" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="3211:3504" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="3590:3969" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="4035:4491" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="4562:5180" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="4885:4987" ph="map(row) → {" />
-            <marker date="1521037825736" expanded="false" signature="5043:5062" ph="}" />
-            <marker date="1521037825736" expanded="true" signature="5296:6089" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="6121:6132" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="6172:6178" ph=" }" />
-            <marker date="1521037825736" expanded="false" signature="6226:6237" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="6293:6299" ph=" }" />
-            <marker date="1521037825736" expanded="false" signature="6332:6343" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="6370:6376" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1390,47 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="350" column="0" lean-forward="false" selection-start-line="350" selection-start-column="0" selection-end-line="350" selection-end-column="0" />
-          <folding>
-            <marker date="1521037825736" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521037825736" expanded="false" signature="140:992" ph="..." />
-            <marker date="1521037825736" expanded="true" signature="1898:2007" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="2155:2268" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="2442:2550" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="2745:3836" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="3956:4177" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="4220:4231" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="4254:4260" ph=" }" />
-            <marker date="1521037825736" expanded="true" signature="4303:5055" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="5088:5225" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="5263:5274" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="5333:5339" ph=" }" />
-            <marker date="1521037825736" expanded="true" signature="5436:5783" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="5850:6125" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="6165:6176" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="6195:6201" ph=" }" />
-            <marker date="1521037825736" expanded="true" signature="6232:6419" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="6481:6572" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="6622:6633" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="6691:6697" ph=" }" />
-            <marker date="1521037825736" expanded="false" signature="6738:6749" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="6803:6809" ph=" }" />
-            <marker date="1521037825736" expanded="false" signature="6848:6859" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="6910:6916" ph=" }" />
-            <marker date="1521037825736" expanded="true" signature="6950:7225" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="7265:7407" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="7434:7445" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="7462:7468" ph=" }" />
-            <marker date="1521037825736" expanded="true" signature="7535:7615" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="7681:7761" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="7869:8171" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="8282:10355" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="10541:11321" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="11408:14220" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="14271:14496" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="14556:14640" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="14700:14802" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="14815:14897" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1438,18 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="45" column="55" lean-forward="false" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
-          <folding>
-            <marker date="1521037825736" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521037825736" expanded="false" signature="146:404" ph="..." />
-            <marker date="1521037825736" expanded="true" signature="654:745" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="779:790" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="808:814" ph=" }" />
-            <marker date="1521037825736" expanded="false" signature="847:858" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="879:885" ph=" }" />
-            <marker date="1521037825736" expanded="true" signature="924:1146" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="1202:1399" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="1465:1577" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1457,17 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1521037825736" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521037825736" expanded="false" signature="146:377" ph="..." />
-            <marker date="1521037825736" expanded="true" signature="654:791" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="932:1092" ph="{...}" />
-            <marker date="1521037825736" expanded="false" signature="1147:1158" ph=" { " />
-            <marker date="1521037825736" expanded="false" signature="1189:1195" ph=" }" />
-            <marker date="1521037825736" expanded="true" signature="1274:1854" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="1903:2077" ph="{...}" />
-            <marker date="1521037825736" expanded="true" signature="2167:2352" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1475,46 +1311,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
           <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding>
-            <marker date="1521037825712" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521037825712" expanded="false" signature="146:600" ph="..." />
-            <marker date="1521037825712" expanded="true" signature="1111:1286" ph="{...}" />
-            <marker date="1521037825712" expanded="false" signature="1326:1337" ph=" { " />
-            <marker date="1521037825712" expanded="false" signature="1361:1367" ph=" }" />
-            <marker date="1521037825712" expanded="false" signature="1407:1418" ph=" { " />
-            <marker date="1521037825712" expanded="false" signature="1458:1464" ph=" }" />
-            <marker date="1521037825712" expanded="true" signature="1494:1673" ph="{...}" />
-            <marker date="1521037825712" expanded="true" signature="1715:2811" ph="{...}" />
-            <marker date="1521037825712" expanded="true" signature="2864:3467" ph="{...}" />
-            <marker date="1521037825712" expanded="true" signature="3511:3720" ph="{...}" />
-            <marker date="1521037825712" expanded="false" signature="3782:3793" ph=" { " />
-            <marker date="1521037825712" expanded="false" signature="3835:3841" ph=" }" />
-            <marker date="1521037825712" expanded="false" signature="3901:3912" ph=" { " />
-            <marker date="1521037825712" expanded="false" signature="3957:3963" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/US6StepsDef.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/US2.features">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="394" column="0" lean-forward="false" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
-          <folding>
-            <element signature="method#Foreachgroupofpossibleduplicatesyoumusthaveatleastonesimilarfieldinallpossibleduplicates#0;class#US6StepsDef#0" expanded="false" />
-            <element signature="e#2200#2208#0" expanded="true" />
-            <element signature="e#2257#2265#0" expanded="true" />
-            <element signature="e#2314#2322#0" expanded="true" />
-            <element signature="method#everygroupofduplicateshouldcontainatleast2contacts#0;class#US6StepsDef#0" expanded="false" />
-            <element signature="method#compareElementsList#0;class#US6StepsDef#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="600">
+          <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CucumberRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/US6.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="413">
+          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/US6StepsDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="407" column="119" lean-forward="false" selection-start-line="407" selection-start-column="102" selection-end-line="407" selection-end-column="119" />
+          <folding>
+            <element signature="method#Foreachgroupofpossibleduplicatesyoumusthaveatleastonesimilarfieldinallpossibleduplicates#0;class#US6StepsDef#0" expanded="false" />
+            <element signature="method#everygroupofduplicateshouldcontainatleast2contacts#0;class#US6StepsDef#0" expanded="false" />
+            <element signature="method#compareElementsList#0;class#US6StepsDef#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
