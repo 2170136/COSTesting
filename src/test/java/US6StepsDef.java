@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.naming.InsufficientResourcesException;
@@ -27,10 +28,14 @@ public class US6StepsDef {
     private WebDriver driver;
     private int countListDuplicates;
     private int totalOfDuplicates;
+    LinkedList<String> listNames;
+    LinkedList<String> listSurNames;
+    LinkedList<String> listEmail;
+    LinkedList<String> listPhone;
     @Before
     public void setUp() throws Exception {
-       // System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
-        System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
+        System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
+       // System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
 
         //System.setProperty("webdriver.chrome.driver","drivers\\chromedriver.exe");
        // driver = new ChromeDriver();
@@ -389,7 +394,7 @@ public class US6StepsDef {
     @Then("^the list of groups on duplicate page should decrease (\\d+) -6US$")
     public void theListOfGroupsOnDuplicatePageShouldDecrease(int arg0) throws Throwable {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
+        driver.navigate().refresh();
         int nrGroups = countListOfGroups();
         boolean status = false;
         if(countListDuplicates == nrGroups+1){
@@ -401,7 +406,7 @@ public class US6StepsDef {
     @Then("^the total of contacts duplicated should decrease (\\d+) -6US$")
     public void theTotalOfContactsDuplicatedShouldDecrease(int arg0) throws Throwable {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
+        driver.navigate().refresh();
         String nrTotalGroupsLabel = driver.findElement(By.xpath("//span[@id='total_contacts']")).getText();
         int auxTotal = Integer.parseInt(nrTotalGroupsLabel);
 
@@ -431,13 +436,27 @@ public class US6StepsDef {
 
         countListDuplicates = countListOfGroups();
         WebElement column = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + i + "]/td[6]/button"));
-
-       /* String text = column.getText();
-        if(!text.equals("Group")){
-            Assert.assertTrue("Teste falhou! Não é possivél clicar na label desejada", false);
-        }*/
-
+        listNames = new LinkedList<String>();
+        listSurNames = new LinkedList<String>();
+        listEmail = new LinkedList<String>();
+        listPhone = new LinkedList<String>();
+        for(int y = 1; y<=i; y++){
+            if(!listNames.contains(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[1]")).getText())){
+                listNames.add(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[1]")).getText());
+            }
+            if(!listSurNames.contains(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[2]")).getText())){
+                listSurNames.add(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[2]")).getText());
+            }
+            if(!listEmail.contains(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[3]")).getText())){
+                listEmail.add(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[3]")).getText());
+            }
+            if(!listPhone.contains(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[4]")).getText())){
+                listPhone.add(driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[4]")).getText());
+            }
+        }
         column.click();
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.urlContains("form_contact"));
     }
 
     @Then("^page is redirected to a form with title \"([^\"]*)\" -6US$")
@@ -445,5 +464,70 @@ public class US6StepsDef {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.titleContains(arg0));
         assertEquals(arg0, driver.getTitle());
+    }
+
+    @Then("^the fields have to be on group page -6US$")
+    public void theFieldHasToBeOnGroupPageUS() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        WebElement element = driver.findElement(By.xpath("//select[@id='givenName']"));
+        List<WebElement> list = element.findElements(By.tagName("option"));
+        LinkedList<String> listOptions = new LinkedList<String>();
+        for(WebElement e: list){
+            if(!listNames.contains(e.getText())){
+                assertTrue("Given Name não apareceu no formulário de agrupar contactos", false);
+            }
+            listOptions.add(e.getText());
+        }
+        for(String e: listNames){
+            if(!listOptions.contains(e)){
+                assertTrue("Given Name não apareceu no formulário de agrupar contactos", false);
+            }
+        }
+
+        element = driver.findElement(By.xpath("//select[@id='surname']"));
+        list = element.findElements(By.tagName("option"));
+        listOptions = new LinkedList<String>();
+        for(WebElement e: list){
+            if(!listSurNames.contains(e.getText())){
+                assertTrue("SurName não apareceu no formulário de agrupar contactos", false);
+            }
+            listOptions.add(e.getText());
+        }
+        for(String e: listSurNames){
+            if(!listOptions.contains(e)){
+                assertTrue("SurName não apareceu no formulário de agrupar contactos", false);
+            }
+        }
+
+        //element = driver.findElement(By.id("email_0"));
+        list = driver.findElements(By.id("email_0"));
+        listOptions = new LinkedList<String>();
+        for(WebElement e: list){
+            if(!listEmail.contains(e.getAttribute("value"))){
+                assertTrue("Email não apareceu no formulário de agrupar contactos", false);
+            }
+            listOptions.add(e.getAttribute("value"));
+        }
+        for(String e: listEmail){
+            if(!listOptions.contains(e)){
+                assertTrue("Email não apareceu no formulário de agrupar contactos", false);
+            }
+        }
+
+        list = driver.findElements(By.id("phone"));
+        listOptions = new LinkedList<String>();
+        for(WebElement e: list){
+            if(!listPhone.contains(e.getAttribute("value"))){
+                assertTrue("Phone não apareceu no formulário de agrupar contactos", false);
+            }
+            listOptions.add(e.getAttribute("value"));
+        }
+        for(String e: listPhone){
+            if(!listOptions.contains(e)){
+                assertTrue("Phone não apareceu no formulário de agrupar contactos", false);
+            }
+        }
+
+
     }
 }

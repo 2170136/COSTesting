@@ -49,3 +49,9 @@ Feature: Check possible duplicated Contacts Page
     Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US
     When I click on Group button of this first group -6US
     Then page is redirected to a form with title "Contacts Form" -6US
+
+  Scenario: Check when i group one group of duplicate the field equals of this group appears on form
+    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US
+    When I click on Group button of this first group -6US
+    Then the fields have to be on group page -6US
+

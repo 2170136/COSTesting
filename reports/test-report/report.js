@@ -7,27 +7,27 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2840363727,
+  "duration": 2420417576,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1509122470,
+  "duration": 2076414832,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1452885307,
+  "duration": 1465553203,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1463274698,
+  "duration": 1432580457,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1411795598,
+  "duration": 1418415112,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1111994499,
+  "duration": 1095360077,
   "status": "passed"
 });
 formatter.scenario({
@@ -52,62 +52,62 @@ formatter.match({
   "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
 });
 formatter.result({
-  "duration": 369654718,
+  "duration": 309829177,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.Foreachgroupofpossibleduplicatesyoumusthaveatleastonesimilarfieldinallpossibleduplicates()"
 });
 formatter.result({
-  "duration": 6932882929,
+  "duration": 6983008397,
   "status": "passed"
 });
 formatter.after({
-  "duration": 541683078,
+  "duration": 536335209,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536446046,
+  "duration": 533863412,
   "status": "passed"
 });
 formatter.after({
-  "duration": 534598586,
+  "duration": 534801260,
   "status": "passed"
 });
 formatter.after({
-  "duration": 538474829,
+  "duration": 532681052,
   "status": "passed"
 });
 formatter.after({
-  "duration": 538022372,
+  "duration": 534529669,
   "status": "passed"
 });
 formatter.after({
-  "duration": 539517446,
+  "duration": 538227723,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1411456897,
+  "duration": 1366454865,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1377627444,
+  "duration": 1370599278,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1773652926,
+  "duration": 1377102668,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1393448021,
+  "duration": 1392991912,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1396305168,
+  "duration": 1385583085,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1184911820,
+  "duration": 1332853196,
   "status": "passed"
 });
 formatter.scenario({
@@ -132,62 +132,62 @@ formatter.match({
   "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
 });
 formatter.result({
-  "duration": 319472687,
+  "duration": 165326495,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.everygroupofduplicateshouldcontainatleast2contacts()"
 });
 formatter.result({
-  "duration": 867195930,
+  "duration": 876895899,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536956662,
+  "duration": 535323927,
   "status": "passed"
 });
 formatter.after({
-  "duration": 77445734,
+  "duration": 533738695,
   "status": "passed"
 });
 formatter.after({
-  "duration": 556916489,
+  "duration": 534600234,
   "status": "passed"
 });
 formatter.after({
-  "duration": 534660168,
+  "duration": 536006183,
   "status": "passed"
 });
 formatter.after({
-  "duration": 79489057,
+  "duration": 534953875,
   "status": "passed"
 });
 formatter.after({
-  "duration": 539843316,
+  "duration": 537323107,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1766305428,
+  "duration": 1360808911,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1426124523,
+  "duration": 1355922343,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1581359396,
+  "duration": 1370313329,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1402372702,
+  "duration": 1403448947,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1484506362,
+  "duration": 1369699586,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1099557081,
+  "duration": 1191615336,
   "status": "passed"
 });
 formatter.scenario({
@@ -212,62 +212,62 @@ formatter.match({
   "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
 });
 formatter.result({
-  "duration": 159933492,
+  "duration": 172172449,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.theTotalOfPossibleDuplicatedContactsMustBeConsistentToTheTotalGroupsInListUS()"
 });
 formatter.result({
-  "duration": 870999044,
+  "duration": 872281332,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536086817,
+  "duration": 535146696,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535005711,
+  "duration": 535401875,
   "status": "passed"
 });
 formatter.after({
-  "duration": 539056009,
+  "duration": 534645362,
   "status": "passed"
 });
 formatter.after({
-  "duration": 549557443,
+  "duration": 535895824,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535272994,
+  "duration": 534454592,
   "status": "passed"
 });
 formatter.after({
-  "duration": 547983255,
+  "duration": 539110186,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1382372676,
+  "duration": 1528612536,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1587550949,
+  "duration": 1374550461,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1394549227,
+  "duration": 1373752923,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1497871787,
+  "duration": 1391039501,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1391759649,
+  "duration": 1483272191,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1082865802,
+  "duration": 1497055587,
   "status": "passed"
 });
 formatter.scenario({
@@ -286,31 +286,31 @@ formatter.scenario({
 });
 formatter.step({
   "line": 22,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked",
+  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
   "keyword": "Given "
 });
 formatter.step({
   "line": 23,
-  "name": "I uncheck every checkbox of this first group",
+  "name": "I uncheck every checkbox of this first group -6US",
   "keyword": "When "
 });
 formatter.step({
   "line": 24,
-  "name": "The label \"Group\" should change to \"Separate\"",
+  "name": "The label \"Group\" should change to \"Separate\" -6US",
   "keyword": "Then "
 });
 formatter.match({
   "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
 });
 formatter.result({
-  "duration": 292155100,
+  "duration": 366008915,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iUncheckEveryCheckboxOfThisFirstGroup()"
 });
 formatter.result({
-  "duration": 199655996,
+  "duration": 195729801,
   "status": "passed"
 });
 formatter.match({
@@ -327,55 +327,55 @@ formatter.match({
   "location": "US6StepsDef.theLabelShouldChangeTo(String,String)"
 });
 formatter.result({
-  "duration": 90752998,
+  "duration": 90295869,
   "status": "passed"
 });
 formatter.after({
-  "duration": 538518449,
+  "duration": 623861845,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536600855,
+  "duration": 534664233,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536054315,
+  "duration": 534812746,
   "status": "passed"
 });
 formatter.after({
-  "duration": 534837217,
+  "duration": 535560645,
   "status": "passed"
 });
 formatter.after({
-  "duration": 81968587,
+  "duration": 533595104,
   "status": "passed"
 });
 formatter.after({
-  "duration": 547905850,
+  "duration": 538071415,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1470318990,
+  "duration": 1374134871,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1387853471,
+  "duration": 1378083182,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1423251553,
+  "duration": 1384747393,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1533123185,
+  "duration": 1413840340,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1446306301,
+  "duration": 1373034152,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1420751069,
+  "duration": 1096433720,
   "status": "passed"
 });
 formatter.scenario({
@@ -388,31 +388,31 @@ formatter.scenario({
 });
 formatter.step({
   "line": 27,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked",
+  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
   "keyword": "Given "
 });
 formatter.step({
   "line": 28,
-  "name": "I uncheck checkbox but let one checked of this first group",
+  "name": "I uncheck checkbox but let one checked of this first group -6US",
   "keyword": "When "
 });
 formatter.step({
   "line": 29,
-  "name": "The label \"Group\" should change to \"Separate\"",
+  "name": "The label \"Group\" should change to \"Separate\" -6US",
   "keyword": "Then "
 });
 formatter.match({
   "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
 });
 formatter.result({
-  "duration": 341451461,
+  "duration": 300663631,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iUncheckCheckboxButLetOneCheckedOfThisFirstGroup()"
 });
 formatter.result({
-  "duration": 158307129,
+  "duration": 170878089,
   "status": "passed"
 });
 formatter.match({
@@ -429,55 +429,55 @@ formatter.match({
   "location": "US6StepsDef.theLabelShouldChangeTo(String,String)"
 });
 formatter.result({
-  "duration": 82294458,
+  "duration": 95609104,
   "status": "passed"
 });
 formatter.after({
-  "duration": 534454040,
+  "duration": 536712645,
   "status": "passed"
 });
 formatter.after({
-  "duration": 539182166,
+  "duration": 536041055,
   "status": "passed"
 });
 formatter.after({
-  "duration": 75978031,
+  "duration": 535334593,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536768068,
+  "duration": 537373980,
   "status": "passed"
 });
 formatter.after({
-  "duration": 87670906,
+  "duration": 535935619,
   "status": "passed"
 });
 formatter.after({
-  "duration": 543797392,
+  "duration": 537712442,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1352521247,
+  "duration": 1373781230,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1987573272,
+  "duration": 1394206272,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1431480444,
+  "duration": 1379684004,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1395251860,
+  "duration": 1380920517,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1495305017,
+  "duration": 1407636026,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1707076836,
+  "duration": 1095142642,
   "status": "passed"
 });
 formatter.scenario({
@@ -490,24 +490,24 @@ formatter.scenario({
 });
 formatter.step({
   "line": 32,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox unchecked",
+  "name": "I am on the duplicate page and the first group of duplicate have every checkbox unchecked -6US",
   "keyword": "Given "
 });
 formatter.step({
   "line": 33,
-  "name": "I check at least 2 checkbox of this group",
+  "name": "I check at least 2 checkbox of this group -6US",
   "keyword": "When "
 });
 formatter.step({
   "line": 34,
-  "name": "The label \"Separate\" should change to \"Group\"",
+  "name": "The label \"Separate\" should change to \"Group\" -6US",
   "keyword": "Then "
 });
 formatter.match({
   "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxUnchecked()"
 });
 formatter.result({
-  "duration": 416438193,
+  "duration": 363055478,
   "status": "passed"
 });
 formatter.match({
@@ -520,7 +520,7 @@ formatter.match({
   "location": "US6StepsDef.iCheckAtLeastCheckboxOfThisGroup(int)"
 });
 formatter.result({
-  "duration": 184624865,
+  "duration": 192685696,
   "status": "passed"
 });
 formatter.match({
@@ -537,55 +537,55 @@ formatter.match({
   "location": "US6StepsDef.theLabelShouldChangeTo(String,String)"
 });
 formatter.result({
-  "duration": 85708409,
+  "duration": 86766430,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535703212,
+  "duration": 534948132,
   "status": "passed"
 });
 formatter.after({
-  "duration": 538362784,
+  "duration": 536688850,
   "status": "passed"
 });
 formatter.after({
-  "duration": 544925539,
+  "duration": 535949978,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535796868,
+  "duration": 534936644,
   "status": "passed"
 });
 formatter.after({
-  "duration": 537160652,
+  "duration": 535321465,
   "status": "passed"
 });
 formatter.after({
-  "duration": 539294639,
+  "duration": 539004750,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1461868149,
+  "duration": 1383084212,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1377547901,
+  "duration": 1403215100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1456350148,
+  "duration": 1785881261,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1477279036,
+  "duration": 1357664293,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1581431242,
+  "duration": 1380345747,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1101731266,
+  "duration": 1083670222,
   "status": "passed"
 });
 formatter.scenario({
@@ -598,43 +598,43 @@ formatter.scenario({
 });
 formatter.step({
   "line": 37,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked",
+  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
   "keyword": "Given "
 });
 formatter.step({
   "line": 38,
-  "name": "I uncheck every contacts of this group",
+  "name": "I uncheck every contacts of this group -6US",
   "keyword": "When "
 });
 formatter.step({
   "line": 39,
-  "name": "I click on label Separate",
+  "name": "I click on label Separate -6US",
   "keyword": "And "
 });
 formatter.step({
   "line": 40,
-  "name": "the list of groups on duplicate page should decrease 1",
+  "name": "the list of groups on duplicate page should decrease 1 -6US",
   "keyword": "Then "
 });
 formatter.match({
   "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
 });
 formatter.result({
-  "duration": 292243196,
+  "duration": 294527011,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iUncheckEveryContactsOfThisGroup()"
 });
 formatter.result({
-  "duration": 186269617,
+  "duration": 188650821,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iClickOnLabelSeparate()"
 });
 formatter.result({
-  "duration": 962388816,
+  "duration": 982851679,
   "status": "passed"
 });
 formatter.match({
@@ -647,56 +647,55 @@ formatter.match({
   "location": "US6StepsDef.theListOfGroupsOnDuplicatePageShouldDecrease(int)"
 });
 formatter.result({
-  "duration": 103404242,
-  "error_message": "org.openqa.selenium.StaleElementReferenceException: {\"errorMessage\":\"Element does not exist in cache\",\"request\":{\"headers\":{\"Accept-Encoding\":\"gzip\",\"Cache-Control\":\"no-cache\",\"Connection\":\"Keep-Alive\",\"Host\":\"localhost:33979\",\"User-Agent\":\"okhttp/3.9.1\"},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/css/background-color\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"background-color\",\"directory\":\"/css/\",\"path\":\"/css/background-color\",\"relative\":\"/css/background-color\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/css/background-color\",\"queryKey\":{},\"chunks\":[\"css\",\"background-color\"]},\"urlOriginal\":\"/session/14686cc0-67f0-11e8-bc01-ffb2ddd78b18/element/%3Awdc%3A1528114147453/css/background-color\"}}\nCommand duration or timeout: 0 milliseconds\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getCssValue(RemoteWebElement.java:165)\r\n\tat US6StepsDef.countListOfGroups(US6StepsDef.java:379)\r\n\tat US6StepsDef.theListOfGroupsOnDuplicatePageShouldDecrease(US6StepsDef.java:393)\r\n\tat ✽.Then the list of groups on duplicate page should decrease 1(US6.feature:40)\r\nCaused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getCssValue(RemoteWebElement.java:165)\r\n\tat US6StepsDef.countListOfGroups(US6StepsDef.java:379)\r\n\tat US6StepsDef.theListOfGroupsOnDuplicatePageShouldDecrease(US6StepsDef.java:393)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)\r\n\tat com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)\r\n\tat com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)\r\nCaused by: org.openqa.selenium.StaleElementReferenceException: {\"errorMessage\":\"Element does not exist in cache\",\"request\":{\"headers\":{\"Accept-Encoding\":\"gzip\",\"Cache-Control\":\"no-cache\",\"Connection\":\"Keep-Alive\",\"Host\":\"localhost:33979\",\"User-Agent\":\"okhttp/3.9.1\"},\"httpVersion\":\"1.1\",\"method\":\"GET\",\"url\":\"/css/background-color\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"background-color\",\"directory\":\"/css/\",\"path\":\"/css/background-color\",\"relative\":\"/css/background-color\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/css/background-color\",\"queryKey\":{},\"chunks\":[\"css\",\"background-color\"]},\"urlOriginal\":\"/session/14686cc0-67f0-11e8-bc01-ffb2ddd78b18/element/%3Awdc%3A1528114147453/css/background-color\"}}\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027BRUNOANASTACIO\u0027, ip: \u0027172.22.224.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00279.0.4\u0027\nDriver info: driver.version: unknown\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 537793150,
+  "duration": 1567774414,
   "status": "passed"
 });
 formatter.after({
-  "duration": 534424532,
+  "duration": 536818902,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535503927,
+  "duration": 535939312,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535518895,
+  "duration": 535161874,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536539701,
+  "duration": 534673259,
   "status": "passed"
 });
 formatter.after({
-  "duration": 538655298,
+  "duration": 536369261,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 538660954,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1469878508,
+  "duration": 1401364842,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1489031354,
+  "duration": 1375425539,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1423482485,
+  "duration": 1346386746,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1522619184,
+  "duration": 1388604216,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1399487330,
+  "duration": 1388102473,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1192953826,
+  "duration": 1094391051,
   "status": "passed"
 });
 formatter.scenario({
@@ -709,43 +708,43 @@ formatter.scenario({
 });
 formatter.step({
   "line": 43,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked",
+  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
   "keyword": "Given "
 });
 formatter.step({
   "line": 44,
-  "name": "I uncheck every contacts of this group",
+  "name": "I uncheck every contacts of this group -6US",
   "keyword": "When "
 });
 formatter.step({
   "line": 45,
-  "name": "I click on label Separate",
+  "name": "I click on label Separate -6US",
   "keyword": "And "
 });
 formatter.step({
   "line": 46,
-  "name": "the total of contacts duplicated should decrease 1",
+  "name": "the total of contacts duplicated should decrease 1 -6US",
   "keyword": "Then "
 });
 formatter.match({
   "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
 });
 formatter.result({
-  "duration": 366518742,
+  "duration": 299240450,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iUncheckEveryContactsOfThisGroup()"
 });
 formatter.result({
-  "duration": 188516930,
+  "duration": 197356060,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iClickOnLabelSeparate()"
 });
 formatter.result({
-  "duration": 1001657154,
+  "duration": 974214953,
   "status": "passed"
 });
 formatter.match({
@@ -758,56 +757,55 @@ formatter.match({
   "location": "US6StepsDef.theTotalOfContactsDuplicatedShouldDecrease(int)"
 });
 formatter.result({
-  "duration": 27439041,
-  "error_message": "java.lang.AssertionError: Teste falhou! Total of duplicates contacts not decrease\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat US6StepsDef.theTotalOfContactsDuplicatedShouldDecrease(US6StepsDef.java:408)\r\n\tat ✽.Then the total of contacts duplicated should decrease 1(US6.feature:46)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 545514845,
+  "duration": 373907178,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535875557,
+  "duration": 537003107,
   "status": "passed"
 });
 formatter.after({
-  "duration": 78423347,
+  "duration": 534779105,
   "status": "passed"
 });
 formatter.after({
-  "duration": 539554224,
+  "duration": 534677772,
   "status": "passed"
 });
 formatter.after({
-  "duration": 537306482,
+  "duration": 534644541,
   "status": "passed"
 });
 formatter.after({
-  "duration": 77569754,
+  "duration": 534237156,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 540891931,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1472288330,
+  "duration": 1374410974,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1700566683,
+  "duration": 1356155369,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1944148153,
+  "duration": 1506561236,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1679144712,
+  "duration": 1377997028,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1393025928,
+  "duration": 1371213022,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1177961184,
+  "duration": 2366847891,
   "status": "passed"
 });
 formatter.scenario({
@@ -820,31 +818,31 @@ formatter.scenario({
 });
 formatter.step({
   "line": 49,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked",
+  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
   "keyword": "Given "
 });
 formatter.step({
   "line": 50,
-  "name": "I click on Group button of this first group",
+  "name": "I click on Group button of this first group -6US",
   "keyword": "When "
 });
 formatter.step({
   "line": 51,
-  "name": "page is redirected to a form with title \"Contacts Form\"",
+  "name": "page is redirected to a form with title \"Contacts Form\" -6US",
   "keyword": "Then "
 });
 formatter.match({
   "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
 });
 formatter.result({
-  "duration": 280450677,
+  "duration": 296297679,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iClickOnGroupButtonOfThisFirstGroup()"
 });
 formatter.result({
-  "duration": 964554876,
+  "duration": 1705523041,
   "status": "passed"
 });
 formatter.match({
@@ -857,31 +855,123 @@ formatter.match({
   "location": "US6StepsDef.pageIsRedirectedToAFormWithTitle(String)"
 });
 formatter.result({
-  "duration": 512293513,
+  "duration": 4442260,
   "status": "passed"
 });
 formatter.after({
-  "duration": 537313325,
+  "duration": 534123105,
   "status": "passed"
 });
 formatter.after({
-  "duration": 555151994,
+  "duration": 539346904,
   "status": "passed"
 });
 formatter.after({
-  "duration": 554568248,
+  "duration": 533673873,
   "status": "passed"
 });
 formatter.after({
-  "duration": 539677388,
+  "duration": 535911414,
   "status": "passed"
 });
 formatter.after({
-  "duration": 76768760,
+  "duration": 535716952,
   "status": "passed"
 });
 formatter.after({
-  "duration": 76936827,
+  "duration": 536712646,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1404157870,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1404268229,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1400814688,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1374253435,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1424234194,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1101217314,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 53,
+  "name": "Check when i group one group of duplicate the field equals of this group appears on form",
+  "description": "",
+  "id": "check-possible-duplicated-contacts-page;check-when-i-group-one-group-of-duplicate-the-field-equals-of-this-group-appears-on-form",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 54,
+  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 55,
+  "name": "I click on Group button of this first group -6US",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 56,
+  "name": "the fields have to be on group page -6US",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
+});
+formatter.result({
+  "duration": 338857303,
+  "status": "passed"
+});
+formatter.match({
+  "location": "US6StepsDef.iClickOnGroupButtonOfThisFirstGroup()"
+});
+formatter.result({
+  "duration": 1717605101,
+  "status": "passed"
+});
+formatter.match({
+  "location": "US6StepsDef.theFieldHasToBeOnGroupPageUS()"
+});
+formatter.result({
+  "duration": 80438047539,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 540011520,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534721669,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 536449260,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 535471208,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 534450079,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 536868543,
   "status": "passed"
 });
 });
