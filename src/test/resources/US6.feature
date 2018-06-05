@@ -67,3 +67,13 @@ Feature: Check possible duplicated Contacts Page
     And the form appears -6US
     And I click on "submit" button -6US
     Then i should be redirected to the "Contacts Duplicate" page and the first user shouldnt be the same -6US
+
+  Scenario: Check when i separate all the duplicated contacts i'm redirected to the Not duplicate page
+    Given I am on the "Contacts Duplicate" page and there is some groups to resolve -6US
+    When I separe all this groups -6US
+    Then i should be redirected to the "Not duplicate" page -6US
+
+  Scenario: Check when i group all the duplicated contacts i'm redirected to the Not duplicate page
+    Given I am on the "Contacts Duplicate" page and there is some groups to resolve -6US
+    When I group all this groups -6US
+    Then i should be redirected to the "Not duplicate" page -6US

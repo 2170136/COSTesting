@@ -341,6 +341,8 @@ public class US6StepsDef {
                 return;
             }
         }
+
+
     }
 
     @And("^I click on label Separate -6US$")
@@ -579,4 +581,114 @@ public class US6StepsDef {
             Assert.assertTrue("Contacts Duplicate page not found!", false);
         }
     }
+
+    @Given("^I am on the \"([^\"]*)\" page and there is some groups to resolve -6US$")
+    public void iAmOnThePageAndThereIsSomeGroupsToResolveUS(String arg0) throws Throwable {
+        String pageTitle = driver.getTitle();
+        if(pageTitle.equals(arg0)){
+            int totalGroups = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText());
+            Assert.assertTrue("Não existem contactos duplicados por resolver!", totalGroups > 0);
+        }else{
+            Assert.assertTrue("Contacts Duplicate page not found!", false);
+        }
+    }
+
+    @When("^I separe all this groups -6US$")
+    public void iSepareAllThisGroupsUS() throws Throwable {
+        WebElement column;
+        WebElement elCheckbox;
+        String color, oldColor = "";
+
+        int totalGroups = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText()); // 22
+        int y = 1;
+        List<WebElement> duplicatedList;
+        do{
+            duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+            if(duplicatedList.size() < y){
+                WebElement buttonSeparate = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" +(y-1)+ "]/td[6]/button"));
+                buttonSeparate.click();
+                WebDriverWait wait = new WebDriverWait(driver, 3);
+                // esperar
+                wait.until(ExpectedConditions.urlContains("not_duplicate"));
+                return;
+            }
+            column =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[5]"));
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                elCheckbox = column.findElement(By.xpath("//input[@id="+(y-1)+"]"));
+                if(elCheckbox.isSelected()){
+                    elCheckbox.click();
+                }
+                oldColor = color;
+                y++;
+            }else{
+                WebElement buttonSeparate = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" +(y-1)+ "]/td[6]/button"));
+                buttonSeparate.click();
+                WebDriverWait wait = new WebDriverWait(driver, 3);
+                // esperar
+                String strTotal = String.valueOf(totalGroups-1) ;
+                wait.until(ExpectedConditions.textToBe(By.xpath("//span[@id='total_contacts']"),strTotal));
+                totalGroups = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText()); // 22
+                y = 1;
+            }
+        }while (totalGroups != 0);
+    }
+
+    @Then("^i should be redirected to the \"([^\"]*)\" page -6US$")
+    public void iShouldBeRedirectedToThePageUS(String arg0) throws Throwable {
+        Assert.assertTrue("Not Duplicate page not found!", driver.getTitle().equals(arg0));
+    }
+
+    @When("^I group all this groups -6US$")
+    public void iGroupAllThisGroupsUS() throws Throwable {
+        WebElement column;
+        WebElement elCheckbox;
+        String color, oldColor = "";
+
+        int totalGroups = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText()); // 22
+        int y = 1;
+        List<WebElement> duplicatedList;
+        do{
+            duplicatedList = driver.findElements(By.xpath("//table[@id='data-table']/tbody/tr"));
+            if(duplicatedList.size() < y){
+                WebElement buttonGroup = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" +(y-1)+ "]/td[6]/button"));
+                buttonGroup.click();
+                WebDriverWait wait = new WebDriverWait(driver, 3);
+                wait.until(ExpectedConditions.urlContains("form_contact"));
+                WebElement buttonSubmit = driver.findElement(By.id("submit"));
+                buttonSubmit.click();
+                wait = new WebDriverWait(driver, 3);
+                // esperar
+                wait.until(ExpectedConditions.urlContains("not_duplicate"));
+                return;
+            }
+            column =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]/td[5]"));
+            color = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" + y + "]")).getCssValue("background-color");
+            if(oldColor.equals(color) || oldColor.equals(""))
+            {
+                oldColor = color;
+                y++;
+            }else{
+                WebElement buttonGroup = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[" +(y-1)+ "]/td[6]/button"));
+                buttonGroup.click();
+                WebDriverWait wait = new WebDriverWait(driver, 3);
+                wait.until(ExpectedConditions.urlContains("form_contact"));
+
+                WebElement buttonSubmit = driver.findElement(By.id("submit"));
+                buttonSubmit.click();
+                wait = new WebDriverWait(driver, 4);
+                wait.until(ExpectedConditions.urlContains("duplicate"));
+
+                // esperar
+                String strTotal = String.valueOf(totalGroups-1) ;
+                wait.until(ExpectedConditions.textToBe(By.xpath("//span[@id='total_contacts']"),strTotal));
+                totalGroups = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText()); // 22
+                y = 1;
+            }
+        }while (totalGroups != 0);
+    }
+
+
+    //name=export
 }
