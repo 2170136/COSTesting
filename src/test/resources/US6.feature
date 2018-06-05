@@ -3,7 +3,6 @@ Feature: Check possible duplicated Contacts Page
   I want to see the possible duplicated contacts
   So that I can decide if they are the same Contact
 
-
   Scenario: Check for each group if some field is similar for all the group -6US
     Given I am on the duplicate page and there is some group of duplicates -6US
     Then For each group of possible duplicates, you must have at least one similar field in all possible duplicates -6US
@@ -55,3 +54,16 @@ Feature: Check possible duplicated Contacts Page
     When I click on Group button of this first group -6US
     Then the fields have to be on group page -6US
 
+  Scenario: Check when i group one group and on form i click on cancel button, the group is still there
+    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US
+    When I click on Group button of this first group -6US
+    And the form appears -6US
+    And I click on "cancel" button -6US
+    Then i should be redirected to the "Contacts Duplicate" page and the first user should be the same -6US
+
+  Scenario: Check when i group one group and on form i submit the group isnt there anymore
+    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US
+    When I click on Group button of this first group -6US
+    And the form appears -6US
+    And I click on "submit" button -6US
+    Then i should be redirected to the "Contacts Duplicate" page and the first user shouldnt be the same -6US

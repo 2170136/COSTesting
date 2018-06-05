@@ -530,4 +530,53 @@ public class US6StepsDef {
 
 
     }
+
+
+    @And("^the form appears -6US$")
+    public void theFormAppearsUS() throws Throwable {
+        String pageTitle = driver.getTitle();
+        Assert.assertTrue("Contacts Form page not found!", pageTitle.equals("Contacts Form"));
+    }
+
+    @And("^I click on \"([^\"]*)\" button -6US$")
+    public void iClickOnButtonUS(String arg0) throws Throwable {
+        WebElement button = driver.findElement(By.id(arg0));
+        button.click();
+        WebDriverWait wait = new WebDriverWait(driver, 2);
+        wait.until(ExpectedConditions.urlContains("duplicate"));
+    }
+
+    @Then("^i should be redirected to the \"([^\"]*)\" page and the first user should be the same -6US$")
+    public void iShouldBeRedirectedToThePageAndTheFirstUserShouldBeTheSameUS(String arg0) throws Throwable {
+        String pageTitle = driver.getTitle();
+        if(pageTitle.equals(arg0)){
+            String name = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[1]/td[1]")).getText();
+            String surname = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[1]/td[2]")).getText();
+            String email = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[1]/td[3]")).getText();
+            String phone =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[1]/td[4]")).getText();
+
+            if(! (listNames.contains(name) && listSurNames.contains(surname) && listEmail.contains(email) && listPhone.contains(phone)) ){
+                assertTrue("User shouldnt be the same.", false);
+            }
+        }else{
+            Assert.assertTrue("Contacts Duplicate page not found!", false);
+        }
+    }
+
+    @Then("^i should be redirected to the \"([^\"]*)\" page and the first user shouldnt be the same -6US$")
+    public void iShouldBeRedirectedToThePageAndTheFirstUserShouldntBeTheSameUS(String arg0) throws Throwable {
+        String pageTitle = driver.getTitle();
+        if(pageTitle.equals(arg0)){
+            String name = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[1]/td[1]")).getText();
+            String surname = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[1]/td[2]")).getText();
+            String email = driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[1]/td[3]")).getText();
+            String phone =  driver.findElement(By.xpath("//table[@id='data-table']/tbody/tr[1]/td[4]")).getText();
+
+            if((listNames.contains(name) && listSurNames.contains(surname) && listEmail.contains(email) && listPhone.contains(phone)) ){
+                assertTrue("User should be the same.", false);
+            }
+        }else{
+            Assert.assertTrue("Contacts Duplicate page not found!", false);
+        }
+    }
 }

@@ -7,971 +7,449 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2420417576,
+  "duration": 2260047803,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2076414832,
+  "duration": 1535708772,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1465553203,
+  "duration": 1523293164,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1432580457,
+  "duration": 1518469671,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1418415112,
+  "duration": 1966148737,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1095360077,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 7,
-  "name": "Check for each group if some field is similar for all the group -6US",
-  "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-for-each-group-if-some-field-is-similar-for-all-the-group--6us",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 8,
-  "name": "I am on the duplicate page and there is some group of duplicates -6US",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "For each group of possible duplicates, you must have at least one similar field in all possible duplicates -6US",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
-});
-formatter.result({
-  "duration": 309829177,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.Foreachgroupofpossibleduplicatesyoumusthaveatleastonesimilarfieldinallpossibleduplicates()"
-});
-formatter.result({
-  "duration": 6983008397,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 536335209,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 533863412,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534801260,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 532681052,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534529669,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 538227723,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1366454865,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1370599278,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1377102668,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1392991912,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1385583085,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1332853196,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 11,
-  "name": "Check if every group have at least 2 contacts -6US",
-  "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-if-every-group-have-at-least-2-contacts--6us",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 12,
-  "name": "I am on the duplicate page and there is some group of duplicates -6US",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 13,
-  "name": "every group of duplicate should contain at least 2 contacts -6US",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
-});
-formatter.result({
-  "duration": 165326495,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.everygroupofduplicateshouldcontainatleast2contacts()"
-});
-formatter.result({
-  "duration": 876895899,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535323927,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 533738695,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534600234,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 536006183,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534953875,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 537323107,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1360808911,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1355922343,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1370313329,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1403448947,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1369699586,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1191615336,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 15,
-  "name": "Check if Total of possible duplicated contacts is right -6US",
-  "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-if-total-of-possible-duplicated-contacts-is-right--6us",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 16,
-  "name": "I am on the duplicate page and there is some group of duplicates -6US",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "the Total of possible duplicated contacts must be consistent to the total groups in list -6US",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "US6StepsDef.Iamontheduplicatepageandthereissomegroupofduplicates()"
-});
-formatter.result({
-  "duration": 172172449,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.theTotalOfPossibleDuplicatedContactsMustBeConsistentToTheTotalGroupsInListUS()"
-});
-formatter.result({
-  "duration": 872281332,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535146696,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535401875,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534645362,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535895824,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534454592,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 539110186,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1528612536,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1374550461,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1373752923,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1391039501,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1483272191,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1497055587,
+  "duration": 1101236899,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
+      "line": 7,
+      "value": "#  Scenario: Check for each group if some field is similar for all the group -6US"
+    },
+    {
+      "line": 8,
+      "value": "#    Given I am on the duplicate page and there is some group of duplicates -6US"
+    },
+    {
+      "line": 9,
+      "value": "#    Then For each group of possible duplicates, you must have at least one similar field in all possible duplicates -6US"
+    },
+    {
+      "line": 10,
+      "value": "#"
+    },
+    {
+      "line": 11,
+      "value": "#  Scenario: Check if every group have at least 2 contacts -6US"
+    },
+    {
+      "line": 12,
+      "value": "#    Given I am on the duplicate page and there is some group of duplicates -6US"
+    },
+    {
+      "line": 13,
+      "value": "#    Then every group of duplicate should contain at least 2 contacts -6US"
+    },
+    {
+      "line": 14,
+      "value": "#"
+    },
+    {
+      "line": 15,
+      "value": "#  Scenario: Check if Total of possible duplicated contacts is right -6US"
+    },
+    {
+      "line": 16,
+      "value": "#    Given I am on the duplicate page and there is some group of duplicates -6US"
+    },
+    {
+      "line": 17,
+      "value": "#    Then the Total of possible duplicated contacts must be consistent to the total groups in list -6US"
+    },
+    {
       "line": 19,
       "value": "# \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
-    }
-  ],
-  "line": 21,
-  "name": "Check if when i uncheck every checkbox of a group the label Group change to Separate",
-  "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-if-when-i-uncheck-every-checkbox-of-a-group-the-label-group-change-to-separate",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 22,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 23,
-  "name": "I uncheck every checkbox of this first group -6US",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 24,
-  "name": "The label \"Group\" should change to \"Separate\" -6US",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
-});
-formatter.result({
-  "duration": 366008915,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.iUncheckEveryCheckboxOfThisFirstGroup()"
-});
-formatter.result({
-  "duration": 195729801,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Group",
-      "offset": 11
     },
     {
-      "val": "Separate",
-      "offset": 36
-    }
-  ],
-  "location": "US6StepsDef.theLabelShouldChangeTo(String,String)"
-});
-formatter.result({
-  "duration": 90295869,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 623861845,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534664233,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534812746,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535560645,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 533595104,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 538071415,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1374134871,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1378083182,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1384747393,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1413840340,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1373034152,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1096433720,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 26,
-  "name": "Check if when i uncheck checkbox and let only 1 checked of a group the label \"Group\" change to \"Separate\"",
-  "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-if-when-i-uncheck-checkbox-and-let-only-1-checked-of-a-group-the-label-\"group\"-change-to-\"separate\"",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 27,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 28,
-  "name": "I uncheck checkbox but let one checked of this first group -6US",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 29,
-  "name": "The label \"Group\" should change to \"Separate\" -6US",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
-});
-formatter.result({
-  "duration": 300663631,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.iUncheckCheckboxButLetOneCheckedOfThisFirstGroup()"
-});
-formatter.result({
-  "duration": 170878089,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Group",
-      "offset": 11
+      "line": 21,
+      "value": "#  Scenario: Check if when i uncheck every checkbox of a group the label Group change to Separate"
     },
     {
-      "val": "Separate",
-      "offset": 36
-    }
-  ],
-  "location": "US6StepsDef.theLabelShouldChangeTo(String,String)"
-});
-formatter.result({
-  "duration": 95609104,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 536712645,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 536041055,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535334593,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 537373980,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535935619,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 537712442,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1373781230,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1394206272,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1379684004,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1380920517,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1407636026,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1095142642,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 31,
-  "name": "Check if when i check every checkbox of a group the label \"Separate\" change to \"Group\"",
-  "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-if-when-i-check-every-checkbox-of-a-group-the-label-\"separate\"-change-to-\"group\"",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 32,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox unchecked -6US",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 33,
-  "name": "I check at least 2 checkbox of this group -6US",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 34,
-  "name": "The label \"Separate\" should change to \"Group\" -6US",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxUnchecked()"
-});
-formatter.result({
-  "duration": 363055478,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 17
-    }
-  ],
-  "location": "US6StepsDef.iCheckAtLeastCheckboxOfThisGroup(int)"
-});
-formatter.result({
-  "duration": 192685696,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Separate",
-      "offset": 11
+      "line": 22,
+      "value": "#    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US"
     },
     {
-      "val": "Group",
-      "offset": 39
-    }
-  ],
-  "location": "US6StepsDef.theLabelShouldChangeTo(String,String)"
-});
-formatter.result({
-  "duration": 86766430,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534948132,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 536688850,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535949978,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534936644,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535321465,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 539004750,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1383084212,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1403215100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1785881261,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1357664293,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1380345747,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1083670222,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 36,
-  "name": "Check when i Separate 1 group of contacts the list decrease 1",
-  "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-when-i-separate-1-group-of-contacts-the-list-decrease-1",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 37,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 38,
-  "name": "I uncheck every contacts of this group -6US",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 39,
-  "name": "I click on label Separate -6US",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 40,
-  "name": "the list of groups on duplicate page should decrease 1 -6US",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
-});
-formatter.result({
-  "duration": 294527011,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.iUncheckEveryContactsOfThisGroup()"
-});
-formatter.result({
-  "duration": 188650821,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.iClickOnLabelSeparate()"
-});
-formatter.result({
-  "duration": 982851679,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
+      "line": 23,
+      "value": "#    When I uncheck every checkbox of this first group -6US"
+    },
     {
-      "val": "1",
-      "offset": 53
-    }
-  ],
-  "location": "US6StepsDef.theListOfGroupsOnDuplicatePageShouldDecrease(int)"
-});
-formatter.result({
-  "duration": 1567774414,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 536818902,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535939312,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 535161874,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534673259,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 536369261,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 538660954,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1401364842,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1375425539,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1346386746,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1388604216,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1388102473,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1094391051,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 42,
-  "name": "Check when i Separate 1 group of contacts the total of duplicates decrease 1",
-  "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-when-i-separate-1-group-of-contacts-the-total-of-duplicates-decrease-1",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 43,
-  "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 44,
-  "name": "I uncheck every contacts of this group -6US",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 45,
-  "name": "I click on label Separate -6US",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 46,
-  "name": "the total of contacts duplicated should decrease 1 -6US",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
-});
-formatter.result({
-  "duration": 299240450,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.iUncheckEveryContactsOfThisGroup()"
-});
-formatter.result({
-  "duration": 197356060,
-  "status": "passed"
-});
-formatter.match({
-  "location": "US6StepsDef.iClickOnLabelSeparate()"
-});
-formatter.result({
-  "duration": 974214953,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
+      "line": 24,
+      "value": "#    Then The label \"Group\" should change to \"Separate\" -6US"
+    },
     {
-      "val": "1",
-      "offset": 49
+      "line": 25,
+      "value": "#"
+    },
+    {
+      "line": 26,
+      "value": "#  Scenario: Check if when i uncheck checkbox and let only 1 checked of a group the label \"Group\" change to \"Separate\""
+    },
+    {
+      "line": 27,
+      "value": "#    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US"
+    },
+    {
+      "line": 28,
+      "value": "#    When I uncheck checkbox but let one checked of this first group -6US"
+    },
+    {
+      "line": 29,
+      "value": "#    Then The label \"Group\" should change to \"Separate\" -6US"
+    },
+    {
+      "line": 30,
+      "value": "#"
+    },
+    {
+      "line": 31,
+      "value": "#  Scenario: Check if when i check every checkbox of a group the label \"Separate\" change to \"Group\""
+    },
+    {
+      "line": 32,
+      "value": "#    Given I am on the duplicate page and the first group of duplicate have every checkbox unchecked -6US"
+    },
+    {
+      "line": 33,
+      "value": "#    When I check at least 2 checkbox of this group -6US"
+    },
+    {
+      "line": 34,
+      "value": "#    Then The label \"Separate\" should change to \"Group\" -6US"
+    },
+    {
+      "line": 35,
+      "value": "#"
+    },
+    {
+      "line": 36,
+      "value": "#  Scenario: Check when i Separate 1 group of contacts the list decrease 1"
+    },
+    {
+      "line": 37,
+      "value": "#    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US"
+    },
+    {
+      "line": 38,
+      "value": "#    When I uncheck every contacts of this group -6US"
+    },
+    {
+      "line": 39,
+      "value": "#    And I click on label Separate -6US"
+    },
+    {
+      "line": 40,
+      "value": "#    Then the list of groups on duplicate page should decrease 1 -6US"
+    },
+    {
+      "line": 41,
+      "value": "#"
+    },
+    {
+      "line": 42,
+      "value": "#  Scenario: Check when i Separate 1 group of contacts the total of duplicates decrease 1"
+    },
+    {
+      "line": 43,
+      "value": "#    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US"
+    },
+    {
+      "line": 44,
+      "value": "#    When I uncheck every contacts of this group -6US"
+    },
+    {
+      "line": 45,
+      "value": "#    And I click on label Separate -6US"
+    },
+    {
+      "line": 46,
+      "value": "#    Then the total of contacts duplicated should decrease 1 -6US"
+    },
+    {
+      "line": 47,
+      "value": "#"
+    },
+    {
+      "line": 48,
+      "value": "#  Scenario: Check when i Group one group of duplicate i redirect to a form with title \"Contacts Form\""
+    },
+    {
+      "line": 49,
+      "value": "#    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US"
+    },
+    {
+      "line": 50,
+      "value": "#    When I click on Group button of this first group -6US"
+    },
+    {
+      "line": 51,
+      "value": "#    Then page is redirected to a form with title \"Contacts Form\" -6US"
+    },
+    {
+      "line": 53,
+      "value": "#  Scenario: Check when i group one group of duplicate the field equals of this group appears on form"
+    },
+    {
+      "line": 54,
+      "value": "#    Given I am on the duplicate page and the first group of duplicate have every checkbox checked -6US"
+    },
+    {
+      "line": 55,
+      "value": "#    When I click on Group button of this first group -6US"
+    },
+    {
+      "line": 56,
+      "value": "#    Then the fields have to be on group page -6US"
     }
   ],
-  "location": "US6StepsDef.theTotalOfContactsDuplicatedShouldDecrease(int)"
-});
-formatter.result({
-  "duration": 373907178,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 537003107,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534779105,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534677772,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534644541,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 534237156,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 540891931,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1374410974,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1356155369,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1506561236,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1377997028,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1371213022,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 2366847891,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 48,
-  "name": "Check when i Group one group of duplicate i redirect to a form with title \"Contacts Form\"",
+  "line": 58,
+  "name": "Check when i group one group and on form i click on cancel button, the group is still there",
   "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-when-i-group-one-group-of-duplicate-i-redirect-to-a-form-with-title-\"contacts-form\"",
+  "id": "check-possible-duplicated-contacts-page;check-when-i-group-one-group-and-on-form-i-click-on-cancel-button,-the-group-is-still-there",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 49,
+  "line": 59,
   "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 50,
+  "line": 60,
   "name": "I click on Group button of this first group -6US",
   "keyword": "When "
 });
 formatter.step({
-  "line": 51,
-  "name": "page is redirected to a form with title \"Contacts Form\" -6US",
+  "line": 61,
+  "name": "the form appears -6US",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "I click on \"cancel\" button -6US",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 63,
+  "name": "i should be redirected to the \"Contacts Duplicate\" page and the first user should be the same -6US",
   "keyword": "Then "
 });
 formatter.match({
   "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
 });
 formatter.result({
-  "duration": 296297679,
+  "duration": 529540312,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iClickOnGroupButtonOfThisFirstGroup()"
 });
 formatter.result({
-  "duration": 1705523041,
+  "duration": 1798862188,
+  "status": "passed"
+});
+formatter.match({
+  "location": "US6StepsDef.theFormAppearsUS()"
+});
+formatter.result({
+  "duration": 2788295,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Contacts Form",
-      "offset": 41
+      "val": "cancel",
+      "offset": 12
     }
   ],
-  "location": "US6StepsDef.pageIsRedirectedToAFormWithTitle(String)"
+  "location": "US6StepsDef.iClickOnButtonUS(String)"
 });
 formatter.result({
-  "duration": 4442260,
+  "duration": 276860107,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Contacts Duplicate",
+      "offset": 31
+    }
+  ],
+  "location": "US6StepsDef.iShouldBeRedirectedToThePageAndTheFirstUserShouldBeTheSameUS(String)"
+});
+formatter.result({
+  "duration": 85388952,
   "status": "passed"
 });
 formatter.after({
-  "duration": 534123105,
+  "duration": 537612253,
   "status": "passed"
 });
 formatter.after({
-  "duration": 539346904,
+  "duration": 534058888,
   "status": "passed"
 });
 formatter.after({
-  "duration": 533673873,
+  "duration": 532674150,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535911414,
+  "duration": 544855404,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535716952,
+  "duration": 542896756,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536712646,
+  "duration": 542913006,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1404157870,
+  "duration": 1552691282,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1404268229,
+  "duration": 1664739664,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1400814688,
+  "duration": 1699824277,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1374253435,
+  "duration": 4665466246,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1424234194,
+  "duration": 1526274329,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1101217314,
+  "duration": 1209161429,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 53,
-  "name": "Check when i group one group of duplicate the field equals of this group appears on form",
+  "line": 65,
+  "name": "Check when i group one group and on form i submit the group isnt there anymore",
   "description": "",
-  "id": "check-possible-duplicated-contacts-page;check-when-i-group-one-group-of-duplicate-the-field-equals-of-this-group-appears-on-form",
+  "id": "check-possible-duplicated-contacts-page;check-when-i-group-one-group-and-on-form-i-submit-the-group-isnt-there-anymore",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 54,
+  "line": 66,
   "name": "I am on the duplicate page and the first group of duplicate have every checkbox checked -6US",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 55,
+  "line": 67,
   "name": "I click on Group button of this first group -6US",
   "keyword": "When "
 });
 formatter.step({
-  "line": 56,
-  "name": "the fields have to be on group page -6US",
+  "line": 68,
+  "name": "the form appears -6US",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 69,
+  "name": "I click on \"submit\" button -6US",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 70,
+  "name": "i should be redirected to the \"Contacts Duplicate\" page and the first user shouldnt be the same -6US",
   "keyword": "Then "
 });
 formatter.match({
   "location": "US6StepsDef.iAmOnTheDuplicatePageAndTheFirstGroupOfDuplicateHaveEveryCheckboxChecked()"
 });
 formatter.result({
-  "duration": 338857303,
+  "duration": 366213397,
   "status": "passed"
 });
 formatter.match({
   "location": "US6StepsDef.iClickOnGroupButtonOfThisFirstGroup()"
 });
 formatter.result({
-  "duration": 1717605101,
+  "duration": 1740783126,
   "status": "passed"
 });
 formatter.match({
-  "location": "US6StepsDef.theFieldHasToBeOnGroupPageUS()"
+  "location": "US6StepsDef.theFormAppearsUS()"
 });
 formatter.result({
-  "duration": 80438047539,
+  "duration": 1278254,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "submit",
+      "offset": 12
+    }
+  ],
+  "location": "US6StepsDef.iClickOnButtonUS(String)"
+});
+formatter.result({
+  "duration": 553590207,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Contacts Duplicate",
+      "offset": 31
+    }
+  ],
+  "location": "US6StepsDef.iShouldBeRedirectedToThePageAndTheFirstUserShouldntBeTheSameUS(String)"
+});
+formatter.result({
+  "duration": 87412177,
   "status": "passed"
 });
 formatter.after({
-  "duration": 540011520,
+  "duration": 536863006,
   "status": "passed"
 });
 formatter.after({
-  "duration": 534721669,
+  "duration": 536793299,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536449260,
+  "duration": 537350957,
   "status": "passed"
 });
 formatter.after({
-  "duration": 535471208,
+  "duration": 532422262,
   "status": "passed"
 });
 formatter.after({
-  "duration": 534450079,
+  "duration": 537296646,
   "status": "passed"
 });
 formatter.after({
-  "duration": 536868543,
+  "duration": 554720920,
   "status": "passed"
 });
 });
