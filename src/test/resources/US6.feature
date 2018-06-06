@@ -77,3 +77,27 @@ Feature: Check possible duplicated Contacts Page
     Given I am on the "Contacts Duplicate" page and there is some groups to resolve -6US
     When I group all this groups -6US
     Then i should be redirected to the "Not duplicate" page -6US
+
+  Scenario: Duplicate page's title and text contains "Contacts Duplicate"
+    Given I am on the duplicate page and there is some group of duplicates -6US
+    Then the title of the page should be "Contacts Duplicate" -6US
+    And I can see the text "Contacts Duplicate" -6US
+
+  Scenario: On duplicate page i should see the total of duplicate contacts
+    Given I am on the duplicate page and there is some group of duplicates -6US
+    Then I can see the total of duplicate contacts -6US
+
+  Scenario Outline: On duplicate page i should see a datable with header
+    Given I am on the duplicate page and there is some group of duplicates -6US
+    Then I can see a datable with an header with "<field>" field on position "<position>"
+    Examples:
+      |field|position|
+      |Name |1|
+      |Surname|2|
+      |Email|3|
+      |Phone Number |4|
+      |Group |5|
+      |Action|6|
+
+
+

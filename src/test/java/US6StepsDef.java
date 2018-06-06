@@ -1,6 +1,7 @@
 import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.cs.A;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -35,7 +36,7 @@ public class US6StepsDef {
     @Before
     public void setUp() throws Exception {
         System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
-       // System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
+        //System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
 
         //System.setProperty("webdriver.chrome.driver","drivers\\chromedriver.exe");
        // driver = new ChromeDriver();
@@ -689,6 +690,27 @@ public class US6StepsDef {
         }while (totalGroups != 0);
     }
 
+    @Then("^the title of the page should be \"([^\"]*)\" -6US$")
+    public void theTitleOfThePageShouldBeUS(String arg0) throws Throwable {
+        Assert.assertTrue("Title is wrong!", driver.getTitle().equals(arg0));
+    }
 
-    //name=export
+    @And("^I can see the text \"([^\"]*)\" -6US$")
+    public void iCanSeeTheTextUS(String arg0) throws Throwable {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.tagName("body")), arg0));
+    }
+
+    @Then("^I can see the total of duplicate contacts -6US$")
+    public void iCanSeeTheTotalOfDuplicateContactsUS() throws Throwable {
+        int totalGroups = Integer.parseInt(driver.findElement(By.xpath("//span[@id='total_contacts']")).getText());
+        Assert.assertTrue("Total of duplicates is wrong!", totalGroups > 0);
+    }
+
+    @Then("^I can see a datable with an header with \"([^\"]*)\" field on position \"([^\"]*)\"$")
+    public void iCanSeeADatableWithAnHeaderWithFieldOnPosition(String field, String position) throws Throwable {
+        String header = driver.findElement(By.xpath("//table[@id='data-table']/thead/tr/th["+position+"]")).getText();
+        Assert.assertTrue("Header is wrong!", header.equals(field));
+    }
+
 }

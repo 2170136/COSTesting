@@ -20,8 +20,8 @@ public class US7StepsDef {
     @Before
     public void setUp() throws Exception {
         System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
-       // System.setProperty("phantomjs.binary.path", "drivers\\phantomjs.exe");
-        
+        //System.setProperty("phantomjs.binary.path", "drivers\\phantomjs.exe");
+
         this.driver = new PhantomJSDriver();
         this.driver.get("http://35.187.16.192:80/COSProject/not_duplicate.php");
         this.totalOfNotDuplicates = 0;
@@ -54,4 +54,5 @@ public class US7StepsDef {
         String pageTitle = this.driver.getTitle();
         this.totalContacts = Integer.parseInt(this.driver.findElement(By.xpath("//span[@id='total_contacts']")).getText());
     }
+
 }

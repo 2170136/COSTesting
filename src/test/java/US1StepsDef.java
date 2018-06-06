@@ -64,7 +64,7 @@ public class US1StepsDef {
     @Before
     public void setUp() throws Exception {
         System.setProperty("phantomjs.binary.path", "drivers/phantomjs-linux");
-      //System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
+    //  System.setProperty("phantomjs.binary.path",  "drivers\\phantomjs.exe");
 
 
         driver = new PhantomJSDriver();
